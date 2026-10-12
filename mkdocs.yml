@@ -1,0 +1,52 @@
+site_name: PoliSSH Docs
+site_description: Polish and English user documentation for PoliSSH on macOS
+site_url: https://almostsensible.github.io/PoliSSH-docs/
+repo_url: https://github.com/AlmostSensible/PoliSSH-docs
+repo_name: AlmostSensible/PoliSSH-docs
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  language: en
+  logo: assets/polissh-icon.png
+  favicon: assets/polissh-icon.png
+  font: false
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light appearance
+    - scheme: default
+      primary: custom
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark appearance
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+plugins:
+  - search:
+      lang:
+        - en
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - Home: index.md
+  - Polski:
+      - Instrukcja obsługi: pl/guide.md
+      - Rozwiązywanie problemów: pl/troubleshooting.md
+  - English:
+      - User guide: en/guide.md
+      - Troubleshooting: en/troubleshooting.md
+  - Availability / Dostępność: status.md
