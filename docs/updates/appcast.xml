@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>PoliSSH updates</title>
+    <link>https://almostsensible.github.io/PoliSSH-docs/</link>
+    <description>Signed and notarized PoliSSH updates for macOS.</description>
+    <language>en</language>
+  </channel>
+</rss>
