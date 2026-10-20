@@ -6,6 +6,34 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.19.0</title>
+            <pubDate>Wed, 21 Oct 2026 00:55:18 +0300</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>0.19.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[PoliSSH 0.19.0 — public beta / publiczna beta
+
+English
+- New offline What’s New window in Polish and English. It opens once for each new app version, including first installation, and can be reopened from PoliSSH → What’s New. Includes recent release highlights and a link to the full release history.
+- Fixed a macOS accessibility crash when reading the status after configuration export or restore. Verified export to a file, restoration into an empty library, duplicate skipping and persistence after restarting.
+
+Polski
+- Nowe okno Co nowego, dostępne offline po polsku i angielsku. Pokazuje się raz dla nowej wersji, także przy pierwszej instalacji. Można wrócić do niego przez PoliSSH → Co nowego. Zawiera ostatnie zmiany i link do pełnej historii wydań.
+- Poprawiono awarię dostępności macOS przy odczycie komunikatu po eksporcie lub przywróceniu konfiguracji. Sprawdzono eksport do pliku, odtworzenie w pustej bibliotece, pomijanie duplikatów i zachowanie danych po restarcie.
+
+Limits / Ograniczenia
+- Configuration backups add missing entries; they do not overwrite existing IDs. Passwords, private keys, passphrases, server trust, recordings and app preferences are not included. JSON is not encrypted: protect host addresses and commands, and back up your keys separately.
+- Kopia konfiguracji dodaje brakujące wpisy; nie nadpisuje istniejących ID. Nie zawiera haseł, kluczy prywatnych, fraz kluczy, zaufania do serwerów, nagrań ani preferencji. JSON nie jest szyfrowany: chroń adresy i polecenia, a klucze zabezpiecz osobno.
+- Remote editor recovery copies require manual cleanup. SFTP saves use two renames, not an atomic transaction or server lock; a disconnect between them may require manual recovery. / Kopie odzyskiwania w edytorze usuwa się ręcznie. Zapis SFTP używa dwóch zmian nazwy, bez atomowej transakcji i blokady; zerwanie między nimi może wymagać ręcznego odzyskania.
+- iCloud synchronization remains experimental. / Synchronizacja iCloud pozostaje eksperymentalna.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.0/PoliSSH-0.19.0-arm64.zip" length="12884580" type="application/octet-stream" sparkle:edSignature="ZjI/jXIKKlVckNbPs/M2bc8iTYCWpEcPiNfQrAUlW5YtOFurkitdi/6qCgHOhDBwgHrV5L/aR3HUQM3smZI3DA=="/>
+        </item>
+        <item>
             <title>0.18.0</title>
             <pubDate>Tue, 20 Oct 2026 23:46:08 +0300</pubDate>
             <sparkle:version>11</sparkle:version>
@@ -61,31 +89,6 @@ Apple Silicon · macOS 14+. Finish active sessions and transfers before updating
 Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.1/PoliSSH-0.17.1-arm64.zip" length="12801675" type="application/octet-stream" sparkle:edSignature="riA/SsLWVamzq5RmS8BeHModOEGfcknOD56P/0O1PNykmlbOZeSheXgD7Nzj7tH511K0x1irwKcTM5SCX3UQDg=="/>
-        </item>
-        <item>
-            <title>0.17.0</title>
-            <pubDate>Tue, 20 Oct 2026 17:16:47 +0300</pubDate>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>0.17.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Polski
-
-- Aktualizacje poza App Store: wybierz PoliSSH → Sprawdź aktualizacje…
-- Automatyczne sprawdzanie można wyłączyć w Ustawienia → Ogólne → Aktualizacje.
-- Paczki są podpisane i notaryzowane. Instalacja wymaga potwierdzenia i ponownego uruchomienia aplikacji; wcześniej zakończ sesje i transfery.
-- Przy przejściu z 0.16.1 lub starszej wersji zainstaluj tę wersję ręcznie, kopiując PoliSSH.app do katalogu Aplikacje. Kolejne wersje zainstalujesz przez aktualizator.
-
-## English
-
-- Updates outside the App Store: choose PoliSSH → Check for Updates…
-- Disable automatic checks in Settings → General → Updates if preferred.
-- Update archives are signed and notarized. Installation requires confirmation and restarts the app; finish sessions and transfers first.
-- If upgrading from 0.16.1 or earlier, install this version manually by copying PoliSSH.app to Applications. Later versions can be installed through the updater.
-
-Apple Silicon · macOS 14 or later.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip" length="12736369" type="application/octet-stream" sparkle:edSignature="rHqMKB14Moq+TWIMeFveW7+Rl54XlWudEqScIKbz66ZoECxz5mYy93jzBd3tRNRXoVDL61MoR9f/cGqapmh+Cg=="/>
         </item>
     </channel>
 </rss>
