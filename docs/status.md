@@ -2,9 +2,9 @@
 
 ## Development preview
 
-PoliSSH is being developed for Apple Silicon Macs with macOS 14 or later. A public notarized installer is not available yet. The application source repository remains private. This public repository contains documentation only.
+PoliSSH 0.17.0 is available for Apple Silicon Macs with macOS 14 or later. [Download the signed, notarized ZIP](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip), extract it and copy `PoliSSH.app` to Applications. Quit the previous app before replacing it. Starting with this version, use **PoliSSH → Check for Updates…** for later releases. The application source repository remains private; this public repository hosts documentation and release downloads.
 
-PoliSSH jest rozwijany na komputery Mac z Apple Silicon i macOS 14 lub nowszym. Publiczny instalator z notaryzacją Apple nie jest jeszcze dostępny. Kod aplikacji pozostaje prywatny; to repozytorium zawiera wyłącznie dokumentację.
+PoliSSH 0.17.0 jest dostępny na komputery Mac z Apple Silicon i macOS 14 lub nowszym. [Pobierz ZIP z podpisem i notaryzacją Apple](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip), rozpakuj go i skopiuj `PoliSSH.app` do Aplikacji. Przed zastąpieniem zamknij poprzednią wersję. Od tej wersji kolejne wydania zainstalujesz przez **PoliSSH → Sprawdź aktualizacje…**. Kod aplikacji pozostaje prywatny; publiczne repozytorium zawiera dokumentację i paczki wydań.
 
 ## Unreleased / Niewydane
 

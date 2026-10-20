@@ -14,6 +14,6 @@ SSH, SFTP and remote editing on macOS. Choose your language to get started.
 ![PoliSSH host library](assets/hosts-dark.jpg)
 
 !!! info "Development preview / Wersja rozwojowa"
-    There is no public installer yet. Features marked **Unreleased** require newer development builds. This documentation is not an app download.
+    [Download PoliSSH 0.17.0](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip) for Apple Silicon and macOS 14 or later. The app is signed and notarized by Apple. Extract the ZIP and copy `PoliSSH.app` to Applications; later updates are available from **PoliSSH → Check for Updates…**.
 
-    Aplikacja jest w rozwoju. Funkcje oznaczone jako **Niewydane** mogą być nieobecne w Twojej kompilacji. [Dostępność / Availability](status.md).
+    [Pobierz PoliSSH 0.17.0](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip) na Apple Silicon z macOS 14 lub nowszym. Aplikacja ma podpis i notaryzację Apple. Rozpakuj ZIP i skopiuj `PoliSSH.app` do Aplikacji; kolejne wydania zainstalujesz przez **PoliSSH → Sprawdź aktualizacje…**. [Dostępność / Availability](status.md).
