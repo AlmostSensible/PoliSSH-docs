@@ -1,14 +1,20 @@
 # Availability / Dostępność
 
-## Public beta 0.17.1
+## Public beta 0.18.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.1/PoliSSH-0.17.1-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.18.0/PoliSSH-0.18.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.1/PoliSSH-0.17.1-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.18.0/PoliSSH-0.18.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.18.0 / Nowości w 0.18.0
+
+Configuration backup and add-only restore, richer SSH config import and recovery copies for remote editor saves. See [release notes](releases.md) for details and limitations.
+
+Kopia konfiguracji i przywracanie nowych wpisów, rozszerzony import SSH oraz kopie do odzyskania przy zapisie edytora zdalnego. Szczegóły i ograniczenia w [historii zmian](releases.md).
 
 ## Included in 0.17.0 / Dostępne w 0.17.0
 
@@ -25,7 +31,7 @@ Dostępne są wzorce i regexy, podgląd wklejania, klikane ścieżki, integracja
 ## Known limits / Znane ograniczenia
 
 - Interrupted SFTP writes may leave a partial file. Temporary failures can be retried up to twice; completed files are retained, known partial files restart from the beginning. This is not byte-offset resume. / Przerwany zapis może pozostawić częściowy plik. Błędy przejściowe mogą być ponawiane do dwóch razy; ukończone pliki pozostają, częściowe zaczynają się od początku.
-- Remote editor: UTF-8 up to 2 MB; conflict detection is not an atomic server lock. Save a local copy of important edits. / Edytor: UTF-8 do 2 MB, bez atomowej blokady pliku na serwerze. Zachowaj lokalną kopię ważnych zmian.
+- Remote editor: UTF-8 up to 2 MiB. Saves retain the previous file as a recovery copy; a disconnect between the two renames may require manual recovery. No atomic server lock; ACLs and extended attributes are not copied to the replacement. Recovery copies require manual cleanup. / Edytor: UTF-8 do 2 MiB. Zapis zachowuje poprzedni plik jako kopię; zerwanie połączenia między zmianami nazwy może wymagać ręcznego odzyskania. Bez atomowej blokady; nowy plik nie przejmuje ACL ani rozszerzonych atrybutów. Kopie usuwa się ręcznie.
 - Root in a terminal does not elevate SFTP. / Root w terminalu nie zmienia uprawnień SFTP.
 - OpenSSH import supports basic fields, not the complete configuration language. No Mosh, Telnet or serial connections. / Import OpenSSH obsługuje podstawowe pola. Brak Mosh, Telnet i połączeń szeregowych.
 - Cross-device iCloud, a fresh installation on macOS 14 and all external AI providers on real accounts are not fully verified. / Nie potwierdzono pełnej synchronizacji iCloud, świeżej instalacji na macOS 14 ani wszystkich dostawców AI na rzeczywistych kontach.

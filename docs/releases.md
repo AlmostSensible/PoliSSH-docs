@@ -1,5 +1,27 @@
 # Release notes / Historia zmian
 
+## 0.18.0 — 20 October / października 2026
+
+PoliSSH 0.18.0 — public beta / publiczna beta
+
+English
+- Back up configuration from Settings → Backup. Preview and restore hosts, groups, credential profile metadata, snippets and tunnels without overwriting existing entries. Passwords and private keys are not included; protect the exported file because addresses and commands may be sensitive.
+- Import more of your OpenSSH configuration: basic Host patterns and negation, bounded Include files, quoted IdentityFile paths and a single named ProxyJump. Importing private keys into Keychain requires explicit selection. ProxyCommand and Match exec are never executed.
+- Remote editor saves retain the previous file as a recovery copy, preserve owner/group and POSIX permissions, and reject detected conflicts, symlinks and unwritable originals. Failed replacements attempt recovery while the server remains reachable.
+
+Polski
+- Kopia konfiguracji w Ustawienia → Kopia danych. Podejrzyj i przywróć hosty, grupy, metadane profili logowania, snippety i tunele bez nadpisywania istniejących wpisów. Hasła i klucze prywatne nie trafiają do kopii; chroń plik, ponieważ adresy i polecenia mogą być poufne.
+- Rozszerzony import OpenSSH: podstawowe wzorce Host i negacja, ograniczona obsługa Include, ścieżki IdentityFile w cudzysłowach oraz pojedynczy nazwany ProxyJump. Import kluczy prywatnych do Pęku kluczy wymaga osobnego zaznaczenia. ProxyCommand i Match exec nigdy nie są wykonywane.
+- Edytor zdalny zachowuje poprzedni plik jako kopię do odzyskania, utrzymuje właściciela, grupę i uprawnienia POSIX oraz odrzuca wykryte konflikty, dowiązania symboliczne i pliki bez prawa zapisu. Przy błędzie podejmuje próbę przywrócenia, jeśli serwer jest nadal dostępny.
+
+Limits / Ograniczenia
+- Remote text editing supports UTF-8 up to 2 MiB. SFTP replacement uses two renames, not an atomic transaction or server lock. A disconnect between renames may require recovering the original from its backup path. Recovery copies require manual cleanup; replacement does not copy ACLs or extended attributes.
+- Edytor obsługuje UTF-8 do 2 MiB. Zapis SFTP korzysta z dwóch zmian nazwy, bez atomowej transakcji i blokady serwera. Zerwanie połączenia pomiędzy nimi może wymagać odzyskania oryginału ze ścieżki kopii. Kopie usuwa się ręcznie; nowy plik nie przejmuje ACL ani rozszerzonych atrybutów.
+- iCloud synchronization remains experimental. / Synchronizacja iCloud pozostaje eksperymentalna.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.17.1 — 20 October / października 2026
 
 PoliSSH 0.17.1 — public beta / publiczna beta
