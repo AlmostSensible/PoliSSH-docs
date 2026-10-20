@@ -1,5 +1,6 @@
-site_name: PoliSSH Docs
-site_description: Polish and English user documentation for PoliSSH on macOS
+site_name: PoliSSH
+site_description: PoliSSH public beta for macOS — SSH, SFTP and remote editing by AlmostSensible
+copyright: AlmostSensible · hello@almostsensible.com
 site_url: https://almostsensible.github.io/PoliSSH-docs/
 repo_url: https://github.com/AlmostSensible/PoliSSH-docs
 repo_name: AlmostSensible/PoliSSH-docs
@@ -46,7 +47,13 @@ nav:
   - Polski:
       - Instrukcja obsługi: pl/guide.md
       - Rozwiązywanie problemów: pl/troubleshooting.md
+      - Pomoc i kopie danych: pl/support.md
+      - Prywatność: pl/privacy.md
   - English:
       - User guide: en/guide.md
       - Troubleshooting: en/troubleshooting.md
+      - Support and backups: en/support.md
+      - Privacy: en/privacy.md
   - Availability / Dostępność: status.md
+  - Release notes / Historia zmian: releases.md
+  - Licenses / Licencje: licenses.md

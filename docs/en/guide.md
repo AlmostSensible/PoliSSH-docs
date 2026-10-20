@@ -1,6 +1,6 @@
 # User guide
 
-For macOS 14+ on Apple Silicon. Features marked **Unreleased** may be absent from your build. See [availability](../status.md).
+For public beta 0.17.0 and later, macOS 14+ on Apple Silicon. See [availability](../status.md).
 
 ## Updates outside the App Store
 
@@ -64,7 +64,7 @@ Automatic SSH reconnect is enabled by default. After transport loss, the session
 
 Reconnect opens a new shell in the same tab, retaining displayed history. It does not replay startup commands or automatically resume transfers, tunnels or logging. Initial authentication and server-identity failures are not automatically retried. A remote process survives transport loss only if the server-side environment keeps it running, for example through a separately configured tmux session.
 
-## New terminal tools — Unreleased
+## New terminal tools
 
 These controls may be absent from older builds. They apply to local and SSH terminals unless stated otherwise.
 
@@ -129,7 +129,7 @@ Choose list, icons or columns. Double-click a folder to open it. Select multiple
 
 Upload by dragging from local to remote, or download in the opposite direction. Dropping onto a folder selects that destination. Dragging within one pane moves the items to the chosen folder. You can also use item context menus.
 
-Open **Transfer activity** using the up/down-arrow control in the application bar. It shows transfers across connections with progress, status, cancellation and retry. Queue pause stops pending work; active transfers finish normally. **Settings → SFTP** controls the global concurrency limit. Failed or cancelled transfers may leave partial destination files; retry is an explicit action.
+Open **Transfer activity** using the up/down-arrow control in the application bar. It shows transfers across connections with progress, status, cancellation and retry. Queue pause stops pending work; active transfers finish normally. **Settings → SFTP** controls the global concurrency limit. Failed or cancelled transfers may leave partial destination files; temporary failures retry automatically up to twice by default (Settings → SFTP). Completed files are retained; known partial files restart from the beginning. Cancelled transfers require an explicit retry.
 
 ### Name conflicts
 
@@ -149,7 +149,7 @@ Double-click a remote UTF-8 text file or choose **Edit file**. Files up to 2 MB 
 
 Edit, then use **Save to server** (`⌘S`). Unsaved changes stay local to the editor until saved. The app checks for remote-content changes before upload and asks before closing unsaved edits. You can export edited or original text as a local copy. Failed uploads retain both versions for recovery. The conflict check does not prevent another application from modifying the remote file concurrently.
 
-**Compact editor — Unreleased:** the header contains **Save**, with reload and local-copy export under **…**; the footer contains syntax, wrapping, encoding and cursor position. The current line is highlighted across its width.
+**Compact editor:** the header contains **Save**, with reload and local-copy export under **…**; the footer contains syntax, wrapping, encoding and cursor position. The current line is highlighted across its width.
 
 SFTP editing uses the original SSH account's permissions, including after terminal elevation to root.
 
@@ -192,7 +192,9 @@ Choose **AI** to draft a command. To explain output, select it and choose **Expl
 
 **Apple** is the default on-device provider, requiring macOS 26+, supported Apple Intelligence and a downloaded model. Availability is shown in the app; unsupported Polish input may require using English.
 
-**Codex CLI** is optional and requires a separately installed CLI with saved authentication. Configure its executable path and optional model in **Settings → AI**. Requests may reach its model provider. The app uses read-only, ephemeral requests with tools and automatic execution disabled; it does not attach Keychain secrets or whole-session history. There is no automatic provider switch. Review generated commands before use.
+**Optional AI tools:** Codex, Claude Code, Gemini, GitHub Copilot, OpenCode, Ollama and LM Studio. Install and authenticate the chosen CLI or configure a local model separately; select its provider, executable and model in **Settings → AI**. Detection does not prove account entitlement. Not every integration has been tested on a real account. External providers may receive submitted text; their terms and limits apply. There is no automatic provider switch. Review commands before use.
+
+**⌘I** opens a command suggestion at the terminal cursor. Review the result and insert it without automatic execution; Escape cancels. This mode does not automatically attach terminal history.
 
 ## Settings and data
 
@@ -200,7 +202,7 @@ Choose **AI** to draft a command. To explain output, select it and choose **Expl
 | --- | --- |
 | General | English/Polish language and dark/light/system appearance. |
 | SFTP | Local start folder and global transfer concurrency. New local panes use the configured start folder. |
-| AI | Provider, Codex path and model. |
+| AI | Provider, executable path and model. |
 | Terminal | Font, palette, cursor, input/mouse behavior, reconnect, scrollback and bell; newer builds add pattern/paste/notification settings. |
 | iCloud | Optional configuration synchronization when the app is provisioned for it. |
 | Shortcuts | Keyboard shortcut reference. |
@@ -221,10 +223,10 @@ Host configuration is stored in SQLite under `~/Library/Application Support/Poli
 | `⌘,` | Settings. |
 | Return / Escape | Commit/cancel inline file rename. |
 | `⌘S` | Save in the remote editor. |
-| `⌘⌥↑` / `⌘⌥↓` | Previous/next shell prompt mark — Unreleased. |
+| `⌘⌥↑` / `⌘⌥↓` | Previous/next shell prompt mark. |
 
 ## Current limits
 
-The project is a development preview, without a notarized installer. Mosh, Telnet and serial connections are not implemented. OpenSSH import supports basic host fields rather than the full configuration language. Transfers do not automatically resume partial files; symbolic links and special files are rejected before writing. UTF-8 editing is limited to 2 MB. A terminal root shell does not change SFTP permissions. Shell integration is session-scoped and does not configure tmux persistence.
+The signed, notarized app is available as a public beta. Mosh, Telnet and serial connections are not implemented. OpenSSH import supports basic host fields rather than the full configuration language. Transfers do not automatically resume partial files; symbolic links and special files are rejected before writing. UTF-8 editing is limited to 2 MB. A terminal root shell does not change SFTP permissions. Shell integration is session-scoped and does not configure tmux persistence.
 
 If something fails, start with [Troubleshooting](../en/troubleshooting.md). See [availability](../status.md) before relying on unreleased features.

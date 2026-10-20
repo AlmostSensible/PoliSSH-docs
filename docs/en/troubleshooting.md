@@ -1,6 +1,6 @@
 # Troubleshooting
 
-Start with the visible error and the operation that produced it. Note the app/build version, macOS version, authentication method and whether the connection is SSH + SFTP or SFTP-only. Controls labeled **Unreleased** in the guide may be absent from your build.
+Start with the visible error and the operation that produced it. Note the app/build version, macOS version, authentication method and whether the connection is SSH + SFTP or SFTP-only. This guide covers 0.17.0 and later.
 
 ## Cannot connect
 
@@ -34,7 +34,7 @@ The editor's conflict check does not lock out other applications editing the rem
 
 ## A transfer failed or was cancelled
 
-Inspect the reported source, destination and error. Partial destination files can remain. Retry is explicit and does not automatically continue from the last byte. On a name conflict, distinguish **Merge** from **Replace**: replacing a destination folder can replace all of it.
+Inspect the reported source, destination and error. Partial destination files can remain. Temporary failures retry up to twice by default; completed files are retained and known partial files restart from the beginning. You can also retry explicitly. There is no byte-offset resume. On a name conflict, distinguish **Merge** from **Replace**: replacing a destination folder can replace all of it.
 
 If recovery after failed replacement reports a recovery path, inspect that path before making another replacement attempt. Queue pause affects pending work; already-running transfers finish normally.
 
@@ -46,19 +46,19 @@ Reconnect opens a new shell and keeps terminal display history. It does not rest
 
 Disable **Settings → Terminal → Use Option as Meta**. When enabled, Option is used for terminal Meta input rather than normal macOS character composition.
 
-## Pattern highlighting is unexpected — Unreleased
+## Pattern highlighting is unexpected
 
 Check the rule's enable switch, **Regex** and **Aa**. Literal `success` also matches text inside a filename; regex `\bsuccess\b` restricts it to whole words. Regular expressions match displayed rows, not text spanning wrapped rows. Empty matches and bidirectional rows are excluded.
 
 Correct the validation error for an invalid expression. If a slow rule was paused, simplify it and edit the rules to retry. Highlighting affects display only; copied output remains unchanged.
 
-## Command history is empty — Unreleased
+## Command history is empty
 
 Activate **… → Enable shell integration…** at an idle zsh or Bash 4.4+ prompt. macOS's older system Bash may not meet that requirement. Re-enable after reconnecting. Nested shells and tmux/screen are not automatically initialized.
 
 A missing end marker is not a successful exit. The command stays without a fabricated code; disconnection marks unfinished work as interrupted. Closed sessions do not retain this in-memory history.
 
-## No completion notification — Unreleased
+## No completion notification
 
 Enable the option under **Settings → Terminal** and allow notifications in macOS System Settings. The command must run for at least 10 seconds with shell integration active, and the session must be in the background. macOS Focus modes may defer delivery. Notification content intentionally omits the command text.
 
@@ -74,6 +74,6 @@ iCloud requires an app build with the appropriate signing and capabilities. See 
 
 ## Reporting a reproducible issue
 
-Use the repository's issue tracker if you have access. Include the app/build version, macOS version, steps, expected behavior, actual behavior and the exact relevant error. For transfers, include direction, file/folder shape, conflict choice and whether cancellation or retry was involved. For UI defects, include the selected language, theme and window size.
+Use the [public issue tracker](https://github.com/AlmostSensible/PoliSSH-docs/issues/new/choose). Include the app/build version, macOS version, steps, expected behavior, actual behavior and the exact relevant error. For transfers, include direction, file/folder shape, conflict choice and whether cancellation or retry was involved. For UI defects, include the selected language, theme and window size.
 
 Use fictional hosts in screenshots. Remove passwords, private keys, tokens and private server details from logs before sharing them. State what you have verified separately from what you suspect.

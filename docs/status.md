@@ -1,25 +1,33 @@
 # Availability / Dostępność
 
-## Development preview
+## Public beta 0.17.0
 
-PoliSSH 0.17.0 is available for Apple Silicon Macs with macOS 14 or later. [Download the signed, notarized ZIP](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip), extract it and copy `PoliSSH.app` to Applications. Quit the previous app before replacing it. Starting with this version, use **PoliSSH → Check for Updates…** for later releases. The application source repository remains private; this public repository hosts documentation and release downloads.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-PoliSSH 0.17.0 jest dostępny na komputery Mac z Apple Silicon i macOS 14 lub nowszym. [Pobierz ZIP z podpisem i notaryzacją Apple](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip), rozpakuj go i skopiuj `PoliSSH.app` do Aplikacji. Przed zastąpieniem zamknij poprzednią wersję. Od tej wersji kolejne wydania zainstalujesz przez **PoliSSH → Sprawdź aktualizacje…**. Kod aplikacji pozostaje prywatny; publiczne repozytorium zawiera dokumentację i paczki wydań.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
-## Unreleased / Niewydane
+The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
-Regex highlighting, paste review, clickable file references, shell integration, command history, completion notifications and the compact editor are described as **Unreleased**. They may be absent from your build. Refer to the version information supplied with the app before using these instructions.
+Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
 
-Regexy, podgląd wklejania, klikane ścieżki, integracja z powłoką, historia poleceń, powiadomienia i kompaktowy edytor są opisane jako **Niewydane**. Sprawdź informacje dołączone do swojej kompilacji.
+## Included in 0.17.0 / Dostępne w 0.17.0
+
+Pattern/regex highlighting, paste review, clickable file references, shell integration, command history, completion notifications, the compact editor, direct SFTP and signed updates are available. Their former Unreleased labels in the guides have been removed.
+
+Dostępne są wzorce i regexy, podgląd wklejania, klikane ścieżki, integracja z powłoką, historia poleceń, powiadomienia, kompaktowy edytor, bezpośrednie SFTP i podpisane aktualizacje.
 
 ## iCloud
 
-Synchronization is optional and requires a properly provisioned app build. It is disabled in the standard local development build. Configuration and Keychain synchronization are distinct; configuration status does not prove that secrets were synchronized.
+**Experimental.** Optional configuration synchronization uses private CloudKit; passwords/private keys use iCloud Keychain. Requires a provisioned app and enabled iCloud services. End-to-end synchronization between two Macs has not yet been verified. Keep a [backup](en/support.md#backup-and-recovery) before enabling it. Configuration sync status does not prove secrets have arrived on another Mac. Turning sync off retains local data; uninstalling the app is not a cloud-data deletion request.
 
-Synchronizacja jest opcjonalna i wymaga odpowiednio skonfigurowanej kompilacji. W standardowej lokalnej wersji rozwojowej jest wyłączona. Synchronizacja konfiguracji i pęku kluczy to osobne mechanizmy.
+**Funkcja eksperymentalna.** Konfiguracja korzysta z prywatnego CloudKit, a hasła i klucze prywatne z Pęku kluczy iCloud. Wymaga przygotowanej aplikacji i włączonych usług iCloud. Pełny przepływ między dwoma Macami nie został jeszcze zweryfikowany. Przed włączeniem zachowaj [kopię danych](pl/support.md#kopia-danych-i-odzyskiwanie). Stan konfiguracji nie potwierdza dotarcia sekretów na drugi Mac. Wyłączenie synchronizacji zachowuje dane lokalne; odinstalowanie nie usuwa danych z chmury.
 
-## Documentation feedback
+## Known limits / Znane ograniczenia
 
-For documentation errors, [open an issue](https://github.com/AlmostSensible/PoliSSH-docs/issues). Include the page, app version and suggested correction. Do not include passwords, keys or private server details.
+- Interrupted SFTP writes may leave a partial file. Temporary failures can be retried up to twice; completed files are retained, known partial files restart from the beginning. This is not byte-offset resume. / Przerwany zapis może pozostawić częściowy plik. Błędy przejściowe mogą być ponawiane do dwóch razy; ukończone pliki pozostają, częściowe zaczynają się od początku.
+- Remote editor: UTF-8 up to 2 MB; conflict detection is not an atomic server lock. Save a local copy of important edits. / Edytor: UTF-8 do 2 MB, bez atomowej blokady pliku na serwerze. Zachowaj lokalną kopię ważnych zmian.
+- Root in a terminal does not elevate SFTP. / Root w terminalu nie zmienia uprawnień SFTP.
+- OpenSSH import supports basic fields, not the complete configuration language. No Mosh, Telnet or serial connections. / Import OpenSSH obsługuje podstawowe pola. Brak Mosh, Telnet i połączeń szeregowych.
+- Cross-device iCloud, a fresh installation on macOS 14 and all external AI providers on real accounts are not fully verified. / Nie potwierdzono pełnej synchronizacji iCloud, świeżej instalacji na macOS 14 ani wszystkich dostawców AI na rzeczywistych kontach.
 
-Błędy dokumentacji zgłoś w [Issues](https://github.com/AlmostSensible/PoliSSH-docs/issues), podając stronę, wersję aplikacji i propozycję poprawki. Nie dołączaj haseł, kluczy ani prywatnych danych serwerów.
+[Help / Pomoc](en/support.md) · [Zgłoś problem / Report an issue](https://github.com/AlmostSensible/PoliSSH-docs/issues/new/choose)

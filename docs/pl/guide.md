@@ -1,6 +1,6 @@
 # Instrukcja obsługi
 
-Instrukcja dla macOS 14+ i Apple Silicon. Funkcje oznaczone jako **Niewydane** mogą być nieobecne w Twojej kompilacji. Zobacz [dostępność](../status.md).
+Instrukcja publicznej bety 0.17.0 i nowszych, macOS 14+ i Apple Silicon. Zobacz [dostępność](../status.md).
 
 ## Aktualizacje poza App Store
 
@@ -64,7 +64,7 @@ Automatyczne wznawianie SSH jest domyślnie włączone. Po utracie transportu ap
 
 Wznowienie otwiera nową powłokę w tej samej karcie, zachowując widoczną historię. Nie powtarza poleceń startowych i nie wznawia automatycznie transferów, tuneli ani nagrywania. Początkowe błędy uwierzytelniania i tożsamości serwera nie są automatycznie ponawiane. Aby proces zdalny przetrwał utratę połączenia, potrzebuje odpowiedniego środowiska na serwerze, np. osobno skonfigurowanej sesji tmux.
 
-## Nowe narzędzia terminala — niewydane
+## Nowe narzędzia terminala
 
 Poniższych kontrolek może nie być w starszej kompilacji. Jeśli nie podano inaczej, dotyczą terminali lokalnych oraz SSH.
 
@@ -129,7 +129,7 @@ Możesz wybrać listę, ikony albo kolumny. Dwuklik otwiera katalog. `⌘` i `�
 
 Przeciągnięcie z panelu lokalnego do zdalnego wysyła pliki; w przeciwną stronę je pobiera. Upuszczenie na katalog wybiera go jako cel. Przeciągnięcie wewnątrz jednego panelu przenosi elementy do wybranego folderu. Te same operacje są dostępne z menu kontekstowego.
 
-Panel **Transfery** otworzysz przyciskiem ze strzałkami góra/dół w pasku aplikacji. Pokazuje operacje ze wszystkich połączeń, postęp, stan, anulowanie i ponowienie. Pauza zatrzymuje zadania oczekujące; rozpoczęte kończą się normalnie. Globalny limit równoległości jest w **Ustawienia → SFTP**. Po błędzie lub anulowaniu w celu mogą pozostać pliki częściowe; ponowienie wymaga osobnej akcji.
+Panel **Transfery** otworzysz przyciskiem ze strzałkami góra/dół w pasku aplikacji. Pokazuje operacje ze wszystkich połączeń, postęp, stan, anulowanie i ponowienie. Pauza zatrzymuje zadania oczekujące; rozpoczęte kończą się normalnie. Globalny limit równoległości jest w **Ustawienia → SFTP**. Po błędzie lub anulowaniu w celu mogą pozostać pliki częściowe; błędy przejściowe są domyślnie ponawiane do dwóch razy (Ustawienia → SFTP). Ukończone pliki pozostają, a znane pliki częściowe zaczynają się od początku. Anulowane transfery wymagają jawnego ponowienia.
 
 ### Konflikty nazw
 
@@ -149,7 +149,7 @@ Dwuklik zdalnego pliku tekstowego UTF-8 albo **Edytuj plik** otwiera edytor. Obs
 
 Po edycji użyj **Zapisz na serwerze** (`⌘S`). Do czasu zapisu zmiany pozostają w edytorze. Aplikacja sprawdza zmianę zawartości zdalnej przed wysłaniem i pyta przed zamknięciem niezapisanych zmian. Możesz wyeksportować lokalną kopię wersji oryginalnej lub edytowanej. Błąd wysyłania zachowuje obie wersje do odzyskania. Kontrola konfliktu nie blokuje równoległego zapisu przez inne aplikacje.
 
-**Kompaktowy edytor — niewydany:** nagłówek zawiera **Zapisz**, a **…** udostępnia ponowne wczytanie i zapis lokalnej kopii. Pasek stanu zawiera składnię, zawijanie, kodowanie oraz pozycję kursora. Aktywny wiersz jest podświetlony na całej szerokości.
+**Kompaktowy edytor:** nagłówek zawiera **Zapisz**, a **…** udostępnia ponowne wczytanie i zapis lokalnej kopii. Pasek stanu zawiera składnię, zawijanie, kodowanie oraz pozycję kursora. Aktywny wiersz jest podświetlony na całej szerokości.
 
 Edycja SFTP korzysta z uprawnień pierwotnego konta SSH, także po przejściu terminala na root.
 
@@ -192,7 +192,9 @@ Wybierz **AI**, aby przygotować polecenie. Aby wyjaśnić wynik, zaznacz tekst 
 
 **Apple** jest domyślnym dostawcą działającym na urządzeniu. Wymaga macOS 26+, dostępnego Apple Intelligence i pobranego modelu. Aplikacja pokazuje dostępność; brak obsługi polskiego może wymagać zapytania po angielsku.
 
-**Codex CLI** jest opcjonalny i wymaga osobno zainstalowanego CLI z zapisanym logowaniem. Ścieżkę programu i opcjonalny model ustawisz w **Ustawienia → AI**. Zapytanie może trafić do dostawcy modelu. Aplikacja używa zapytań efemerycznych, read-only, bez narzędzi i automatycznego wykonywania. Nie dołącza sekretów z Keychain ani całej historii sesji. Nie przełącza dostawcy automatycznie. Przejrzyj wygenerowane komendy przed użyciem.
+**Opcjonalne narzędzia AI:** Codex, Claude Code, Gemini, GitHub Copilot, OpenCode, Ollama i LM Studio. Zainstaluj wybrane narzędzie i skonfiguruj logowanie lub lokalny model osobno; w **Ustawienia → AI** wybierz dostawcę, ścieżkę i model. Wykrycie narzędzia nie potwierdza uprawnień konta. Nie wszystkie integracje sprawdzono na rzeczywistych kontach. Zewnętrzny dostawca może otrzymać wysłany tekst; obowiązują jego zasady i limity. Brak automatycznej zmiany dostawcy. Sprawdzaj polecenia przed użyciem.
+
+**⌘I** otwiera sugestię polecenia przy kursorze. Sprawdź wynik i wstaw go bez automatycznego wykonania; Escape anuluje. Ten tryb nie dołącza automatycznie historii terminala.
 
 ## Ustawienia i dane
 
@@ -200,12 +202,12 @@ Wybierz **AI**, aby przygotować polecenie. Aby wyjaśnić wynik, zaznacz tekst 
 | --- | --- |
 | Ogólne | Język polski/angielski i motyw ciemny/jasny/systemowy. |
 | SFTP | Lokalny katalog startowy i globalny limit równoległych transferów. Katalog startowy dotyczy nowych paneli lokalnych. |
-| AI | Dostawca, ścieżka Codex i model. |
-| Terminal | Czcionka, paleta, kursor, klawiatura/mysz, wznowienie, historia ekranu i dzwonek; nowsze wersje dodają wzorce, podgląd wklejania i powiadomienia. |
-| iCloud | Opcjonalna synchronizacja, jeśli aplikacja została do niej przygotowana i podpisana. |
+| AI | Dostawca, ścieżka narzędzia i model. |
+| Terminal | Czcionka, paleta, kursor, klawiatura/mysz, wznowienie, historia ekranu i dzwonek; wzorce, podgląd wklejania i powiadomienia. |
+| iCloud | Eksperymentalna, opcjonalna synchronizacja w przygotowanej i podpisanej aplikacji. |
 | Skróty | Lista skrótów klawiaturowych. |
 
-Konfiguracja hostów znajduje się w SQLite w `~/Library/Application Support/PoliSSH`; sekrety przechowuje pęk kluczy macOS. Opcjonalny iCloud wymaga przygotowania przez programistę i jest domyślnie wyłączony w standardowym buildzie. Zobacz [dostępność iCloud](../status.md#icloud). Stan synchronizacji konfiguracji sam w sobie nie potwierdza synchronizacji sekretów.
+Konfiguracja hostów znajduje się w SQLite w `~/Library/Application Support/PoliSSH`; sekrety przechowuje pęk kluczy macOS. Eksperymentalny, opcjonalny iCloud wymaga przygotowania przez programistę i jest domyślnie wyłączony w standardowym buildzie. Zobacz [dostępność iCloud](../status.md#icloud). Stan synchronizacji konfiguracji sam w sobie nie potwierdza synchronizacji sekretów.
 
 ## Skróty klawiaturowe
 
@@ -221,12 +223,12 @@ Konfiguracja hostów znajduje się w SQLite w `~/Library/Application Support/Pol
 | `⌘,` | Ustawienia. |
 | Return / Escape | Zapisz/anuluj zmianę nazwy pliku. |
 | `⌘S` | Zapisz w edytorze zdalnym. |
-| `⌘⌥↑` / `⌘⌥↓` | Poprzedni/następny znacznik promptu — niewydane. |
+| `⌘⌥↑` / `⌘⌥↓` | Poprzedni/następny znacznik promptu. |
 
 Zobacz [rozwiązywanie problemów](troubleshooting.md), jeśli napotkasz błąd.
 
 ## Obecne ograniczenia
 
-To wersja rozwojowa bez instalatora z notaryzacją Apple. Nie zaimplementowano Mosh, Telnet ani połączeń szeregowych. Import OpenSSH obejmuje podstawowe pola hosta, a nie cały język konfiguracji. Transfery nie wznawiają automatycznie plików częściowych; dowiązania symboliczne i pliki specjalne są odrzucane przed zapisem. Edytor obsługuje UTF-8 do 2 MB. Root w terminalu nie zmienia uprawnień SFTP. Integracja z powłoką dotyczy bieżącej sesji i nie konfiguruje trwałości tmux.
+Podpisana aplikacja z notaryzacją Apple jest dostępna jako publiczna beta. Nie zaimplementowano Mosh, Telnet ani połączeń szeregowych. Import OpenSSH obejmuje podstawowe pola hosta, a nie cały język konfiguracji. Transfery nie wznawiają automatycznie plików częściowych; dowiązania symboliczne i pliki specjalne są odrzucane przed zapisem. Edytor obsługuje UTF-8 do 2 MB. Root w terminalu nie zmienia uprawnień SFTP. Integracja z powłoką dotyczy bieżącej sesji i nie konfiguruje trwałości tmux.
 
 Dostępność funkcji opisuje [informacja o wersji](../status.md).

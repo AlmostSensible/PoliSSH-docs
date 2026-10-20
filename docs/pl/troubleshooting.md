@@ -8,9 +8,9 @@
 | Pliki działają, terminal nie | Serwer może udostępniać wyłącznie SFTP. Korzystaj z widoku Pliki. |
 | Brak uprawnień do zapisu pliku | Uprawnienia konta SFTP. Root w terminalu nie zmienia tych uprawnień. |
 | Edytor zgłasza konflikt | Plik zmienił się od wczytania. Najpierw zachowaj lokalną kopię edycji, potem wczytaj i porównaj aktualną wersję. |
-| Transfer został przerwany | Sprawdź częściowy plik docelowy i wybierz ponowienie. Nie ma automatycznego wznowienia od ostatniego bajtu. |
+| Transfer został przerwany | Sprawdź plik docelowy. Błędy przejściowe są domyślnie ponawiane do dwóch razy; pliki ukończone pozostają, a częściowe zaczynają się od początku. Anulowane transfery ponów jawnie. Brak wznowienia od ostatniego bajtu. |
 | Zamiast polskich liter działają skróty Meta | Wyłącz Używaj Option jako Meta w ustawieniach terminala. |
-| Reguła podświetla część nazwy pliku | Włącz Regex i użyj granic słów, np. `\bsuccess\b`; funkcja wymaga nowszego builda. |
+| Reguła podświetla część nazwy pliku | Włącz Regex i użyj granic słów, np. `\bsuccess\b`. |
 | Brak historii poleceń | Włącz integrację przy gotowym zsh/Bash 4.4+, ponownie po reconnect. Sprawdź informację o wersji. |
 | Brak powiadomienia | Włącz opcję, sprawdź zgodę macOS i tryb skupienia. Polecenie musi trwać ≥10 sekund, a sesja być w tle. |
 | Apple AI nie jest dostępne | Sprawdź wersję systemu, Apple Intelligence i pobrany model. Codex wymaga osobnej konfiguracji; aplikacja nie przełącza dostawcy za Ciebie. |
