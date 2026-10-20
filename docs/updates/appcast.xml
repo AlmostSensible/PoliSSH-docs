@@ -1,9 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
-  <channel>
-    <title>PoliSSH updates</title>
-    <link>https://almostsensible.github.io/PoliSSH-docs/</link>
-    <description>Signed and notarized PoliSSH updates for macOS.</description>
-    <language>en</language>
-  </channel>
+    <channel>
+        <title>PoliSSH updates</title>
+        <link>https://almostsensible.github.io/PoliSSH-docs/</link>
+        <description>Signed and notarized PoliSSH updates for macOS.</description>
+        <language>en</language>
+        <item>
+            <title>0.17.0</title>
+            <pubDate>Tue, 20 Oct 2026 17:16:47 +0300</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.17.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## Polski
+
+- Aktualizacje poza App Store: wybierz PoliSSH → Sprawdź aktualizacje…
+- Automatyczne sprawdzanie można wyłączyć w Ustawienia → Ogólne → Aktualizacje.
+- Paczki są podpisane i notaryzowane. Instalacja wymaga potwierdzenia i ponownego uruchomienia aplikacji; wcześniej zakończ sesje i transfery.
+- Przy przejściu z 0.16.1 lub starszej wersji zainstaluj tę wersję ręcznie, kopiując PoliSSH.app do katalogu Aplikacje. Kolejne wersje zainstalujesz przez aktualizator.
+
+## English
+
+- Updates outside the App Store: choose PoliSSH → Check for Updates…
+- Disable automatic checks in Settings → General → Updates if preferred.
+- Update archives are signed and notarized. Installation requires confirmation and restarts the app; finish sessions and transfers first.
+- If upgrading from 0.16.1 or earlier, install this version manually by copying PoliSSH.app to Applications. Later versions can be installed through the updater.
+
+Apple Silicon · macOS 14 or later.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.0/PoliSSH-0.17.0-arm64.zip" length="12736369" type="application/octet-stream" sparkle:edSignature="rHqMKB14Moq+TWIMeFveW7+Rl54XlWudEqScIKbz66ZoECxz5mYy93jzBd3tRNRXoVDL61MoR9f/cGqapmh+Cg=="/>
+        </item>
+    </channel>
 </rss>
