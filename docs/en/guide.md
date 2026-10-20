@@ -2,6 +2,12 @@
 
 For macOS 14+ on Apple Silicon. Features marked **Unreleased** may be absent from your build. See [availability](../status.md).
 
+## Updates outside the App Store
+
+Starting with 0.17.0, the native app includes **PoliSSH → Check for Updates…**. Enable or disable automatic checks in **Settings → General → Updates**. Installation requires confirmation and restarts the app; finish sessions and transfers first.
+
+Versions 0.16.1 and earlier do not include an updater. Install the first version with updates manually: extract the official ZIP and copy `PoliSSH.app` to Applications, replacing the previous app after quitting it. Later releases can be installed through the updater. See [availability](../status.md) for published downloads. The SwiftPM development build has no updater.
+
 ## First connection
 
 1. Open PoliSSH and select **New host**.

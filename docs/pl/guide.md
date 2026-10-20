@@ -2,6 +2,12 @@
 
 Instrukcja dla macOS 14+ i Apple Silicon. Funkcje oznaczone jako **Niewydane** mogą być nieobecne w Twojej kompilacji. Zobacz [dostępność](../status.md).
 
+## Aktualizacje poza App Store
+
+Od wersji 0.17.0 natywna aplikacja ma **PoliSSH → Sprawdź aktualizacje…**. W **Ustawienia → Ogólne → Aktualizacje** można włączyć lub wyłączyć automatyczne sprawdzanie. Instalacja wymaga potwierdzenia i ponownego uruchomienia aplikacji; wcześniej zakończ sesje i transfery.
+
+Wersje 0.16.1 i starsze nie zawierają aktualizatora. Pierwszą wersję z aktualizacjami zainstaluj ręcznie: rozpakuj oficjalną paczkę ZIP i skopiuj `PoliSSH.app` do katalogu Aplikacje, zastępując poprzednią aplikację po jej zamknięciu. Późniejsze wydania można instalować przez aktualizator. Dostępne paczki opisuje [strona dostępności](../status.md). Wersja deweloperska SwiftPM nie zawiera aktualizatora.
+
 ## Pierwsze połączenie
 
 1. Otwórz aplikację i wybierz **Nowy host**.
