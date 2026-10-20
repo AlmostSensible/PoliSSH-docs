@@ -6,6 +6,34 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.17.1</title>
+            <pubDate>Tue, 20 Oct 2026 20:12:46 +0300</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.17.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[PoliSSH 0.17.1 — public beta / publiczna beta
+
+English
+- Added a Beta badge in the workspace and public beta information in About PoliSSH.
+- Added bundled third-party license texts and Help menu access.
+- Added Help, Privacy and bug-report links.
+- Marked iCloud synchronization as experimental pending verification between two Macs.
+- Updated Polish/English installation, backup, troubleshooting and release documentation.
+
+Polski
+- Dodano etykietę Beta w oknie aplikacji i informację o publicznej becie w panelu O PoliSSH.
+- Dodano licencje bibliotek w paczce i dostęp do nich w menu Pomoc.
+- Dodano odnośniki do instrukcji, prywatności i zgłaszania błędów.
+- Synchronizację iCloud oznaczono jako eksperymentalną do czasu sprawdzenia na dwóch Macach.
+- Uaktualniono polskie i angielskie instrukcje instalacji, kopii danych, diagnostyki i historii zmian.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.17.1/PoliSSH-0.17.1-arm64.zip" length="12801675" type="application/octet-stream" sparkle:edSignature="riA/SsLWVamzq5RmS8BeHModOEGfcknOD56P/0O1PNykmlbOZeSheXgD7Nzj7tH511K0x1irwKcTM5SCX3UQDg=="/>
+        </item>
+        <item>
             <title>0.17.0</title>
             <pubDate>Tue, 20 Oct 2026 17:16:47 +0300</pubDate>
             <sparkle:version>9</sparkle:version>
