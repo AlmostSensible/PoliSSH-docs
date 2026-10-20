@@ -1,16 +1,22 @@
 # Availability / Dostępność
 
-## Public beta 0.18.0
+## Public beta 0.19.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.18.0/PoliSSH-0.18.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.0/PoliSSH-0.19.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.18.0/PoliSSH-0.18.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.0/PoliSSH-0.19.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
 
-## New in 0.18.0 / Nowości w 0.18.0
+## New in 0.19.0 / Nowości w 0.19.0
+
+An offline Polish/English What’s New window introduces each new app version and can be reopened from the PoliSSH menu. Fixed a macOS accessibility crash in configuration backup status. File export, restore into an empty library, duplicate skipping and persistence after restart were verified.
+
+Okno Co nowego działa offline po polsku i angielsku, przedstawia nową wersję i jest dostępne w menu PoliSSH. Poprawiono awarię dostępności macOS w komunikacie kopii konfiguracji. Sprawdzono eksport do pliku, odtworzenie w pustej bibliotece, pomijanie duplikatów i dane po restarcie.
+
+## Included in 0.18.0 / Dostępne w 0.18.0
 
 Configuration backup and add-only restore, richer SSH config import and recovery copies for remote editor saves. See [release notes](releases.md) for details and limitations.
 

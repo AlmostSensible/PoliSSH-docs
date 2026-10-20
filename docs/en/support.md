@@ -14,7 +14,9 @@ Before installing an update, finish transfers and shell work, save remote-editor
 
 ## Backup and recovery
 
-In 0.18.0, Settings → Backup can export configuration and preview an add-only restore. It includes hosts, groups, credential profile metadata, snippets and tunnels, but not passwords, private keys, recordings or preferences. Existing IDs are not overwritten. Protect the JSON file: addresses and commands may be sensitive. This export complements the complete backup below.
+In 0.19.0, an accessibility crash in the export/restore status message is fixed. File export, restore into an empty library, duplicate skipping and persistence after restart were verified.
+
+Since 0.18.0, Settings → Backup can export configuration and preview an add-only restore. It includes hosts, groups, credential profile metadata, snippets and tunnels, but not passwords, private keys, recordings or preferences. Existing IDs are not overwritten. Protect the JSON file: addresses and commands may be sensitive. This export complements the complete backup below.
 
 Quit PoliSSH before copying local data. In Finder → Go → Go to Folder, open `~/Library/Application Support/PoliSSH` and copy the **entire folder** to a protected backup location. Include the application preferences at `~/Library/Preferences/com.polissh.app.plist` if present and separately back up any recordings and exported files wherever you saved them. Prefer an encrypted Time Machine or whole-Mac backup.
 

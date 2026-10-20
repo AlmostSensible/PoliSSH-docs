@@ -14,6 +14,8 @@ Przed aktualizacją zakończ transfery i pracę powłoki, zapisz edycje i zamkni
 
 ## Kopia danych i odzyskiwanie
 
+W 0.19.0 poprawiono awarię dostępności w komunikacie eksportu i przywracania. Sprawdzono eksport do pliku, odtworzenie w pustej bibliotece, pomijanie duplikatów i zachowanie danych po restarcie.
+
 Od 0.18.0 w Ustawienia → Kopia danych możesz wyeksportować konfigurację i podejrzeć przywracanie nowych wpisów. Kopia obejmuje hosty, grupy, metadane profili logowania, snippety i tunele, ale nie hasła, klucze prywatne, nagrania ani preferencje. Istniejące identyfikatory nie są nadpisywane. Chroń plik JSON: adresy i polecenia mogą być poufne. Eksport uzupełnia pełną kopię opisaną poniżej.
 
 Zamknij PoliSSH przed kopiowaniem. W Finder → Idź → Idź do folderu otwórz `~/Library/Application Support/PoliSSH` i skopiuj **cały folder** w bezpieczne miejsce. Uwzględnij preferencje `~/Library/Preferences/com.polissh.app.plist`, jeśli istnieją, oraz osobno nagrania i eksporty w wybranych przez Ciebie miejscach. Zalecana jest szyfrowana kopia Time Machine lub całego Maca.

@@ -1,5 +1,26 @@
 # Release notes / Historia zmian
 
+## 0.19.0 — 21 October / października 2026
+
+PoliSSH 0.19.0 — public beta / publiczna beta
+
+English
+- New offline What’s New window in Polish and English. It opens once for each new app version, including first installation, and can be reopened from PoliSSH → What’s New. Includes recent release highlights and a link to the full release history.
+- Fixed a macOS accessibility crash when reading the status after configuration export or restore. Verified export to a file, restoration into an empty library, duplicate skipping and persistence after restarting.
+
+Polski
+- Nowe okno Co nowego, dostępne offline po polsku i angielsku. Pokazuje się raz dla nowej wersji, także przy pierwszej instalacji. Można wrócić do niego przez PoliSSH → Co nowego. Zawiera ostatnie zmiany i link do pełnej historii wydań.
+- Poprawiono awarię dostępności macOS przy odczycie komunikatu po eksporcie lub przywróceniu konfiguracji. Sprawdzono eksport do pliku, odtworzenie w pustej bibliotece, pomijanie duplikatów i zachowanie danych po restarcie.
+
+Limits / Ograniczenia
+- Configuration backups add missing entries; they do not overwrite existing IDs. Passwords, private keys, passphrases, server trust, recordings and app preferences are not included. JSON is not encrypted: protect host addresses and commands, and back up your keys separately.
+- Kopia konfiguracji dodaje brakujące wpisy; nie nadpisuje istniejących ID. Nie zawiera haseł, kluczy prywatnych, fraz kluczy, zaufania do serwerów, nagrań ani preferencji. JSON nie jest szyfrowany: chroń adresy i polecenia, a klucze zabezpiecz osobno.
+- Remote editor recovery copies require manual cleanup. SFTP saves use two renames, not an atomic transaction or server lock; a disconnect between them may require manual recovery. / Kopie odzyskiwania w edytorze usuwa się ręcznie. Zapis SFTP używa dwóch zmian nazwy, bez atomowej transakcji i blokady; zerwanie między nimi może wymagać ręcznego odzyskania.
+- iCloud synchronization remains experimental. / Synchronizacja iCloud pozostaje eksperymentalna.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.18.0 — 20 October / października 2026
 
 PoliSSH 0.18.0 — public beta / publiczna beta
