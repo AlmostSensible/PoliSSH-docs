@@ -14,6 +14,8 @@ Przed aktualizacją zakończ transfery i pracę powłoki, zapisz edycje i zamkni
 
 ## Kopia danych i odzyskiwanie
 
+W 0.19.1 eksport zachowuje także zapisane hosty z niekompletnymi danymi połączenia. Wynik lub błąd pojawia się przy przycisku eksportu; po zapisie dostępna jest ścieżka pliku i opcja Pokaż w Finderze. Przed połączeniem popraw niekompletne dane hosta.
+
 W 0.19.0 poprawiono awarię dostępności w komunikacie eksportu i przywracania. Sprawdzono eksport do pliku, odtworzenie w pustej bibliotece, pomijanie duplikatów i zachowanie danych po restarcie.
 
 Od 0.18.0 w Ustawienia → Kopia danych możesz wyeksportować konfigurację i podejrzeć przywracanie nowych wpisów. Kopia obejmuje hosty, grupy, metadane profili logowania, snippety i tunele, ale nie hasła, klucze prywatne, nagrania ani preferencje. Istniejące identyfikatory nie są nadpisywane. Chroń plik JSON: adresy i polecenia mogą być poufne. Eksport uzupełnia pełną kopię opisaną poniżej.

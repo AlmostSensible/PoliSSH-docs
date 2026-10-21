@@ -14,6 +14,8 @@ Before installing an update, finish transfers and shell work, save remote-editor
 
 ## Backup and recovery
 
+In 0.19.1, export also preserves saved hosts with incomplete connection details. Success or failure appears beside Export, with the saved path and Show in Finder after a successful save. Correct incomplete host details before connecting.
+
 In 0.19.0, an accessibility crash in the export/restore status message is fixed. File export, restore into an empty library, duplicate skipping and persistence after restart were verified.
 
 Since 0.18.0, Settings → Backup can export configuration and preview an add-only restore. It includes hosts, groups, credential profile metadata, snippets and tunnels, but not passwords, private keys, recordings or preferences. Existing IDs are not overwritten. Protect the JSON file: addresses and commands may be sensitive. This export complements the complete backup below.

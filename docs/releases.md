@@ -1,5 +1,27 @@
 # Release notes / Historia zmian
 
+## 0.19.1 — 21 October / października 2026
+
+PoliSSH 0.19.1 — public beta / publiczna beta
+
+English
+- Fixed configuration export failing when a saved host has incomplete connection details, such as an empty username or whitespace in its address. Backups now preserve those entries without changing their values; they still need correction before connecting.
+- Export results now appear beside the Export button, with the saved file path and Show in Finder. Errors are clearly labelled as export failures.
+- Verified saving to Downloads, reading the resulting backup and preserving incomplete hosts during restore. Existing IDs are still skipped and never overwritten.
+
+Polski
+- Poprawiono błąd eksportu konfiguracji przy zapisanych hostach z niekompletnymi danymi połączenia, np. pustym użytkownikiem lub białym znakiem w adresie. Kopia zachowuje takie wpisy bez zmiany ich wartości; przed połączeniem nadal trzeba je poprawić.
+- Wynik eksportu jest teraz przy jego przycisku, ze ścieżką pliku i opcją Pokaż w Finderze. Błędy są jednoznacznie opisane jako błędy eksportu.
+- Sprawdzono zapis do Downloads, odczyt utworzonej kopii i zachowanie niekompletnych hostów przy przywracaniu. Istniejące ID nadal są pomijane i nigdy nie są nadpisywane.
+
+Limits / Ograniczenia
+- Configuration backups do not include passwords, private keys, passphrases, server trust, recordings or app preferences. JSON is not encrypted: protect host addresses and commands, and back up your keys separately.
+- Kopie konfiguracji nie zawierają haseł, kluczy prywatnych, fraz kluczy, zaufania do serwerów, nagrań ani preferencji. JSON nie jest szyfrowany: chroń adresy i polecenia, a klucze zabezpiecz osobno.
+- iCloud synchronization remains experimental. / Synchronizacja iCloud pozostaje eksperymentalna.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.19.0 — 21 October / października 2026
 
 PoliSSH 0.19.0 — public beta / publiczna beta
