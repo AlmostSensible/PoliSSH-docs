@@ -1,5 +1,24 @@
 # Release notes / Historia zmian
 
+## 0.19.2 — 22 October / października 2026
+
+PoliSSH 0.19.2 — public beta / publiczna beta
+
+English
+- Fixed password and Duo/PAM sign-in by preferring keyboard-interactive authentication when supported, matching OpenSSH. Avoids a failed password-only attempt before the interactive flow.
+- Reuse the saved password once for a single hidden Password prompt. Verification codes and other prompts still require your response; an outdated password can be corrected interactively.
+- Acknowledge empty authentication rounds without showing a blank sign-in dialog.
+- Verified MIT SSH sign-in, reconnect and SFTP directory listing over VPN. Other MFA providers have not been verified live.
+
+Polski
+- Poprawiono logowanie hasłem z Duo/PAM: gdy serwer je udostępnia, aplikacja wybiera logowanie keyboard-interactive, tak jak OpenSSH. Pomija wcześniejszą nieudaną próbę samym hasłem.
+- Zapisane hasło jest używane jeden raz przy pojedynczym ukrytym pytaniu Password. Kody i pozostałe pytania nadal wymagają odpowiedzi; nieaktualne hasło można poprawić podczas logowania.
+- Puste rundy uwierzytelniania są potwierdzane bez wyświetlania pustego okna.
+- Sprawdzono logowanie SSH, ponowne połączenie i listę katalogu SFTP MIT przez VPN. Innych dostawców MFA nie sprawdzono na żywo.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.19.1 — 21 October / października 2026
 
 PoliSSH 0.19.1 — public beta / publiczna beta

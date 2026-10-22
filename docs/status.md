@@ -1,14 +1,20 @@
 # Availability / Dostępność
 
-## Public beta 0.19.1
+## Public beta 0.19.2
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.1/PoliSSH-0.19.1-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.2/PoliSSH-0.19.2-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.1/PoliSSH-0.19.1-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.2/PoliSSH-0.19.2-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.19.2 / Nowości w 0.19.2
+
+Password profiles prefer the server's interactive password/MFA flow. The saved password is reused once, verification remains interactive, and empty Duo/PAM rounds no longer show a blank dialog. MIT SSH and SFTP were verified; other MFA providers have not been checked on live servers.
+
+Profile z hasłem preferują interaktywne logowanie z MFA oferowane przez serwer. Zapisane hasło jest używane raz, drugi składnik pozostaje interaktywny, a puste rundy Duo/PAM nie wyświetlają pustego okna. Sprawdzono SSH i SFTP MIT; innych dostawców MFA nie testowano na rzeczywistych serwerach.
 
 ## New in 0.19.1 / Nowości w 0.19.1
 
