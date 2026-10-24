@@ -6,6 +6,30 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.19.3</title>
+            <pubDate>Sat, 24 Oct 2026 17:47:40 +0300</pubDate>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>0.19.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.19.3 — public beta / publiczna beta
+
+English
+- Administrator passwords are saved only after a confirmed root login that actually used the password. Rejected passwords and unused passwords for passwordless sudo are not saved.
+- After a failed attempt, choose **Switch to root…** again to enter a replacement, including when an older version saved an incorrect password. If sudo keeps prompting, cancel the attempt or wait for its timeout before retrying.
+- Saved administrator passwords remain local to this Mac and require Touch ID or the Mac login password when retrieved. Terminal elevation does not change SFTP permissions.
+
+Polski
+- Hasło administratora jest zapisywane dopiero po potwierdzonym wejściu na roota z jego użyciem. Błędne hasła i nieużyte hasła przy sudo bez hasła nie są zapisywane.
+- Po nieudanej próbie ponownie wybierz **Przejdź na root…**, aby podać nowe hasło, także gdy starsza wersja zapisała błędne. Jeśli sudo nadal pyta o hasło, anuluj próbę albo poczekaj na upłynięcie limitu czasu przed ponowieniem.
+- Zapisane hasła administratora pozostają lokalne na tym Macu, a odczyt wymaga Touch ID lub hasła logowania do Maca. Przejście terminala na root nie zmienia uprawnień SFTP.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.3/PoliSSH-0.19.3-arm64.zip" length="12887075" type="application/octet-stream" sparkle:edSignature="k3XQlmocQfMCL0AOorbPgJxbs35/uGZpI/S/nsCzXh7jBMG9ZC9dqcKOvZqRbF0/QrSOxDI/F/xgFKzyIRBdAw=="/>
+        </item>
+        <item>
             <title>0.19.2</title>
             <pubDate>Thu, 22 Oct 2026 12:46:47 +0300</pubDate>
             <sparkle:version>17</sparkle:version>
@@ -59,34 +83,6 @@ Apple Silicon · macOS 14+. Finish active sessions and transfers before updating
 Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.1/PoliSSH-0.19.1-arm64.zip" length="12887343" type="application/octet-stream" sparkle:edSignature="sDb0xYDGbatln5S5otayTJXKsB1b3XteHA/ANhqtWGPoLJXGrVs4Bd5a5KNgUHBfdgTG5uW1wYauBYC/XDR/CQ=="/>
-        </item>
-        <item>
-            <title>0.19.0</title>
-            <pubDate>Wed, 21 Oct 2026 00:55:18 +0300</pubDate>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>0.19.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[PoliSSH 0.19.0 — public beta / publiczna beta
-
-English
-- New offline What’s New window in Polish and English. It opens once for each new app version, including first installation, and can be reopened from PoliSSH → What’s New. Includes recent release highlights and a link to the full release history.
-- Fixed a macOS accessibility crash when reading the status after configuration export or restore. Verified export to a file, restoration into an empty library, duplicate skipping and persistence after restarting.
-
-Polski
-- Nowe okno Co nowego, dostępne offline po polsku i angielsku. Pokazuje się raz dla nowej wersji, także przy pierwszej instalacji. Można wrócić do niego przez PoliSSH → Co nowego. Zawiera ostatnie zmiany i link do pełnej historii wydań.
-- Poprawiono awarię dostępności macOS przy odczycie komunikatu po eksporcie lub przywróceniu konfiguracji. Sprawdzono eksport do pliku, odtworzenie w pustej bibliotece, pomijanie duplikatów i zachowanie danych po restarcie.
-
-Limits / Ograniczenia
-- Configuration backups add missing entries; they do not overwrite existing IDs. Passwords, private keys, passphrases, server trust, recordings and app preferences are not included. JSON is not encrypted: protect host addresses and commands, and back up your keys separately.
-- Kopia konfiguracji dodaje brakujące wpisy; nie nadpisuje istniejących ID. Nie zawiera haseł, kluczy prywatnych, fraz kluczy, zaufania do serwerów, nagrań ani preferencji. JSON nie jest szyfrowany: chroń adresy i polecenia, a klucze zabezpiecz osobno.
-- Remote editor recovery copies require manual cleanup. SFTP saves use two renames, not an atomic transaction or server lock; a disconnect between them may require manual recovery. / Kopie odzyskiwania w edytorze usuwa się ręcznie. Zapis SFTP używa dwóch zmian nazwy, bez atomowej transakcji i blokady; zerwanie między nimi może wymagać ręcznego odzyskania.
-- iCloud synchronization remains experimental. / Synchronizacja iCloud pozostaje eksperymentalna.
-
-Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
-Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.0/PoliSSH-0.19.0-arm64.zip" length="12884580" type="application/octet-stream" sparkle:edSignature="ZjI/jXIKKlVckNbPs/M2bc8iTYCWpEcPiNfQrAUlW5YtOFurkitdi/6qCgHOhDBwgHrV5L/aR3HUQM3smZI3DA=="/>
         </item>
     </channel>
 </rss>
