@@ -1,5 +1,22 @@
 # Release notes / Historia zmian
 
+## 0.19.3 — 24 October / października 2026
+
+PoliSSH 0.19.3 — public beta / publiczna beta
+
+English
+- Administrator passwords are saved only after a confirmed root login that actually used the password. Rejected passwords and unused passwords for passwordless sudo are not saved.
+- After a failed attempt, choose **Switch to root…** again to enter a replacement, including when an older version saved an incorrect password. If sudo keeps prompting, cancel the attempt or wait for its timeout before retrying.
+- Saved administrator passwords remain local to this Mac and require Touch ID or the Mac login password when retrieved. Terminal elevation does not change SFTP permissions.
+
+Polski
+- Hasło administratora jest zapisywane dopiero po potwierdzonym wejściu na roota z jego użyciem. Błędne hasła i nieużyte hasła przy sudo bez hasła nie są zapisywane.
+- Po nieudanej próbie ponownie wybierz **Przejdź na root…**, aby podać nowe hasło, także gdy starsza wersja zapisała błędne. Jeśli sudo nadal pyta o hasło, anuluj próbę albo poczekaj na upłynięcie limitu czasu przed ponowieniem.
+- Zapisane hasła administratora pozostają lokalne na tym Macu, a odczyt wymaga Touch ID lub hasła logowania do Maca. Przejście terminala na root nie zmienia uprawnień SFTP.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.19.2 — 22 October / października 2026
 
 PoliSSH 0.19.2 — public beta / publiczna beta

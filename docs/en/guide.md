@@ -184,6 +184,8 @@ For a bastion, configure a single **Jump host** in the destination host's settin
 
 Use **… → Switch to root…**, or explicitly enable automatic elevation in the host settings. Choose sudo or su. A saved administrator password uses a separate, local-only Keychain entry; retrieval requires Touch ID or the Mac login password. It is excluded from iCloud synchronization and export.
 
+Passwords are saved only after confirmed root access that used the password. If an attempt fails, choose **Switch to root…** again to enter a replacement, including for an incorrect password saved by an older version. After repeated sudo prompts, cancel the attempt or wait for its timeout before retrying. Passwordless sudo does not save an unused password.
+
 Recording stops before administrator-password exchange. Use `exit` to leave the elevated shell. Elevating the terminal does not elevate SFTP. Initial automatic elevation is not repeated by automatic reconnect.
 
 ## AI assistant

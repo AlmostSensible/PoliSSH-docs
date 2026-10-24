@@ -184,6 +184,8 @@ Jeśli łączysz się przez bastion, ustaw pojedynczego **Hosta pośrednicząceg
 
 Użyj **… → Przejdź na root…** albo jawnie włącz przejście po nowym połączeniu w ustawieniach hosta. Wybierz sudo lub su. Zapisane hasło administratora znajduje się w osobnym, lokalnym wpisie pęku kluczy; odczyt wymaga Touch ID lub hasła logowania do Maca. Hasło nie trafia do iCloud ani eksportu.
 
+Hasło jest zapisywane dopiero po potwierdzonym wejściu na roota z jego użyciem. Po nieudanej próbie ponownie wybierz **Przejdź na root…**, aby podać nowe hasło, także gdy starsza wersja zapisała błędne. Jeśli sudo nadal pyta o hasło, anuluj próbę albo poczekaj na upłynięcie limitu czasu przed ponowieniem. Sudo bez hasła nie zapisuje nieużytego hasła.
+
 Nagrywanie zatrzymuje się przed wymianą hasła administratora. `exit` opuszcza podwyższoną powłokę. Przejście terminala na root nie podnosi uprawnień SFTP. Automatyczne wznowienie połączenia nie ponawia początkowego przejścia na root.
 
 ## Asystent AI
