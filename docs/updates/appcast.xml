@@ -6,6 +6,32 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.20.0</title>
+            <pubDate>Tue, 27 Oct 2026 13:35:05 +0200</pubDate>
+            <sparkle:version>37</sparkle:version>
+            <sparkle:shortVersionString>0.20.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.20.0 — public beta / publiczna beta
+
+English
+- Create nested host groups, move groups between parents and arrange siblings in your own order.
+- Browse a collapsible tree in the sidebar and group manager. Use group menus to create subgroups, edit, move, reorder and delete groups; search groups and select hosts in the editor.
+- Deleting a group keeps its hosts and moves its subgroups one level up. Configuration backups and iCloud records preserve hierarchy and order.
+- Update all syncing Macs to 0.20.0 before editing groups: older versions can discard hierarchy metadata. Two-Mac synchronization remains experimental. Export a backup before updating.
+
+Polski
+- Twórz zagnieżdżone grupy hostów, przenoś je między grupami nadrzędnymi i ustawiaj własną kolejność.
+- Korzystaj ze zwijanego drzewa w panelu bocznym i menedżerze grup. Menu grup pozwala tworzyć podgrupy, edytować, przenosić, zmieniać kolejność i usuwać grupy; edytor umożliwia wyszukiwanie grup i wybór hostów.
+- Usunięcie grupy zachowuje hosty i przenosi podgrupy poziom wyżej. Kopie konfiguracji i rekordy iCloud zachowują hierarchię i kolejność.
+- Przed edycją grup zaktualizuj wszystkie synchronizowane Maki do 0.20.0: starsze wersje mogą zgubić dane hierarchii. Synchronizacja dwóch Maków pozostaje eksperymentalna. Przed aktualizacją wyeksportuj kopię danych.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.20.0/PoliSSH-0.20.0-arm64.zip" length="12491972" type="application/octet-stream" sparkle:edSignature="Y4XhY5PfaJGXaV+cw+Y4OCZCmDNkTu9F57J1nscpZy0hbX2Xp2EKufLzMC7fRkGFi4jOjgp5m/KcS1Or0JHHCQ=="/>
+        </item>
+        <item>
             <title>0.19.3</title>
             <pubDate>Sat, 24 Oct 2026 17:47:40 +0300</pubDate>
             <sparkle:version>19</sparkle:version>
@@ -54,35 +80,6 @@ Apple Silicon · macOS 14+. Finish active sessions and transfers before updating
 Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.2/PoliSSH-0.19.2-arm64.zip" length="12887719" type="application/octet-stream" sparkle:edSignature="2y3TLQIhMdPh7TD0cHhddQITrydoa33ZZkPxn69+qMEmq1616IsZK7u+hlJeE+T1bdxdzt2BzclTsR9L2OFcCA=="/>
-        </item>
-        <item>
-            <title>0.19.1</title>
-            <pubDate>Wed, 21 Oct 2026 13:50:34 +0300</pubDate>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>0.19.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[PoliSSH 0.19.1 — public beta / publiczna beta
-
-English
-- Fixed configuration export failing when a saved host has incomplete connection details, such as an empty username or whitespace in its address. Backups now preserve those entries without changing their values; they still need correction before connecting.
-- Export results now appear beside the Export button, with the saved file path and Show in Finder. Errors are clearly labelled as export failures.
-- Verified saving to Downloads, reading the resulting backup and preserving incomplete hosts during restore. Existing IDs are still skipped and never overwritten.
-
-Polski
-- Poprawiono błąd eksportu konfiguracji przy zapisanych hostach z niekompletnymi danymi połączenia, np. pustym użytkownikiem lub białym znakiem w adresie. Kopia zachowuje takie wpisy bez zmiany ich wartości; przed połączeniem nadal trzeba je poprawić.
-- Wynik eksportu jest teraz przy jego przycisku, ze ścieżką pliku i opcją Pokaż w Finderze. Błędy są jednoznacznie opisane jako błędy eksportu.
-- Sprawdzono zapis do Downloads, odczyt utworzonej kopii i zachowanie niekompletnych hostów przy przywracaniu. Istniejące ID nadal są pomijane i nigdy nie są nadpisywane.
-
-Limits / Ograniczenia
-- Configuration backups do not include passwords, private keys, passphrases, server trust, recordings or app preferences. JSON is not encrypted: protect host addresses and commands, and back up your keys separately.
-- Kopie konfiguracji nie zawierają haseł, kluczy prywatnych, fraz kluczy, zaufania do serwerów, nagrań ani preferencji. JSON nie jest szyfrowany: chroń adresy i polecenia, a klucze zabezpiecz osobno.
-- iCloud synchronization remains experimental. / Synchronizacja iCloud pozostaje eksperymentalna.
-
-Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
-Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.1/PoliSSH-0.19.1-arm64.zip" length="12887343" type="application/octet-stream" sparkle:edSignature="sDb0xYDGbatln5S5otayTJXKsB1b3XteHA/ANhqtWGPoLJXGrVs4Bd5a5KNgUHBfdgTG5uW1wYauBYC/XDR/CQ=="/>
         </item>
     </channel>
 </rss>
