@@ -1,5 +1,24 @@
 # Release notes / Historia zmian
 
+## 0.20.0 — 27 October / października 2026
+
+PoliSSH 0.20.0 — public beta / publiczna beta
+
+English
+- Create nested host groups, move groups between parents and arrange siblings in your own order.
+- Browse a collapsible tree in the sidebar and group manager. Use group menus to create subgroups, edit, move, reorder and delete groups; search groups and select hosts in the editor.
+- Deleting a group keeps its hosts and moves its subgroups one level up. Configuration backups and iCloud records preserve hierarchy and order.
+- Update all syncing Macs to 0.20.0 before editing groups: older versions can discard hierarchy metadata. Two-Mac synchronization remains experimental. Export a backup before updating.
+
+Polski
+- Twórz zagnieżdżone grupy hostów, przenoś je między grupami nadrzędnymi i ustawiaj własną kolejność.
+- Korzystaj ze zwijanego drzewa w panelu bocznym i menedżerze grup. Menu grup pozwala tworzyć podgrupy, edytować, przenosić, zmieniać kolejność i usuwać grupy; edytor umożliwia wyszukiwanie grup i wybór hostów.
+- Usunięcie grupy zachowuje hosty i przenosi podgrupy poziom wyżej. Kopie konfiguracji i rekordy iCloud zachowują hierarchię i kolejność.
+- Przed edycją grup zaktualizuj wszystkie synchronizowane Maki do 0.20.0: starsze wersje mogą zgubić dane hierarchii. Synchronizacja dwóch Maków pozostaje eksperymentalna. Przed aktualizacją wyeksportuj kopię danych.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.19.3 — 24 October / października 2026
 
 PoliSSH 0.19.3 — public beta / publiczna beta
