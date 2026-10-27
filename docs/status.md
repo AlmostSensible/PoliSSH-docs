@@ -1,14 +1,20 @@
 # Availability / Dostępność
 
-## Public beta 0.19.3
+## Public beta 0.20.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.3/PoliSSH-0.19.3-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.20.0/PoliSSH-0.20.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.3/PoliSSH-0.19.3-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.20.0/PoliSSH-0.20.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.20.0 / Nowości w 0.20.0
+
+Nested host groups, parent selection, moving groups and sibling ordering, with a collapsible tree and contextual menus. Deleting a group keeps its hosts and promotes its subgroups. Update every syncing Mac to 0.20.0 before editing hierarchy: older versions can discard hierarchy metadata. Two-Mac iCloud synchronization remains experimental.
+
+Podgrupy hostów, wybór grupy nadrzędnej, przenoszenie i kolejność grup, ze zwijanym drzewem i menu kontekstowym. Usunięcie grupy zachowuje hosty i przenosi podgrupy poziom wyżej. Przed edycją hierarchii zaktualizuj wszystkie synchronizowane Maki do 0.20.0: starsze wersje mogą utracić metadane hierarchii. Synchronizacja iCloud między dwoma Makami pozostaje eksperymentalna.
 
 ## New in 0.19.3 / Nowości w 0.19.3
 
