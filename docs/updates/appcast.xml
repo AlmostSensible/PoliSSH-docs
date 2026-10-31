@@ -6,6 +6,28 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.21.1</title>
+            <pubDate>Sat, 31 Oct 2026 15:59:02 +0200</pubDate>
+            <sparkle:version>39</sparkle:version>
+            <sparkle:shortVersionString>0.21.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.21.1 — public beta / publiczna beta
+
+English
+- Fix MCP initialization with interactive clients such as Codex. Requests now receive responses immediately while the connection remains open.
+- MCP remains off by default. Enable it in Settings → Agents and reconnect your client. Shared servers, credentials and approval requirements are unchanged.
+
+Polski
+- Poprawiono inicjalizację MCP w interaktywnych klientach, takich jak Codex. Żądania otrzymują teraz odpowiedź od razu, bez zamykania połączenia.
+- MCP pozostaje domyślnie wyłączone. Włącz je w Ustawienia → Agenci i połącz klienta ponownie. Udostępnione serwery, poświadczenia i wymagane zgody pozostają bez zmian.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.1/PoliSSH-0.21.1-arm64.zip" length="12653601" type="application/octet-stream" sparkle:edSignature="s2nLxxcVZ246+7ZqrlPM6xRDF4k0BHLWmT+L8HPBniecmAFnBYj9qCCAtTGu+DNbP9dV4Gdbb7gfg5IOE+O0AQ=="/>
+        </item>
+        <item>
             <title>0.21.0</title>
             <pubDate>Sat, 31 Oct 2026 15:30:24 +0200</pubDate>
             <sparkle:version>38</sparkle:version>
@@ -54,30 +76,6 @@ Apple Silicon · macOS 14+. Finish active sessions and transfers before updating
 Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.20.0/PoliSSH-0.20.0-arm64.zip" length="12491972" type="application/octet-stream" sparkle:edSignature="Y4XhY5PfaJGXaV+cw+Y4OCZCmDNkTu9F57J1nscpZy0hbX2Xp2EKufLzMC7fRkGFi4jOjgp5m/KcS1Or0JHHCQ=="/>
-        </item>
-        <item>
-            <title>0.19.3</title>
-            <pubDate>Sat, 24 Oct 2026 17:47:40 +0300</pubDate>
-            <sparkle:version>19</sparkle:version>
-            <sparkle:shortVersionString>0.19.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.19.3 — public beta / publiczna beta
-
-English
-- Administrator passwords are saved only after a confirmed root login that actually used the password. Rejected passwords and unused passwords for passwordless sudo are not saved.
-- After a failed attempt, choose **Switch to root…** again to enter a replacement, including when an older version saved an incorrect password. If sudo keeps prompting, cancel the attempt or wait for its timeout before retrying.
-- Saved administrator passwords remain local to this Mac and require Touch ID or the Mac login password when retrieved. Terminal elevation does not change SFTP permissions.
-
-Polski
-- Hasło administratora jest zapisywane dopiero po potwierdzonym wejściu na roota z jego użyciem. Błędne hasła i nieużyte hasła przy sudo bez hasła nie są zapisywane.
-- Po nieudanej próbie ponownie wybierz **Przejdź na root…**, aby podać nowe hasło, także gdy starsza wersja zapisała błędne. Jeśli sudo nadal pyta o hasło, anuluj próbę albo poczekaj na upłynięcie limitu czasu przed ponowieniem.
-- Zapisane hasła administratora pozostają lokalne na tym Macu, a odczyt wymaga Touch ID lub hasła logowania do Maca. Przejście terminala na root nie zmienia uprawnień SFTP.
-
-Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
-Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.19.3/PoliSSH-0.19.3-arm64.zip" length="12887075" type="application/octet-stream" sparkle:edSignature="k3XQlmocQfMCL0AOorbPgJxbs35/uGZpI/S/nsCzXh7jBMG9ZC9dqcKOvZqRbF0/QrSOxDI/F/xgFKzyIRBdAw=="/>
         </item>
     </channel>
 </rss>
