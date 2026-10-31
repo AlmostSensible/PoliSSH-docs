@@ -1,5 +1,22 @@
 # Release notes / Historia zmian
 
+## 0.22.0 — 31 October / października 2026
+
+English
+- See when agents use MCP: open sessions, operations, approvals and results from the activity indicator.
+- Filter by SSH session, review requests, cancel operations and disconnect agent sessions. File-read paths stay in memory; file contents are not logged. Command output appears after completion.
+- Find MCP access, agent apps and shared servers in separate Settings → Agents tabs.
+- Fix intermittent incomplete MCP responses on macOS.
+
+Polski
+- Sprawdź, kiedy agenci korzystają z MCP: otwórz sesje, operacje, zgody i wyniki ze wskaźnika aktywności.
+- Filtruj według sesji SSH, sprawdzaj prośby, anuluj operacje i rozłączaj sesje agentów. Ścieżki odczytów pozostają w pamięci; zawartość plików nie jest zapisywana w historii. Wyniki poleceń pojawiają się po zakończeniu.
+- Znajdź dostęp MCP, aplikacje agentów i udostępnione serwery w osobnych zakładkach Ustawienia → Agenci.
+- Poprawiono sporadyczne niepełne odpowiedzi MCP na macOS.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.21.2 — 31 October / października 2026
 
 English

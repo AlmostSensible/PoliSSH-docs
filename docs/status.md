@@ -1,14 +1,20 @@
 # Availability / Dostępność
 
-## Public beta 0.21.2
+## Public beta 0.22.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.2/PoliSSH-0.21.2-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.22.0/PoliSSH-0.22.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.2/PoliSSH-0.21.2-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.22.0/PoliSSH-0.22.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.22.0 / Nowości w 0.22.0
+
+Open MCP activity from the workspace indicator: see sessions, operations, approval requests and results. Settings → Agents now separates Access, Agent apps and Servers. Command output appears after completion. Local MCP connections also handle replies more reliably on macOS.
+
+Otwórz aktywność MCP ze wskaźnika w obszarze roboczym: zobacz sesje, operacje, prośby o zgodę i wyniki. Ustawienia → Agenci mają teraz osobne zakładki Dostęp, Aplikacje agentów i Serwery. Wyniki poleceń pojawiają się po zakończeniu. Poprawiono też niezawodność lokalnych odpowiedzi MCP na macOS.
 
 ## New in 0.21.2 / Nowości w 0.21.2
 
