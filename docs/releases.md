@@ -1,5 +1,18 @@
 # Release notes / Historia zmian
 
+## 0.21.1 — 31 October / października 2026
+
+English
+- Fix MCP initialization with interactive clients such as Codex. Requests now receive responses immediately while the connection remains open.
+- MCP remains off by default. Enable it in Settings → Agents and reconnect your client. Shared servers, credentials and approval requirements are unchanged.
+
+Polski
+- Poprawiono inicjalizację MCP w interaktywnych klientach, takich jak Codex. Żądania otrzymują teraz odpowiedź od razu, bez zamykania połączenia.
+- MCP pozostaje domyślnie wyłączone. Włącz je w Ustawienia → Agenci i połącz klienta ponownie. Udostępnione serwery, poświadczenia i wymagane zgody pozostają bez zmian.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.21.0 — 31 October / października 2026
 
 English
