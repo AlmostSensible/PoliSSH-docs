@@ -1,5 +1,18 @@
 # Release notes / Historia zmian
 
+## 0.21.2 — 31 October / października 2026
+
+English
+- See which servers are available to agents: shared hosts show an MCP badge in the connection list and tiles.
+- Badges update immediately when you enable/disable MCP or change shared hosts in Settings → Agents. Existing connection and approval settings are preserved.
+
+Polski
+- Sprawdź, które serwery są dostępne dla agentów: udostępnione hosty mają oznaczenie MCP na liście i kafelkach połączeń.
+- Oznaczenia zmieniają się od razu po włączeniu/wyłączeniu MCP lub zmianie udostępnionych serwerów w Ustawienia → Agenci. Dotychczasowe ustawienia połączeń i wymaganych zgód pozostają zachowane.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.21.1 — 31 October / października 2026
 
 English
