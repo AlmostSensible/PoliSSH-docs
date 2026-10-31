@@ -1,14 +1,20 @@
 # Availability / Dostępność
 
-## Public beta 0.20.0
+## Public beta 0.21.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.20.0/PoliSSH-0.20.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.0/PoliSSH-0.21.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.20.0/PoliSSH-0.20.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.0/PoliSSH-0.21.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.21.0 / Nowości w 0.21.0
+
+Enable local MCP in Settings → Agents, choose shared SSH servers and copy setup for Codex or Claude. MCP is off by default. Agents use separate sessions; saves, single-file copies and every command require one-time approval in PoliSSH. Revoke access or turn MCP off at any time. Cancellation does not roll back remote effects.
+
+Włącz lokalne MCP w Ustawienia → Agenci, wybierz udostępnione serwery SSH i skopiuj konfigurację dla Codex lub Claude. MCP jest domyślnie wyłączone. Agenci używają osobnych sesji; zapis, kopiowanie pojedynczych plików i każde polecenie wymagają jednorazowej zgody w PoliSSH. W każdej chwili możesz cofnąć dostęp lub wyłączyć MCP. Anulowanie nie cofa zmian na serwerze.
 
 ## New in 0.20.0 / Nowości w 0.20.0
 

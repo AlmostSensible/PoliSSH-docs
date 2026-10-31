@@ -1,5 +1,20 @@
 # Release notes / Historia zmian
 
+## 0.21.0 — 31 October / października 2026
+
+English
+- Connect agents through MCP. Enable it in Settings → Agents, choose shared SSH servers and copy connection setup for Codex or Claude. MCP is off by default and works locally on this Mac.
+- Agents can browse and read remote files using their own SSH sessions. File saves, single-file copies and every command require your one-time approval in PoliSSH.
+- Review requests and results, revoke individual connections or switch MCP off without closing your own sessions. Cancellation does not roll back remote effects; inspect unknown outcomes before retrying.
+
+Polski
+- Połącz agentów przez MCP. Włącz je w Ustawienia → Agenci, wybierz udostępnione serwery SSH i skopiuj konfigurację dla Codex lub Claude. MCP jest domyślnie wyłączone i działa lokalnie na tym Macu.
+- Agenci mogą przeglądać i czytać zdalne pliki we własnych sesjach SSH. Zapis plików, kopiowanie pojedynczych plików i każde polecenie wymagają Twojej jednorazowej zgody w PoliSSH.
+- Sprawdzaj prośby i wyniki, cofaj dostęp wybranym połączeniom lub wyłącz MCP bez zamykania własnych sesji. Anulowanie nie cofa zmian na serwerze; sprawdź nieznany wynik przed ponowieniem operacji.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.20.0 — 27 October / października 2026
 
 PoliSSH 0.20.0 — public beta / publiczna beta
