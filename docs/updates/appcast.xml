@@ -6,6 +6,32 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.22.0</title>
+            <pubDate>Sat, 31 Oct 2026 22:18:51 +0200</pubDate>
+            <sparkle:version>41</sparkle:version>
+            <sparkle:shortVersionString>0.22.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.22.0 — public beta / publiczna beta
+
+English
+- See when agents use MCP: open sessions, operations, approvals and results from the activity indicator.
+- Filter by SSH session, review requests, cancel operations and disconnect agent sessions. File-read paths stay in memory; file contents are not logged. Command output appears after completion.
+- Find MCP access, agent apps and shared servers in separate Settings → Agents tabs.
+- Fix intermittent incomplete MCP responses on macOS.
+
+Polski
+- Sprawdź, kiedy agenci korzystają z MCP: otwórz sesje, operacje, zgody i wyniki ze wskaźnika aktywności.
+- Filtruj według sesji SSH, sprawdzaj prośby, anuluj operacje i rozłączaj sesje agentów. Ścieżki odczytów pozostają w pamięci; zawartość plików nie jest zapisywana w historii. Wyniki poleceń pojawiają się po zakończeniu.
+- Znajdź dostęp MCP, aplikacje agentów i udostępnione serwery w osobnych zakładkach Ustawienia → Agenci.
+- Poprawiono sporadyczne niepełne odpowiedzi MCP na macOS.
+
+Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
+Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.22.0/PoliSSH-0.22.0-arm64.zip" length="12668244" type="application/octet-stream" sparkle:edSignature="mYtpTa6i8aUnbB1noJCEIgK7xPmNlRtwmt1FV/mHsyVcKoYOxFBgKGv4nryr8FceJ3kGaPzVZrA3jWk6JCqUDQ=="/>
+        </item>
+        <item>
             <title>0.21.2</title>
             <pubDate>Sat, 31 Oct 2026 21:49:33 +0200</pubDate>
             <sparkle:version>40</sparkle:version>
@@ -48,30 +74,6 @@ Apple Silicon · macOS 14+. Finish active sessions and transfers before updating
 Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.1/PoliSSH-0.21.1-arm64.zip" length="12653601" type="application/octet-stream" sparkle:edSignature="s2nLxxcVZ246+7ZqrlPM6xRDF4k0BHLWmT+L8HPBniecmAFnBYj9qCCAtTGu+DNbP9dV4Gdbb7gfg5IOE+O0AQ=="/>
-        </item>
-        <item>
-            <title>0.21.0</title>
-            <pubDate>Sat, 31 Oct 2026 15:30:24 +0200</pubDate>
-            <sparkle:version>38</sparkle:version>
-            <sparkle:shortVersionString>0.21.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.21.0 — public beta / publiczna beta
-
-English
-- Connect agents through MCP. Enable it in Settings → Agents, choose shared SSH servers and copy connection setup for Codex or Claude. MCP is off by default and works locally on this Mac.
-- Agents can browse and read remote files using their own SSH sessions. File saves, single-file copies and every command require your one-time approval in PoliSSH.
-- Review requests and results, revoke individual connections or switch MCP off without closing your own sessions. Cancellation does not roll back remote effects; inspect unknown outcomes before retrying.
-
-Polski
-- Połącz agentów przez MCP. Włącz je w Ustawienia → Agenci, wybierz udostępnione serwery SSH i skopiuj konfigurację dla Codex lub Claude. MCP jest domyślnie wyłączone i działa lokalnie na tym Macu.
-- Agenci mogą przeglądać i czytać zdalne pliki we własnych sesjach SSH. Zapis plików, kopiowanie pojedynczych plików i każde polecenie wymagają Twojej jednorazowej zgody w PoliSSH.
-- Sprawdzaj prośby i wyniki, cofaj dostęp wybranym połączeniom lub wyłącz MCP bez zamykania własnych sesji. Anulowanie nie cofa zmian na serwerze; sprawdź nieznany wynik przed ponowieniem operacji.
-
-Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
-Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.0/PoliSSH-0.21.0-arm64.zip" length="12653339" type="application/octet-stream" sparkle:edSignature="TZ0HfRuqnXV7N6inPbFU4x3Ow57vwuE23JOPyEcPbL9kGns6bNDE+WCdNjizExQ3iH/I36VKdY1SvPqy6sEeDA=="/>
         </item>
     </channel>
 </rss>
