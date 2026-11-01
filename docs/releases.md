@@ -1,5 +1,19 @@
 # Release notes / Historia zmian
 
+## 0.23.0 — 1 November / listopada 2026
+
+### English
+
+- Follow active agent sessions in workspace tabs or open the resizable monitor using the compact MCP toolbar button (Shift-Command-M).
+- Choose a session in the sidebar and see commands, live stdout/stderr and file-operation events in a read-only console. Review approvals, cancel work and disconnect sessions.
+- Recent closed sessions and partial output remain available in memory until quitting. Output is bounded; file contents are not logged. Commands and writes still require one-time approval. Cancellation does not undo remote effects.
+
+### Polski
+
+- Śledź aktywne sesje agentów na kartach lub otwórz skalowalny podgląd małym przyciskiem MCP w pasku (Shift-Command-M).
+- Wybierz sesję na liście i zobacz polecenia, wyniki oraz błędy na żywo i zdarzenia operacji na plikach w konsoli tylko do odczytu. Sprawdzaj zgody, anuluj operacje i rozłączaj sesje.
+- Ostatnio zamknięte sesje i częściowe wyniki pozostają w pamięci do zamknięcia aplikacji. Wynik ma limit wielkości; zawartość plików nie jest logowana. Polecenia i zapis nadal wymagają jednorazowej zgody. Anulowanie nie cofa zmian na serwerze.
+
 ## 0.22.0 — 31 October / października 2026
 
 English

@@ -1,14 +1,20 @@
 # Availability / Dostępność
 
-## Public beta 0.22.0
+## Public beta 0.23.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.22.0/PoliSSH-0.22.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.23.0/PoliSSH-0.23.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.22.0/PoliSSH-0.22.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.23.0/PoliSSH-0.23.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.23.0 / Nowości w 0.23.0
+
+Follow agents in workspace tabs or open the resizable session monitor from the compact MCP toolbar button (Shift-Command-M). A sidebar and read-only console show commands, output and file-operation events live. Recent closed sessions remain in memory until quitting. Commands and writes still require one-time approval.
+
+Śledź agentów na kartach lub otwórz skalowalny podgląd sesji małym przyciskiem MCP w pasku (Shift-Command-M). Lista sesji i konsola tylko do odczytu pokazują polecenia, wyniki i zdarzenia operacji na plikach na żywo. Ostatnio zamknięte sesje pozostają w pamięci do zamknięcia aplikacji. Polecenia i zapis nadal wymagają jednorazowej zgody.
 
 ## New in 0.22.0 / Nowości w 0.22.0
 
