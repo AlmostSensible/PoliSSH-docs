@@ -6,6 +6,29 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.23.0</title>
+            <pubDate>Sun, 01 Nov 2026 18:09:50 +0200</pubDate>
+            <sparkle:version>42</sparkle:version>
+            <sparkle:shortVersionString>0.23.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.23.0 beta
+
+## English
+
+- Follow active agent sessions in workspace tabs or open the resizable monitor using the compact MCP toolbar button (Shift-Command-M).
+- Choose a session in the sidebar and see commands, live stdout/stderr and file-operation events in a read-only console. Review approvals, cancel work and disconnect sessions.
+- Recent closed sessions and partial output remain available in memory until quitting. Output is bounded; file contents are not logged. Commands and writes still require one-time approval. Cancellation does not undo remote effects.
+
+## Polski
+
+- Śledź aktywne sesje agentów na kartach lub otwórz skalowalny podgląd małym przyciskiem MCP w pasku (Shift-Command-M).
+- Wybierz sesję na liście i zobacz polecenia, wyniki oraz błędy na żywo i zdarzenia operacji na plikach w konsoli tylko do odczytu. Sprawdzaj zgody, anuluj operacje i rozłączaj sesje.
+- Ostatnio zamknięte sesje i częściowe wyniki pozostają w pamięci do zamknięcia aplikacji. Wynik ma limit wielkości; zawartość plików nie jest logowana. Polecenia i zapis nadal wymagają jednorazowej zgody. Anulowanie nie cofa zmian na serwerze.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.23.0/PoliSSH-0.23.0-arm64.zip" length="12689917" type="application/octet-stream" sparkle:edSignature="oiAOTueNmhsPKjF1Xacq+aCX0fliBKnDLDTWA4SxYo5Pbs6XCwrHhFLH9f0VYBOtIEOW9LHCRKGRu+tF/xx3Bg=="/>
+        </item>
+        <item>
             <title>0.22.0</title>
             <pubDate>Sat, 31 Oct 2026 22:18:51 +0200</pubDate>
             <sparkle:version>41</sparkle:version>
@@ -52,28 +75,6 @@ Apple Silicon · macOS 14+. Finish active sessions and transfers before updating
 Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.2/PoliSSH-0.21.2-arm64.zip" length="12657157" type="application/octet-stream" sparkle:edSignature="LKfAetOv+a/4leNIP5a7GIxwrtDH9XDbUUSra011nPd07RVBYjZ905WBRj+7isEa0e3C8eoGBRSq1Sss5zmFAA=="/>
-        </item>
-        <item>
-            <title>0.21.1</title>
-            <pubDate>Sat, 31 Oct 2026 15:59:02 +0200</pubDate>
-            <sparkle:version>39</sparkle:version>
-            <sparkle:shortVersionString>0.21.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.21.1 — public beta / publiczna beta
-
-English
-- Fix MCP initialization with interactive clients such as Codex. Requests now receive responses immediately while the connection remains open.
-- MCP remains off by default. Enable it in Settings → Agents and reconnect your client. Shared servers, credentials and approval requirements are unchanged.
-
-Polski
-- Poprawiono inicjalizację MCP w interaktywnych klientach, takich jak Codex. Żądania otrzymują teraz odpowiedź od razu, bez zamykania połączenia.
-- MCP pozostaje domyślnie wyłączone. Włącz je w Ustawienia → Agenci i połącz klienta ponownie. Udostępnione serwery, poświadczenia i wymagane zgody pozostają bez zmian.
-
-Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
-Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.1/PoliSSH-0.21.1-arm64.zip" length="12653601" type="application/octet-stream" sparkle:edSignature="s2nLxxcVZ246+7ZqrlPM6xRDF4k0BHLWmT+L8HPBniecmAFnBYj9qCCAtTGu+DNbP9dV4Gdbb7gfg5IOE+O0AQ=="/>
         </item>
     </channel>
 </rss>
