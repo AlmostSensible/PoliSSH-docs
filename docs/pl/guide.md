@@ -238,3 +238,9 @@ Dostępność funkcji opisuje [informacja o wersji](../status.md).
 ## Wersja 0.24.0: pliki, test połączenia i Tailscale
 
 Zobacz dwujęzyczną [instrukcję obszaru plików](../files-workspace.md): połączenie bez powłoki, skróty, podgląd transferu, anulowanie i konflikty edycji. [Statusy, akcje i Tailscale](../workspace-automation.md) opisują statusy programów, wymagane odpowiedzi, snippety i konfigurację agentów.
+
+## Wersja 0.25.0: kompaktowy obszar roboczy
+
+Karty połączeń mają więcej miejsca w kompaktowym pasku okna. **+** otwiera menu nowego połączenia, lokalnego terminala lub hosta. **Aktywność** łączy uwagę, transfery i agentów; **…** zawiera wyszukiwalną listę otwartych połączeń i akcje sesji. Logo znajduje się w panelu bocznym.
+
+**Wymaga uwagi** ma stały nagłówek, liczbę sesji i wyjaśnienie pustej listy. Zakończone wyniki nadal można oznaczyć jako przeczytane; oczekujące programy pozostają do zmiany stanu. AI, wyszukiwanie, podział i pozostałe akcje terminala tworzą jedną kompaktową grupę. W formularzu hosta **Testuj połączenie**, **Anuluj** i **Zapisz** są w jednym pasku na dole, a wynik testu nad nimi. Przyciski Terminal/Pliki pozostają widoczne po zmianie rozmiaru okna. Urządzenia Android w Tailscale mają ikonę robota; online nadal nie potwierdza dostępu SSH.

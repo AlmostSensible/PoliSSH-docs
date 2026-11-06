@@ -236,3 +236,9 @@ If something fails, start with [Troubleshooting](../en/troubleshooting.md). See 
 ## Version 0.24.0: files, host testing and Tailscale
 
 See the bilingual [files workspace guide](../files-workspace.md) for file-only connections, keyboard controls, transfer review, cancellation and editor conflicts. See [status, actions and Tailscale](../workspace-automation.md) for program status, attention, snippets and agent setup.
+
+## Version 0.25.0: compact workspace
+
+Connection tabs have more room in the compact window bar. Use **+** for a new connection, local terminal or host. **Activity** combines attention, transfers and agents; **…** contains the searchable list of open connections and session actions. Branding is in the sidebar.
+
+**Needs attention** has a fixed heading, session count and an explanation when no sessions need a response. Completed results can still be marked as read; waiting programs remain until their state changes. Terminal AI, search, split and more actions use one compact group. In the host form, **Test connection**, **Cancel** and **Save** share the footer, with test results above them. Host Terminal/Files buttons remain visible after resizing. Tailscale Android devices have a robot icon; online status still does not prove SSH access.

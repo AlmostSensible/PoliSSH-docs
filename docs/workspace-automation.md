@@ -1,4 +1,4 @@
-# Workspace status, actions and Tailscale — 0.24.0
+# Workspace status, actions and Tailscale — 0.25.0
 
 ## English
 
@@ -6,7 +6,7 @@
 
 Programs supporting OSC 7501 can report working, waiting for a response, completed, failed and idle states, plus optional progress. PoliSSH displays these in tabs and terminal headers; choose a status to inspect all records. Waiting takes priority over failures, running work and completions. Ordinary commands use the existing opt-in shell integration for start/end tracking; PoliSSH does not infer approval requests from terminal text.
 
-Open **Needs attention** in the workspace sidebar or toolbar to find waiting programs and unread completions/failures. Opening a panel or choosing **Mark as read** acknowledges completed results. Waiting programs remain until they report another state. Status and acknowledgement data stay in memory. Disconnected terminals retain completed results but discard active states.
+Open **Needs attention** in the workspace sidebar or Activity popover to find waiting programs and unread completions/failures. Opening a panel or choosing **Mark as read** acknowledges completed results. Waiting programs remain until they report another state. Status and acknowledgement data stay in memory. Disconnected terminals retain completed results but discard active states.
 
 In **Settings → Terminal → History and notifications**, enable long-command completion notifications or the separate **Notify when a program needs a response** option. Both require macOS notification permission. Alerts are sent only for background panels/windows; completion alerts require at least ten seconds. Repeated reports and overlapping shell/program completion reports are deduplicated. Notifications contain the session name and event type, without program messages or commands.
 
@@ -57,3 +57,15 @@ Tailscale devices can be searched by name, DNS, IP or OS and filtered to online 
 Urządzenia Tailscale można wyszukiwać po nazwie, DNS, IP lub systemie i filtrować do urządzeń online. Odświeżanie zachowuje poprzednie wyniki i pokazuje czas ostatniego udanego odczytu. Ikony korzystają ze zgłoszonego systemu; typ urządzenia Apple jest podpowiadany na podstawie nazwy i może być ogólny. Nie jest to weryfikacja sprzętu ani dostępności SSH.
 
 Na liście Tailscale szukaj po nazwie, DNS, IP lub systemie i użyj filtra urządzeń online. Widać liczniki i czas ostatniego udanego odświeżenia; odświeżanie zachowuje poprzednią listę. Ikony korzystają z systemu oraz wskazówek w nazwie sprzętu, a stan ma kolor i etykietę tekstową.
+
+## Version 0.25.0: compact workspace
+
+Connection tabs have more room in the compact window bar. Use **+** for a new connection, local terminal or host. **Activity** combines attention, transfers and agents; **…** contains the searchable list of open connections and session actions. Branding is in the sidebar.
+
+**Needs attention** has a fixed heading, session count and an explanation when no sessions need a response. Completed results can still be marked as read; waiting programs remain until their state changes. Terminal AI, search, split and more actions use one compact group. In the host form, **Test connection**, **Cancel** and **Save** share the footer, with test results above them. Host Terminal/Files buttons remain visible after resizing. Tailscale Android devices have a robot icon; online status still does not prove SSH access.
+
+## Wersja 0.25.0: kompaktowy obszar roboczy
+
+Karty połączeń mają więcej miejsca w kompaktowym pasku okna. **+** otwiera menu nowego połączenia, lokalnego terminala lub hosta. **Aktywność** łączy uwagę, transfery i agentów; **…** zawiera wyszukiwalną listę otwartych połączeń i akcje sesji. Logo znajduje się w panelu bocznym.
+
+**Wymaga uwagi** ma stały nagłówek, liczbę sesji i wyjaśnienie pustej listy. Zakończone wyniki nadal można oznaczyć jako przeczytane; oczekujące programy pozostają do zmiany stanu. AI, wyszukiwanie, podział i pozostałe akcje terminala tworzą jedną kompaktową grupę. W formularzu hosta **Testuj połączenie**, **Anuluj** i **Zapisz** są w jednym pasku na dole, a wynik testu nad nimi. Przyciski Terminal/Pliki pozostają widoczne po zmianie rozmiaru okna. Urządzenia Android w Tailscale mają ikonę robota; online nadal nie potwierdza dostępu SSH.

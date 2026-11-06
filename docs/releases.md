@@ -1,5 +1,26 @@
 # Release notes / Historia zmian
 
+## 0.25.0 — 6 November / listopada 2026
+
+### English
+
+- More space for connection tabs: compact top controls, a + connection menu, unified Activity, and a searchable list of open connections.
+- A clearer Needs attention page with a fixed heading, session count and explanatory empty state.
+- Consistent terminal AI/search/split/action controls; host Terminal and Files buttons remain visible after startup and window resizing.
+- Test connection, Cancel and Save share one host-form footer, with results above it.
+- Recognizable Android icons in Tailscale, retaining online/offline indicators. Online does not confirm SSH access.
+
+### Polski
+
+- Więcej miejsca na karty połączeń: zwięzły górny pasek, menu +, wspólna Aktywność i wyszukiwanie otwartych połączeń.
+- Czytelniejszy widok Wymaga uwagi: stały nagłówek, licznik sesji i opis pustego stanu.
+- Spójne przyciski AI, wyszukiwania, podziału i akcji terminala. Przyciski Terminal i Pliki pozostają widoczne po starcie i zmianie rozmiaru okna.
+- Sprawdź połączenie, Anuluj i Zapisz we wspólnym pasku formularza hosta, z wynikiem testu powyżej.
+- Rozpoznawalne ikony Androida w Tailscale z oznaczeniami online/offline. Online nie potwierdza dostępu SSH.
+
+Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
+
+
 ## 0.24.0 — 6 November / listopada 2026
 
 ## English
