@@ -36,7 +36,7 @@ Online status does not guarantee SSH access. Connections use the existing SSH/SF
 
 Programy obsługujące OSC 7501 zgłaszają pracę, oczekiwanie na odpowiedź, zakończenie, błąd lub bezczynność oraz opcjonalny postęp. Statusy widać na kartach i w nagłówkach terminali; kliknięcie pokazuje szczegóły wszystkich rekordów. Priorytet: oczekiwanie → błąd → praca → zakończenie → bezczynność. Zwykłe polecenia korzystają z istniejącej, opcjonalnej integracji powłoki. PoliSSH nie zgaduje próśb o zgodę z tekstu terminala.
 
-Widok **Wymaga uwagi**, dostępny w panelu bocznym i pasku narzędzi, zbiera oczekujące programy oraz nieprzeczytane zakończenia i błędy. Otwarcie panelu lub **Oznacz jako przeczytane** potwierdza odczyt wyniku. Oczekiwanie pozostaje do zmiany stanu programu. Dane są przechowywane w pamięci; rozłączenie usuwa aktywne statusy i zachowuje zakończone wyniki.
+Widok **Wymaga uwagi**, dostępny w panelu bocznym i menu Aktywność, zbiera oczekujące programy oraz nieprzeczytane zakończenia i błędy. Otwarcie panelu lub **Oznacz jako przeczytane** potwierdza odczyt wyniku. Oczekiwanie pozostaje do zmiany stanu programu. Dane są przechowywane w pamięci; rozłączenie usuwa aktywne statusy i zachowuje zakończone wyniki.
 
 W **Ustawienia → Terminal → Historia i powiadomienia** można włączyć powiadomienia o długich poleceniach lub osobno **Powiadom, gdy program wymaga odpowiedzi**. Wymagana jest zgoda macOS. Alerty dotyczą paneli i okien w tle; zakończenie wymaga co najmniej dziesięciu sekund pracy. Powtarzane raporty oraz zakończenie zgłoszone jednocześnie przez program i powłokę nie dublują alertów. Powiadomienie zawiera nazwę sesji i rodzaj zdarzenia, bez komendy ani komunikatu programu.
 

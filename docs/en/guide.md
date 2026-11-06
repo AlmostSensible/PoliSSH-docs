@@ -129,7 +129,7 @@ Choose list, icons or columns. Double-click a folder to open it. Select multiple
 
 Upload by dragging from local to remote, or download in the opposite direction. Dropping onto a folder selects that destination. Dragging within one pane moves the items to the chosen folder. You can also use item context menus.
 
-Open **Transfer activity** using the up/down-arrow control in the application bar. It shows transfers across connections with progress, status, cancellation and retry. Queue pause stops pending work; active transfers finish normally. **Settings → SFTP** controls the global concurrency limit. Failed or cancelled transfers may leave partial destination files; temporary failures retry automatically up to twice by default (Settings → SFTP). Completed files are retained; known partial files restart from the beginning. Cancelled transfers require an explicit retry.
+Open **Activity** (the pulse icon) in the application bar, then choose **Transfers**. It shows transfers across connections with progress, status, cancellation and retry. Queue pause stops pending work; active transfers finish normally. **Settings → SFTP** controls the global concurrency limit. Failed or cancelled transfers may leave partial destination files; temporary failures retry automatically up to twice by default (Settings → SFTP). Completed files are retained; known partial files restart from the beginning. Cancelled transfers require an explicit retry.
 
 ### Name conflicts
 

@@ -129,7 +129,7 @@ Możesz wybrać listę, ikony albo kolumny. Dwuklik otwiera katalog. `⌘` i `�
 
 Przeciągnięcie z panelu lokalnego do zdalnego wysyła pliki; w przeciwną stronę je pobiera. Upuszczenie na katalog wybiera go jako cel. Przeciągnięcie wewnątrz jednego panelu przenosi elementy do wybranego folderu. Te same operacje są dostępne z menu kontekstowego.
 
-Panel **Transfery** otworzysz przyciskiem ze strzałkami góra/dół w pasku aplikacji. Pokazuje operacje ze wszystkich połączeń, postęp, stan, anulowanie i ponowienie. Pauza zatrzymuje zadania oczekujące; rozpoczęte kończą się normalnie. Globalny limit równoległości jest w **Ustawienia → SFTP**. Po błędzie lub anulowaniu w celu mogą pozostać pliki częściowe; błędy przejściowe są domyślnie ponawiane do dwóch razy (Ustawienia → SFTP). Ukończone pliki pozostają, a znane pliki częściowe zaczynają się od początku. Anulowane transfery wymagają jawnego ponowienia.
+Panel **Transfery** otworzysz z **Aktywności** (ikona pulsu) w pasku aplikacji. Pokazuje operacje ze wszystkich połączeń, postęp, stan, anulowanie i ponowienie. Pauza zatrzymuje zadania oczekujące; rozpoczęte kończą się normalnie. Globalny limit równoległości jest w **Ustawienia → SFTP**. Po błędzie lub anulowaniu w celu mogą pozostać pliki częściowe; błędy przejściowe są domyślnie ponawiane do dwóch razy (Ustawienia → SFTP). Ukończone pliki pozostają, a znane pliki częściowe zaczynają się od początku. Anulowane transfery wymagają jawnego ponowienia.
 
 ### Konflikty nazw
 
