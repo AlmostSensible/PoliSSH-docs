@@ -6,6 +6,36 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.26.0</title>
+            <pubDate>Fri, 06 Nov 2026 21:55:11 +0200</pubDate>
+            <sparkle:version>45</sparkle:version>
+            <sparkle:shortVersionString>0.26.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## 0.26.0 — 6 November / listopada 2026
+
+### English
+
+- Choose saved keys, SSH agents or password/interactive profiles explicitly in the host form.
+- Inspect agent public identities and pin a specific key to a profile. Missing or rejected pinned keys do not silently switch to other keys or passwords.
+- Configure a custom agent socket on this Mac, including 1Password, with bounded diagnostics and cancellable signing.
+- Validate imported private keys and passphrases before replacing the draft. Inspect, copy or export public keys and explicitly add saved keys to the system agent.
+- Distinguish SSH authentication success from an unavailable SFTP subsystem. Certificates, FIDO2 and agent forwarding remain unsupported.
+
+### Polski
+
+- W formularzu hosta jawnie wybierz zapisany klucz, agenta SSH albo profil hasła/logowania interaktywnego.
+- Przeglądaj publiczne tożsamości agenta i przypisz konkretny klucz do profilu. Brak lub odrzucenie przypisanego klucza nie przełącza po cichu na inne klucze ani hasło.
+- Ustaw własne gniazdo agenta na tym Macu, także 1Password. Diagnostyka ma limit czasu, a oczekiwanie na podpis można anulować.
+- Import sprawdza klucz prywatny i passphrase przed zastąpieniem danych formularza. Przeglądaj, kopiuj i eksportuj klucze publiczne oraz świadomie dodawaj zapisane klucze do systemowego agenta.
+- Rozróżniamy poprawne uwierzytelnienie SSH od niedostępnego SFTP. Certyfikaty, FIDO2 i przekazywanie agenta pozostają nieobsługiwane.
+
+Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
+
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.26.0/PoliSSH-0.26.0-arm64.zip" length="12960544" type="application/octet-stream" sparkle:edSignature="zc1H/iSN7q0UlfoZlZaSIdJf2vHb8+en0ujO9RLqcLT8YQDH5yGCL7m99a1cHBIJjh5kLRmL8FJPKfq+aZFpAQ=="/>
+        </item>
+        <item>
             <title>0.25.0</title>
             <pubDate>Fri, 06 Nov 2026 14:50:27 +0200</pubDate>
             <sparkle:version>44</sparkle:version>
@@ -58,29 +88,6 @@ Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Prz
 Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.24.0/PoliSSH-0.24.0-arm64.zip" length="12832662" type="application/octet-stream" sparkle:edSignature="ZTjMxNpsr3vYU5CTtRlK2Blhu/vGgGEO+Z8vQ6SGcJrZ6fHxlDKtl8ue0z8S9lphr6dJrnaoos9J1QT5UOlbCw=="/>
-        </item>
-        <item>
-            <title>0.23.0</title>
-            <pubDate>Sun, 01 Nov 2026 18:09:50 +0200</pubDate>
-            <sparkle:version>42</sparkle:version>
-            <sparkle:shortVersionString>0.23.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.23.0 beta
-
-## English
-
-- Follow active agent sessions in workspace tabs or open the resizable monitor using the compact MCP toolbar button (Shift-Command-M).
-- Choose a session in the sidebar and see commands, live stdout/stderr and file-operation events in a read-only console. Review approvals, cancel work and disconnect sessions.
-- Recent closed sessions and partial output remain available in memory until quitting. Output is bounded; file contents are not logged. Commands and writes still require one-time approval. Cancellation does not undo remote effects.
-
-## Polski
-
-- Śledź aktywne sesje agentów na kartach lub otwórz skalowalny podgląd małym przyciskiem MCP w pasku (Shift-Command-M).
-- Wybierz sesję na liście i zobacz polecenia, wyniki oraz błędy na żywo i zdarzenia operacji na plikach w konsoli tylko do odczytu. Sprawdzaj zgody, anuluj operacje i rozłączaj sesje.
-- Ostatnio zamknięte sesje i częściowe wyniki pozostają w pamięci do zamknięcia aplikacji. Wynik ma limit wielkości; zawartość plików nie jest logowana. Polecenia i zapis nadal wymagają jednorazowej zgody. Anulowanie nie cofa zmian na serwerze.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.23.0/PoliSSH-0.23.0-arm64.zip" length="12689917" type="application/octet-stream" sparkle:edSignature="oiAOTueNmhsPKjF1Xacq+aCX0fliBKnDLDTWA4SxYo5Pbs6XCwrHhFLH9f0VYBOtIEOW9LHCRKGRu+tF/xx3Bg=="/>
         </item>
     </channel>
 </rss>
