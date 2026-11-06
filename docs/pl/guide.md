@@ -13,7 +13,7 @@ Wersje 0.16.1 i starsze nie zawierają aktualizatora. Pierwszą wersję z aktual
 1. Otwórz aplikację i wybierz **Nowy host**.
 2. Nadaj rozpoznawalną nazwę. Wpisz adres serwera, port SSH (zwykle `22`) i nazwę użytkownika.
 3. Wybierz profil uwierzytelniania albo dodaj go w sekcji **Uwierzytelnianie**.
-4. Zapisz i otwórz hosta.
+4. Opcjonalnie wybierz **Sprawdź połączenie**, aby sprawdzić logowanie SSH i SFTP przed zapisem. Zapisz i otwórz **Terminal** lub **Pliki**; Pliki nie uruchamiają powłoki.
 5. Przy pierwszym połączeniu porównaj odcisk klucza SSH ze znaną, zaufaną wartością otrzymaną od administratora serwera.
 6. Odpowiedz na pytania o hasło, passphrase klucza lub uwierzytelnianie interaktywne.
 
@@ -234,3 +234,7 @@ Zobacz [rozwiązywanie problemów](troubleshooting.md), jeśli napotkasz błąd.
 Podpisana aplikacja z notaryzacją Apple jest dostępna jako publiczna beta. Nie zaimplementowano Mosh, Telnet ani połączeń szeregowych. Import OpenSSH obejmuje podstawowe pola hosta, a nie cały język konfiguracji. Transfery nie wznawiają automatycznie plików częściowych; dowiązania symboliczne i pliki specjalne są odrzucane przed zapisem. Edytor obsługuje UTF-8 do 2 MB. Root w terminalu nie zmienia uprawnień SFTP. Integracja z powłoką dotyczy bieżącej sesji i nie konfiguruje trwałości tmux.
 
 Dostępność funkcji opisuje [informacja o wersji](../status.md).
+
+## Wersja 0.24.0: pliki, test połączenia i Tailscale
+
+Zobacz dwujęzyczną [instrukcję obszaru plików](../files-workspace.md): połączenie bez powłoki, skróty, podgląd transferu, anulowanie i konflikty edycji. [Statusy, akcje i Tailscale](../workspace-automation.md) opisują statusy programów, wymagane odpowiedzi, snippety i konfigurację agentów.

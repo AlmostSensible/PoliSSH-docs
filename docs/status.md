@@ -1,14 +1,20 @@
 # Availability / Dostępność
 
-## Public beta 0.23.0
+## Public beta 0.24.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.23.0/PoliSSH-0.23.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.24.0/PoliSSH-0.24.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.23.0/PoliSSH-0.23.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.24.0/PoliSSH-0.24.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.24.0 / Nowości w 0.24.0
+
+Open Files directly, review transfer destinations and use the docked queue. Test SSH and SFTP before saving a host. Discover Tailscale devices with search, online filtering and system icons. Program status, Needs attention, snippet search and agent setup guidance are also included. See the [files guide](files-workspace.md) and [workspace guide](workspace-automation.md) for usage and limitations. Online does not guarantee SSH access; full program status requires OSC 7501 support.
+
+Otwieraj Pliki bezpośrednio, sprawdzaj katalogi docelowe i korzystaj z dokowanej kolejki. Testuj SSH i SFTP przed zapisaniem hosta. Wyszukuj urządzenia Tailscale z filtrem online i ikonami systemów. Dodano też status programów, Wymaga uwagi, wyszukiwanie snippetów i instrukcję konfiguracji agentów. Zobacz [instrukcję plików](files-workspace.md) i [obszaru roboczego](workspace-automation.md). Online nie potwierdza dostępu SSH; pełne statusy wymagają wsparcia OSC 7501.
 
 ## New in 0.23.0 / Nowości w 0.23.0
 

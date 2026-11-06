@@ -1,5 +1,25 @@
 # Release notes / Historia zmian
 
+## 0.24.0 — 6 November / listopada 2026
+
+## English
+
+- Open hosts directly in Files without starting a shell. Review upload/download destinations and use the shared docked transfer queue, focused keyboard controls and safe close confirmations.
+- Remote editing checks server metadata and content before saving, preserving local edits and recovery safeguards after errors.
+- Test SSH authentication and SFTP before saving a host, with normal host-key verification. Host setup has inline validation and collapsible advanced options.
+- Discover Tailscale devices with search, online filtering, system/device icons and green Online indicators. Online does not guarantee SSH access.
+- See program status and Needs attention, find snippets with Command-K, and follow the agent setup checklist. Program status requires program support; commands and writes retain existing approval rules.
+
+## Polski
+
+- Otwieraj hosty od razu w Plikach bez uruchamiania powłoki. Sprawdzaj katalog docelowy transferu i korzystaj ze wspólnej dokowanej kolejki, skrótów klawiaturowych oraz potwierdzeń przy zamykaniu.
+- Edytor sprawdza metadane i treść na serwerze przed zapisem; zachowuje lokalne zmiany i zabezpieczenia odzyskiwania po błędach.
+- Sprawdź logowanie SSH i SFTP przed zapisaniem hosta, z normalną weryfikacją klucza serwera. Formularz ma walidację przy polach i zwijane opcje zaawansowane.
+- Wyszukuj urządzenia Tailscale z filtrem online, ikonami systemów/sprzętu i zielonym oznaczeniem Online. Online nie potwierdza dostępu SSH.
+- Sprawdzaj status programów i widok Wymaga uwagi, wyszukuj snippety przez Command-K i korzystaj z checklisty konfiguracji agentów. Status wymaga wsparcia programu; polecenia i zapis nadal podlegają dotychczasowym zgodom.
+
+Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.23.0 — 1 November / listopada 2026
 
 ### English

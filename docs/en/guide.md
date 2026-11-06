@@ -13,7 +13,7 @@ Versions 0.16.1 and earlier do not include an updater. Install the first version
 1. Open PoliSSH and select **New host**.
 2. Give the host a recognizable name. Enter its address, SSH port (normally `22`) and username.
 3. Choose an authentication profile, or create one under **Authentication**.
-4. Save and open the host.
+4. Optionally choose **Test connection** to verify SSH authentication and SFTP before saving. Save and open **Terminal** or **Files**; Files does not start a shell.
 5. For a new server, compare its SSH fingerprint with a trusted value from the server administrator before accepting it.
 6. Complete any password, key-passphrase or keyboard-interactive challenge.
 
@@ -232,3 +232,7 @@ Host configuration is stored in SQLite under `~/Library/Application Support/Poli
 The signed, notarized app is available as a public beta. Mosh, Telnet and serial connections are not implemented. OpenSSH import supports basic host fields rather than the full configuration language. Transfers do not automatically resume partial files; symbolic links and special files are rejected before writing. UTF-8 editing is limited to 2 MB. A terminal root shell does not change SFTP permissions. Shell integration is session-scoped and does not configure tmux persistence.
 
 If something fails, start with [Troubleshooting](../en/troubleshooting.md). See [availability](../status.md) before relying on unreleased features.
+
+## Version 0.24.0: files, host testing and Tailscale
+
+See the bilingual [files workspace guide](../files-workspace.md) for file-only connections, keyboard controls, transfer review, cancellation and editor conflicts. See [status, actions and Tailscale](../workspace-automation.md) for program status, attention, snippets and agent setup.

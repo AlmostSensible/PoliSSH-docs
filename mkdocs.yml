@@ -54,6 +54,8 @@ nav:
       - Troubleshooting: en/troubleshooting.md
       - Support and backups: en/support.md
       - Privacy: en/privacy.md
+  - Files workspace / Obszar plików: files-workspace.md
+  - Status, actions and Tailscale / Statusy, akcje i Tailscale: workspace-automation.md
   - Availability / Dostępność: status.md
   - Release notes / Historia zmian: releases.md
   - Licenses / Licencje: licenses.md
