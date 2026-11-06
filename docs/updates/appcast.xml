@@ -6,6 +6,33 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.24.0</title>
+            <pubDate>Fri, 06 Nov 2026 12:48:15 +0200</pubDate>
+            <sparkle:version>43</sparkle:version>
+            <sparkle:shortVersionString>0.24.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## English
+
+- Open hosts directly in Files without starting a shell. Review upload/download destinations and use the shared docked transfer queue, focused keyboard controls and safe close confirmations.
+- Remote editing checks server metadata and content before saving, preserving local edits and recovery safeguards after errors.
+- Test SSH authentication and SFTP before saving a host, with normal host-key verification. Host setup has inline validation and collapsible advanced options.
+- Discover Tailscale devices with search, online filtering, system/device icons and green Online indicators. Online does not guarantee SSH access.
+- See program status and Needs attention, find snippets with Command-K, and follow the agent setup checklist. Program status requires program support; commands and writes retain existing approval rules.
+
+## Polski
+
+- Otwieraj hosty od razu w Plikach bez uruchamiania powłoki. Sprawdzaj katalog docelowy transferu i korzystaj ze wspólnej dokowanej kolejki, skrótów klawiaturowych oraz potwierdzeń przy zamykaniu.
+- Edytor sprawdza metadane i treść na serwerze przed zapisem; zachowuje lokalne zmiany i zabezpieczenia odzyskiwania po błędach.
+- Sprawdź logowanie SSH i SFTP przed zapisaniem hosta, z normalną weryfikacją klucza serwera. Formularz ma walidację przy polach i zwijane opcje zaawansowane.
+- Wyszukuj urządzenia Tailscale z filtrem online, ikonami systemów/sprzętu i zielonym oznaczeniem Online. Online nie potwierdza dostępu SSH.
+- Sprawdzaj status programów i widok Wymaga uwagi, wyszukuj snippety przez Command-K i korzystaj z checklisty konfiguracji agentów. Status wymaga wsparcia programu; polecenia i zapis nadal podlegają dotychczasowym zgodom.
+
+Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.24.0/PoliSSH-0.24.0-arm64.zip" length="12832662" type="application/octet-stream" sparkle:edSignature="ZTjMxNpsr3vYU5CTtRlK2Blhu/vGgGEO+Z8vQ6SGcJrZ6fHxlDKtl8ue0z8S9lphr6dJrnaoos9J1QT5UOlbCw=="/>
+        </item>
+        <item>
             <title>0.23.0</title>
             <pubDate>Sun, 01 Nov 2026 18:09:50 +0200</pubDate>
             <sparkle:version>42</sparkle:version>
@@ -53,28 +80,6 @@ Apple Silicon · macOS 14+. Finish active sessions and transfers before updating
 Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.22.0/PoliSSH-0.22.0-arm64.zip" length="12668244" type="application/octet-stream" sparkle:edSignature="mYtpTa6i8aUnbB1noJCEIgK7xPmNlRtwmt1FV/mHsyVcKoYOxFBgKGv4nryr8FceJ3kGaPzVZrA3jWk6JCqUDQ=="/>
-        </item>
-        <item>
-            <title>0.21.2</title>
-            <pubDate>Sat, 31 Oct 2026 21:49:33 +0200</pubDate>
-            <sparkle:version>40</sparkle:version>
-            <sparkle:shortVersionString>0.21.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.21.2 — public beta / publiczna beta
-
-English
-- See which servers are available to agents: shared hosts show an MCP badge in the connection list and tiles.
-- Badges update immediately when you enable/disable MCP or change shared hosts in Settings → Agents. Existing connection and approval settings are preserved.
-
-Polski
-- Sprawdź, które serwery są dostępne dla agentów: udostępnione hosty mają oznaczenie MCP na liście i kafelkach połączeń.
-- Oznaczenia zmieniają się od razu po włączeniu/wyłączeniu MCP lub zmianie udostępnionych serwerów w Ustawienia → Agenci. Dotychczasowe ustawienia połączeń i wymaganych zgód pozostają zachowane.
-
-Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
-Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.21.2/PoliSSH-0.21.2-arm64.zip" length="12657157" type="application/octet-stream" sparkle:edSignature="LKfAetOv+a/4leNIP5a7GIxwrtDH9XDbUUSra011nPd07RVBYjZ905WBRj+7isEa0e3C8eoGBRSq1Sss5zmFAA=="/>
         </item>
     </channel>
 </rss>
