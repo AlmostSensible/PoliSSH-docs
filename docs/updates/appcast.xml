@@ -6,6 +6,33 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.25.0</title>
+            <pubDate>Fri, 06 Nov 2026 14:50:27 +0200</pubDate>
+            <sparkle:version>44</sparkle:version>
+            <sparkle:shortVersionString>0.25.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## English
+
+- More space for connection tabs: compact top controls, a + connection menu, unified Activity, and a searchable list of open connections.
+- A clearer Needs attention page with a fixed heading, session count and explanatory empty state.
+- Consistent terminal AI/search/split/action controls; host Terminal and Files buttons remain visible after startup and window resizing.
+- Test connection, Cancel and Save share one host-form footer, with results above it.
+- Recognizable Android icons in Tailscale, retaining online/offline indicators. Online does not confirm SSH access.
+
+## Polski
+
+- Więcej miejsca na karty połączeń: zwięzły górny pasek, menu +, wspólna Aktywność i wyszukiwanie otwartych połączeń.
+- Czytelniejszy widok Wymaga uwagi: stały nagłówek, licznik sesji i opis pustego stanu.
+- Spójne przyciski AI, wyszukiwania, podziału i akcji terminala. Przyciski Terminal i Pliki pozostają widoczne po starcie i zmianie rozmiaru okna.
+- Sprawdź połączenie, Anuluj i Zapisz we wspólnym pasku formularza hosta, z wynikiem testu powyżej.
+- Rozpoznawalne ikony Androida w Tailscale z oznaczeniami online/offline. Online nie potwierdza dostępu SSH.
+
+Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.25.0/PoliSSH-0.25.0-arm64.zip" length="12851712" type="application/octet-stream" sparkle:edSignature="fcX22DHSCpi31RZz8N+fuLntLaDz0GEPE3v+YwxdqHQufQ1aWWRjmG9aSFBerBS4WqF2Xv3QGNs0JOMsb+VJCQ=="/>
+        </item>
+        <item>
             <title>0.24.0</title>
             <pubDate>Fri, 06 Nov 2026 12:48:15 +0200</pubDate>
             <sparkle:version>43</sparkle:version>
@@ -54,32 +81,6 @@ Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Prz
 - Ostatnio zamknięte sesje i częściowe wyniki pozostają w pamięci do zamknięcia aplikacji. Wynik ma limit wielkości; zawartość plików nie jest logowana. Polecenia i zapis nadal wymagają jednorazowej zgody. Anulowanie nie cofa zmian na serwerze.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.23.0/PoliSSH-0.23.0-arm64.zip" length="12689917" type="application/octet-stream" sparkle:edSignature="oiAOTueNmhsPKjF1Xacq+aCX0fliBKnDLDTWA4SxYo5Pbs6XCwrHhFLH9f0VYBOtIEOW9LHCRKGRu+tF/xx3Bg=="/>
-        </item>
-        <item>
-            <title>0.22.0</title>
-            <pubDate>Sat, 31 Oct 2026 22:18:51 +0200</pubDate>
-            <sparkle:version>41</sparkle:version>
-            <sparkle:shortVersionString>0.22.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# PoliSSH 0.22.0 — public beta / publiczna beta
-
-English
-- See when agents use MCP: open sessions, operations, approvals and results from the activity indicator.
-- Filter by SSH session, review requests, cancel operations and disconnect agent sessions. File-read paths stay in memory; file contents are not logged. Command output appears after completion.
-- Find MCP access, agent apps and shared servers in separate Settings → Agents tabs.
-- Fix intermittent incomplete MCP responses on macOS.
-
-Polski
-- Sprawdź, kiedy agenci korzystają z MCP: otwórz sesje, operacje, zgody i wyniki ze wskaźnika aktywności.
-- Filtruj według sesji SSH, sprawdzaj prośby, anuluj operacje i rozłączaj sesje agentów. Ścieżki odczytów pozostają w pamięci; zawartość plików nie jest zapisywana w historii. Wyniki poleceń pojawiają się po zakończeniu.
-- Znajdź dostęp MCP, aplikacje agentów i udostępnione serwery w osobnych zakładkach Ustawienia → Agenci.
-- Poprawiono sporadyczne niepełne odpowiedzi MCP na macOS.
-
-Apple Silicon · macOS 14+. Finish active sessions and transfers before updating.
-Apple Silicon · macOS 14+. Przed aktualizacją zakończ sesje i transfery.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.22.0/PoliSSH-0.22.0-arm64.zip" length="12668244" type="application/octet-stream" sparkle:edSignature="mYtpTa6i8aUnbB1noJCEIgK7xPmNlRtwmt1FV/mHsyVcKoYOxFBgKGv4nryr8FceJ3kGaPzVZrA3jWk6JCqUDQ=="/>
         </item>
     </channel>
 </rss>
