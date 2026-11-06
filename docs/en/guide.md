@@ -40,6 +40,14 @@ Under **Authentication**, create a profile to reuse across hosts:
 | ssh-agent | A running agent with the appropriate key loaded. |
 | Keyboard-interactive | Answers to the server's prompts, including supported 2FA challenges. |
 
+Choose **Saved key**, **SSH agent**, or **Password / interactive** in the host form. **Test connection** checks SSH authentication and SFTP before saving; unavailable SFTP is reported separately from authentication failure.
+
+The agent panel lists public identities with their algorithm and SHA-256 fingerprint. Use **Use key** to create a reusable agent profile pinned to one public identity. If it is missing or rejected, the connection stops instead of trying another key or a password. Older profiles without a pin retain their available-key behavior. With several keys, select a specific identity to avoid server authentication-attempt limits.
+
+For a system agent, keep **System (SSH_AUTH_SOCK)**. For an external provider, expand the source settings, enable a custom socket, paste the provider's socket path and choose **Apply**. For 1Password this is commonly `~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock`. This local setting applies to all agent profiles on this Mac and is not synchronized. PoliSSH does not edit OpenSSH configuration or the provider's settings. Listing public identities does not request a signature; signing may require provider approval and can be cancelled.
+
+Saved keys can be imported or generated as Ed25519. An encrypted import requires the correct passphrase before replacing the editor draft. Inspect, copy or export the public key after import/generation. **Add saved key to system agent** is an explicit action for supported saved keys; external-provider keys are managed in that provider. No private-key export, automatic server installation, certificates, FIDO2 or agent forwarding is provided.
+
 Passwords and private keys are stored in macOS Keychain. Deleting a profile identifies dependent hosts and asks for confirmation. Those hosts remain in the library, but need another authentication method before their next connection. Existing sessions stay open.
 
 **Known hosts** lists saved server fingerprints. Forgetting a fingerprint asks for confirmation and causes another trust decision on the next connection. A changed fingerprint is not automatically accepted.

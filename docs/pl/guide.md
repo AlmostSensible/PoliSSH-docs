@@ -40,6 +40,14 @@ Profile w sekcji **Uwierzytelnianie** można przypisywać do wielu hostów:
 | ssh-agent | Działający agent z wczytanym odpowiednim kluczem. |
 | Keyboard-interactive | Odpowiedzi na pytania serwera, w tym obsługiwane pytania 2FA. |
 
+W formularzu hosta wybierz **Zapisany klucz**, **Agent SSH** albo **Hasło / interaktywne**. **Sprawdź połączenie** weryfikuje uwierzytelnienie SSH i SFTP przed zapisem; niedostępność SFTP jest osobnym wynikiem od błędnego logowania.
+
+Panel agenta pokazuje publiczne tożsamości, algorytmy i odciski SHA-256. **Użyj klucza** tworzy profil przypisany do jednej publicznej tożsamości. Jeżeli klucza brakuje albo serwer go odrzuci, połączenie zatrzymuje się zamiast próbować innego klucza lub hasła. Starsze profile bez przypisania zachowują próbowanie dostępnych kluczy. Przy wielu kluczach wybierz konkretny, aby uniknąć limitu prób na serwerze.
+
+Dla systemowego agenta pozostaw **Systemowy (SSH_AUTH_SOCK)**. Dla zewnętrznego dostawcy rozwiń ustawienia źródła, włącz własne gniazdo, wklej jego ścieżkę i wybierz **Zastosuj**. Dla 1Password jest to zwykle `~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock`. Ustawienie dotyczy wszystkich profili agenta tylko na tym Macu i nie synchronizuje się. PoliSSH nie zmienia konfiguracji OpenSSH ani ustawień dostawcy. Lista publicznych tożsamości nie wymaga podpisu; podpisywanie może wymagać zgody dostawcy i można je anulować.
+
+Zapisany klucz można zaimportować albo wygenerować jako Ed25519. Import zaszyfrowanego klucza wymaga poprawnego hasła przed zastąpieniem danych formularza. Po imporcie/generowaniu sprawdź, skopiuj lub wyeksportuj klucz publiczny. **Dodaj zapisany klucz do systemowego agenta** jest świadomą akcją dla obsługiwanych kluczy; kluczami zewnętrznego dostawcy zarządza się w jego aplikacji. Nie dodano eksportu klucza prywatnego, automatycznej instalacji na serwerze, certyfikatów, FIDO2 ani przekazywania agenta.
+
 Hasła i klucze prywatne są zapisywane w pęku kluczy macOS. Usuwanie profilu pokazuje zależne hosty i wymaga potwierdzenia. Hosty pozostają zapisane, ale przed kolejnym połączeniem trzeba wybrać inne uwierzytelnianie. Otwarte sesje pozostają aktywne.
 
 Sekcja **Znane hosty** pokazuje zapamiętane odciski serwerów. Zapomnienie odcisku wymaga potwierdzenia i powoduje ponowne pytanie przy następnym połączeniu. Zmieniony klucz nie jest akceptowany automatycznie.

@@ -1,5 +1,25 @@
 # Release notes / Historia zmian
 
+## 0.26.0 — 6 November / listopada 2026
+
+### English
+
+- Choose saved keys, SSH agents or password/interactive profiles explicitly in the host form.
+- Inspect agent public identities and pin a specific key to a profile. Missing or rejected pinned keys do not silently switch to other keys or passwords.
+- Configure a custom agent socket on this Mac, including 1Password, with bounded diagnostics and cancellable signing.
+- Validate imported private keys and passphrases before replacing the draft. Inspect, copy or export public keys and explicitly add saved keys to the system agent.
+- Distinguish SSH authentication success from an unavailable SFTP subsystem. Certificates, FIDO2 and agent forwarding remain unsupported.
+
+### Polski
+
+- W formularzu hosta jawnie wybierz zapisany klucz, agenta SSH albo profil hasła/logowania interaktywnego.
+- Przeglądaj publiczne tożsamości agenta i przypisz konkretny klucz do profilu. Brak lub odrzucenie przypisanego klucza nie przełącza po cichu na inne klucze ani hasło.
+- Ustaw własne gniazdo agenta na tym Macu, także 1Password. Diagnostyka ma limit czasu, a oczekiwanie na podpis można anulować.
+- Import sprawdza klucz prywatny i passphrase przed zastąpieniem danych formularza. Przeglądaj, kopiuj i eksportuj klucze publiczne oraz świadomie dodawaj zapisane klucze do systemowego agenta.
+- Rozróżniamy poprawne uwierzytelnienie SSH od niedostępnego SFTP. Certyfikaty, FIDO2 i przekazywanie agenta pozostają nieobsługiwane.
+
+Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.25.0 — 6 November / listopada 2026
 
 ### English
