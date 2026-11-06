@@ -1,14 +1,20 @@
 # Availability / Dostępność
 
-## Public beta 0.25.0
+## Public beta 0.26.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.25.0/PoliSSH-0.25.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.26.0/PoliSSH-0.26.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.25.0/PoliSSH-0.25.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.26.0/PoliSSH-0.26.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.26.0 / Nowości w 0.26.0
+
+Choose saved keys, SSH agents or password/interactive profiles in the host form. Inspect public identities and pin one agent key to a profile; missing or rejected pinned keys stop the connection. Configure a custom socket locally, validate encrypted imports and explicitly load saved keys into the system agent. SSH success and unavailable SFTP are reported separately. See the [authentication guide](en/guide.md#hosts-and-authentication). Certificates, FIDO2 and agent forwarding remain unsupported.
+
+Wybierz zapisany klucz, agenta SSH albo profil hasła/logowania interaktywnego w formularzu hosta. Przeglądaj publiczne tożsamości i przypisz jeden klucz agenta do profilu; jego brak lub odrzucenie zatrzymuje połączenie. Ustaw własne lokalne gniazdo, sprawdzaj zaszyfrowany import i świadomie dodawaj zapisane klucze do systemowego agenta. Poprawne SSH i niedostępne SFTP mają osobne wyniki. Zobacz [instrukcję uwierzytelniania](pl/guide.md#hosty-i-uwierzytelnianie). Certyfikaty, FIDO2 i przekazywanie agenta pozostają nieobsługiwane.
 
 ## New in 0.25.0 / Nowości w 0.25.0
 
