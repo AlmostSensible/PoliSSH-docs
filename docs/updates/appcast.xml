@@ -6,6 +6,31 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.26.1</title>
+            <pubDate>Sat, 07 Nov 2026 02:24:05 +0200</pubDate>
+            <sparkle:version>46</sparkle:version>
+            <sparkle:shortVersionString>0.26.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## 0.26.1 — 7 November / listopada 2026
+
+### English
+
+- Detect SSH agent sockets for 1Password, Bitwarden (direct and App Store versions), and Strongbox. Enable the agent in your password manager, refresh, and choose it from the Agent list without copying a socket path.
+- Keep system and custom agents, existing settings, and a local selection shared by all agent profiles on this Mac.
+- Fix the cramped authentication-method label in the host form.
+
+### Polski
+
+- Wykrywaj gniazda agentów SSH 1Password, Bitwarden (wersji bezpośredniej i z App Store) oraz Strongbox. Włącz agenta w menedżerze haseł, odśwież i wybierz go z listy Agent bez kopiowania ścieżki gniazda.
+- Zachowujemy agenta systemowego, własne ścieżki i dotychczasowe ustawienia. Wybór jest lokalny i wspólny dla wszystkich profili agenta na tym Macu.
+- Poprawiono ściśniętą etykietę sposobu logowania w formularzu hosta.
+
+Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.26.1/PoliSSH-0.26.1-arm64.zip" length="12965215" type="application/octet-stream" sparkle:edSignature="tf3vV81xfz2WLG8bv32OGV461v3Eo6pL870bqy7xiN5v+SLh3WD2wZ8Kn+i3b7TEWCsnRMfUNMPcE+mojkkMBw=="/>
+        </item>
+        <item>
             <title>0.26.0</title>
             <pubDate>Fri, 06 Nov 2026 21:55:11 +0200</pubDate>
             <sparkle:version>45</sparkle:version>
@@ -61,33 +86,6 @@ Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Prz
 Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.25.0/PoliSSH-0.25.0-arm64.zip" length="12851712" type="application/octet-stream" sparkle:edSignature="fcX22DHSCpi31RZz8N+fuLntLaDz0GEPE3v+YwxdqHQufQ1aWWRjmG9aSFBerBS4WqF2Xv3QGNs0JOMsb+VJCQ=="/>
-        </item>
-        <item>
-            <title>0.24.0</title>
-            <pubDate>Fri, 06 Nov 2026 12:48:15 +0200</pubDate>
-            <sparkle:version>43</sparkle:version>
-            <sparkle:shortVersionString>0.24.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## English
-
-- Open hosts directly in Files without starting a shell. Review upload/download destinations and use the shared docked transfer queue, focused keyboard controls and safe close confirmations.
-- Remote editing checks server metadata and content before saving, preserving local edits and recovery safeguards after errors.
-- Test SSH authentication and SFTP before saving a host, with normal host-key verification. Host setup has inline validation and collapsible advanced options.
-- Discover Tailscale devices with search, online filtering, system/device icons and green Online indicators. Online does not guarantee SSH access.
-- See program status and Needs attention, find snippets with Command-K, and follow the agent setup checklist. Program status requires program support; commands and writes retain existing approval rules.
-
-## Polski
-
-- Otwieraj hosty od razu w Plikach bez uruchamiania powłoki. Sprawdzaj katalog docelowy transferu i korzystaj ze wspólnej dokowanej kolejki, skrótów klawiaturowych oraz potwierdzeń przy zamykaniu.
-- Edytor sprawdza metadane i treść na serwerze przed zapisem; zachowuje lokalne zmiany i zabezpieczenia odzyskiwania po błędach.
-- Sprawdź logowanie SSH i SFTP przed zapisaniem hosta, z normalną weryfikacją klucza serwera. Formularz ma walidację przy polach i zwijane opcje zaawansowane.
-- Wyszukuj urządzenia Tailscale z filtrem online, ikonami systemów/sprzętu i zielonym oznaczeniem Online. Online nie potwierdza dostępu SSH.
-- Sprawdzaj status programów i widok Wymaga uwagi, wyszukuj snippety przez Command-K i korzystaj z checklisty konfiguracji agentów. Status wymaga wsparcia programu; polecenia i zapis nadal podlegają dotychczasowym zgodom.
-
-Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.24.0/PoliSSH-0.24.0-arm64.zip" length="12832662" type="application/octet-stream" sparkle:edSignature="ZTjMxNpsr3vYU5CTtRlK2Blhu/vGgGEO+Z8vQ6SGcJrZ6fHxlDKtl8ue0z8S9lphr6dJrnaoos9J1QT5UOlbCw=="/>
         </item>
     </channel>
 </rss>
