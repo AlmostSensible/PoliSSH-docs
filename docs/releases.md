@@ -1,5 +1,21 @@
 # Release notes / Historia zmian
 
+## 0.26.1 — 7 November / listopada 2026
+
+### English
+
+- Detect SSH agent sockets for 1Password, Bitwarden (direct and App Store versions), and Strongbox. Enable the agent in your password manager, refresh, and choose it from the Agent list without copying a socket path.
+- Keep system and custom agents, existing settings, and a local selection shared by all agent profiles on this Mac.
+- Fix the cramped authentication-method label in the host form.
+
+### Polski
+
+- Wykrywaj gniazda agentów SSH 1Password, Bitwarden (wersji bezpośredniej i z App Store) oraz Strongbox. Włącz agenta w menedżerze haseł, odśwież i wybierz go z listy Agent bez kopiowania ścieżki gniazda.
+- Zachowujemy agenta systemowego, własne ścieżki i dotychczasowe ustawienia. Wybór jest lokalny i wspólny dla wszystkich profili agenta na tym Macu.
+- Poprawiono ściśniętą etykietę sposobu logowania w formularzu hosta.
+
+Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
+
 ## 0.26.0 — 6 November / listopada 2026
 
 ### English
