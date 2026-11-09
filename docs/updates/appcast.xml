@@ -6,6 +6,25 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.26.2</title>
+            <pubDate>Mon, 09 Nov 2026 14:42:41 +0200</pubDate>
+            <sparkle:version>47</sparkle:version>
+            <sparkle:shortVersionString>0.26.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## English
+
+- SSH sessions now flag common confirmation prompts such as `[Y/n]`, `[y/N]` and `(yes/no)` in **Needs attention**.
+- With response notifications enabled, PoliSSH can show a macOS banner for a background session even while the app is active.
+
+## Polski
+
+- Sesje SSH pokazują typowe pytania, takie jak `[Y/n]`, `[y/N]` i `(yes/no)`, w widoku **Wymaga uwagi**.
+- Po włączeniu powiadomień o potrzebie odpowiedzi PoliSSH może pokazać baner macOS dla sesji w tle również wtedy, gdy aplikacja jest aktywna.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.26.2/PoliSSH-0.26.2-arm64.zip" length="12971737" type="application/octet-stream" sparkle:edSignature="hGPR6iI/DvRztqvl+Jp6/JOPf5i3STtmfgFOj4w1xKLGeHTuQTSgNVgLhCX+2B4oCAUYF9MoZqFMrmLLx09/DQ=="/>
+        </item>
+        <item>
             <title>0.26.1</title>
             <pubDate>Sat, 07 Nov 2026 02:24:05 +0200</pubDate>
             <sparkle:version>46</sparkle:version>
@@ -59,33 +78,6 @@ Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Prz
 
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.26.0/PoliSSH-0.26.0-arm64.zip" length="12960544" type="application/octet-stream" sparkle:edSignature="zc1H/iSN7q0UlfoZlZaSIdJf2vHb8+en0ujO9RLqcLT8YQDH5yGCL7m99a1cHBIJjh5kLRmL8FJPKfq+aZFpAQ=="/>
-        </item>
-        <item>
-            <title>0.25.0</title>
-            <pubDate>Fri, 06 Nov 2026 14:50:27 +0200</pubDate>
-            <sparkle:version>44</sparkle:version>
-            <sparkle:shortVersionString>0.25.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## English
-
-- More space for connection tabs: compact top controls, a + connection menu, unified Activity, and a searchable list of open connections.
-- A clearer Needs attention page with a fixed heading, session count and explanatory empty state.
-- Consistent terminal AI/search/split/action controls; host Terminal and Files buttons remain visible after startup and window resizing.
-- Test connection, Cancel and Save share one host-form footer, with results above it.
-- Recognizable Android icons in Tailscale, retaining online/offline indicators. Online does not confirm SSH access.
-
-## Polski
-
-- Więcej miejsca na karty połączeń: zwięzły górny pasek, menu +, wspólna Aktywność i wyszukiwanie otwartych połączeń.
-- Czytelniejszy widok Wymaga uwagi: stały nagłówek, licznik sesji i opis pustego stanu.
-- Spójne przyciski AI, wyszukiwania, podziału i akcji terminala. Przyciski Terminal i Pliki pozostają widoczne po starcie i zmianie rozmiaru okna.
-- Sprawdź połączenie, Anuluj i Zapisz we wspólnym pasku formularza hosta, z wynikiem testu powyżej.
-- Rozpoznawalne ikony Androida w Tailscale z oznaczeniami online/offline. Online nie potwierdza dostępu SSH.
-
-Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.25.0/PoliSSH-0.25.0-arm64.zip" length="12851712" type="application/octet-stream" sparkle:edSignature="fcX22DHSCpi31RZz8N+fuLntLaDz0GEPE3v+YwxdqHQufQ1aWWRjmG9aSFBerBS4WqF2Xv3QGNs0JOMsb+VJCQ=="/>
         </item>
     </channel>
 </rss>
