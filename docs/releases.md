@@ -1,5 +1,17 @@
 # Release notes / Historia zmian
 
+## 0.26.2 — 9 November / listopada 2026
+
+### English
+
+- SSH sessions now flag common confirmation prompts such as `[Y/n]`, `[y/N]` and `(yes/no)` in **Needs attention**.
+- With response notifications enabled, PoliSSH can show a macOS banner for a background session even while the app is active.
+
+### Polski
+
+- Sesje SSH pokazują typowe pytania, takie jak `[Y/n]`, `[y/N]` i `(yes/no)`, w widoku **Wymaga uwagi**.
+- Po włączeniu powiadomień o potrzebie odpowiedzi PoliSSH może pokazać baner macOS dla sesji w tle również wtedy, gdy aplikacja jest aktywna.
+
 ## 0.26.1 — 7 November / listopada 2026
 
 ### English
