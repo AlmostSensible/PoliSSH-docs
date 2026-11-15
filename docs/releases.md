@@ -1,5 +1,19 @@
 # Release notes / Historia zmian
 
+## 0.27.1 — 15 November / listopada 2026
+
+### English
+
+- Fixed interrupted SFTP uploads that reported a conflict after a file had already reached the server. Resume verifies the contents and only skips an identical file.
+- Redesigned transfer confirmation to show the selected items and destination in a compact native sheet.
+- Moved transfer errors above the file list in Transfer Activity.
+
+### Polski
+
+- Naprawiono wznawianie wysyłania przez SFTP po zerwaniu połączenia tuż po zapisaniu pliku na serwerze. Wznowienie sprawdza zawartość i pomija wyłącznie identyczny plik.
+- Okno potwierdzenia transferu pokazuje wybrane elementy i miejsce docelowe w kompaktowym układzie.
+- Komunikaty błędów w Aktywności transferów są widoczne nad listą plików.
+
 ## 0.27.0 — 15 November / listopada 2026
 
 ### English
