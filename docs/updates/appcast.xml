@@ -6,6 +6,29 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.27.0</title>
+            <pubDate>Sun, 15 Nov 2026 03:33:05 +0200</pubDate>
+            <sparkle:version>48</sparkle:version>
+            <sparkle:shortVersionString>0.27.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## English
+
+- Resume SFTP transfers for saved hosts after restarting PoliSSH. Large files can continue from verified ranges.
+- Replace files and folders after the incoming copy is ready. If the server cannot confirm the final rename, transfer details show the recovery paths.
+- Preview files with Quick Look, rename and change permissions in batches, compare folders and queue copies in one direction. Jump between Files and the terminal at the current folder.
+- Download large files faster in Files mode over high-latency links. Copy folders with many small files with fewer requests.
+
+## Polski
+
+- Wznawiaj transfery SFTP zapisanych hostów po restarcie PoliSSH. Duże pliki mogą być kontynuowane od zweryfikowanych fragmentów.
+- Zastępuj pliki i katalogi po skopiowaniu nowej wersji. Jeśli serwer nie potwierdzi końcowej zmiany nazwy, szczegóły transferu pokażą ścieżki odzyskiwania.
+- Używaj Quick Look, zmieniaj grupowo nazwy i uprawnienia, porównuj katalogi i kolejkuj kopiowanie w jednym kierunku. Przechodź między panelem Pliki a terminalem z bieżącego katalogu.
+- Pobieraj duże pliki szybciej w trybie Pliki na łączach o dużym opóźnieniu. Kopiowanie katalogów z wieloma małymi plikami wymaga teraz mniej żądań.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.0/PoliSSH-0.27.0-arm64.zip" length="13124699" type="application/octet-stream" sparkle:edSignature="xHajHjuPJki9Z+JWSLwW9H7I23bZhRLiPTG/NHuSyVWY/5UAbbMS7lw12QrVuLBaxE5rAv5KeXeAI3EqLuikDw=="/>
+        </item>
+        <item>
             <title>0.26.2</title>
             <pubDate>Mon, 09 Nov 2026 14:42:41 +0200</pubDate>
             <sparkle:version>47</sparkle:version>
@@ -48,36 +71,6 @@
 Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.26.1/PoliSSH-0.26.1-arm64.zip" length="12965215" type="application/octet-stream" sparkle:edSignature="tf3vV81xfz2WLG8bv32OGV461v3Eo6pL870bqy7xiN5v+SLh3WD2wZ8Kn+i3b7TEWCsnRMfUNMPcE+mojkkMBw=="/>
-        </item>
-        <item>
-            <title>0.26.0</title>
-            <pubDate>Fri, 06 Nov 2026 21:55:11 +0200</pubDate>
-            <sparkle:version>45</sparkle:version>
-            <sparkle:shortVersionString>0.26.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## 0.26.0 — 6 November / listopada 2026
-
-### English
-
-- Choose saved keys, SSH agents or password/interactive profiles explicitly in the host form.
-- Inspect agent public identities and pin a specific key to a profile. Missing or rejected pinned keys do not silently switch to other keys or passwords.
-- Configure a custom agent socket on this Mac, including 1Password, with bounded diagnostics and cancellable signing.
-- Validate imported private keys and passphrases before replacing the draft. Inspect, copy or export public keys and explicitly add saved keys to the system agent.
-- Distinguish SSH authentication success from an unavailable SFTP subsystem. Certificates, FIDO2 and agent forwarding remain unsupported.
-
-### Polski
-
-- W formularzu hosta jawnie wybierz zapisany klucz, agenta SSH albo profil hasła/logowania interaktywnego.
-- Przeglądaj publiczne tożsamości agenta i przypisz konkretny klucz do profilu. Brak lub odrzucenie przypisanego klucza nie przełącza po cichu na inne klucze ani hasło.
-- Ustaw własne gniazdo agenta na tym Macu, także 1Password. Diagnostyka ma limit czasu, a oczekiwanie na podpis można anulować.
-- Import sprawdza klucz prywatny i passphrase przed zastąpieniem danych formularza. Przeglądaj, kopiuj i eksportuj klucze publiczne oraz świadomie dodawaj zapisane klucze do systemowego agenta.
-- Rozróżniamy poprawne uwierzytelnienie SSH od niedostępnego SFTP. Certyfikaty, FIDO2 i przekazywanie agenta pozostają nieobsługiwane.
-
-Apple Silicon · macOS 14+. Finish sessions and transfers before updating. / Przed aktualizacją zakończ sesje i transfery.
-
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.26.0/PoliSSH-0.26.0-arm64.zip" length="12960544" type="application/octet-stream" sparkle:edSignature="zc1H/iSN7q0UlfoZlZaSIdJf2vHb8+en0ujO9RLqcLT8YQDH5yGCL7m99a1cHBIJjh5kLRmL8FJPKfq+aZFpAQ=="/>
         </item>
     </channel>
 </rss>
