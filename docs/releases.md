@@ -1,5 +1,21 @@
 # Release notes / Historia zmian
 
+## 0.27.0 — 15 November / listopada 2026
+
+### English
+
+- Resume SFTP transfers for saved hosts after restarting PoliSSH. Large files can continue from verified ranges.
+- Replace files and folders after the incoming copy is ready. If the server cannot confirm the final rename, transfer details show the recovery paths.
+- Preview files with Quick Look, rename and change permissions in batches, compare folders and queue copies in one direction. Jump between Files and the terminal at the current folder.
+- Download large files faster in Files mode over high-latency links. Copy folders with many small files with fewer requests.
+
+### Polski
+
+- Wznawiaj transfery SFTP zapisanych hostów po restarcie PoliSSH. Duże pliki mogą być kontynuowane od zweryfikowanych fragmentów.
+- Zastępuj pliki i katalogi po skopiowaniu nowej wersji. Jeśli serwer nie potwierdzi końcowej zmiany nazwy, szczegóły transferu pokażą ścieżki odzyskiwania.
+- Używaj Quick Look, zmieniaj grupowo nazwy i uprawnienia, porównuj katalogi i kolejkuj kopiowanie w jednym kierunku. Przechodź między panelem Pliki a terminalem z bieżącego katalogu.
+- Pobieraj duże pliki szybciej w trybie Pliki na łączach o dużym opóźnieniu. Kopiowanie katalogów z wieloma małymi plikami wymaga teraz mniej żądań.
+
 ## 0.26.2 — 9 November / listopada 2026
 
 ### English
