@@ -1,5 +1,15 @@
 # Release notes / Historia zmian
 
+## 0.27.2 — 17 November / listopada 2026
+
+### English
+
+- Keep the selected terminal view when an SSH connection drops and reconnects.
+
+### Polski
+
+- Zachowano wybrany widok terminala po zerwaniu i ponownym nawiązaniu połączenia SSH.
+
 ## 0.27.1 — 15 November / listopada 2026
 
 ### English
