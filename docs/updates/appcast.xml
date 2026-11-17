@@ -6,6 +6,23 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.27.3</title>
+            <pubDate>Tue, 17 Nov 2026 23:53:54 +0200</pubDate>
+            <sparkle:version>51</sparkle:version>
+            <sparkle:shortVersionString>0.27.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## English
+
+- Fixed blank output from large Kitty graphics in the local terminal, including the KymaOS desktop on Retina displays.
+
+## Polski
+
+- Naprawiono pusty ekran przy wyświetlaniu dużych obrazów Kitty w lokalnym terminalu, w tym pulpitu KymaOS na ekranach Retina.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.3/PoliSSH-0.27.3-arm64.zip" length="13128203" type="application/octet-stream" sparkle:edSignature="lbZJ173TFhKEu7jsMSq53YhtA+bfcFS+Y38FJ1MWYD/GrjyW5RxlyVSGsuTWcrFDbdrlQorYgpTMPqK0ZKCzBA=="/>
+        </item>
+        <item>
             <title>0.27.2</title>
             <pubDate>Tue, 17 Nov 2026 18:38:36 +0200</pubDate>
             <sparkle:version>50</sparkle:version>
@@ -42,29 +59,6 @@
 - Komunikaty błędów w Aktywności transferów są widoczne nad listą plików.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.1/PoliSSH-0.27.1-arm64.zip" length="13127200" type="application/octet-stream" sparkle:edSignature="iO6hk0N9Tz0bdeAPJT1ZE/06mm/ryPToRG9PQNQdHTTjuYoO/M10FmYG6MDiNITimIjXKJLfg+iD5xMKjRcWCA=="/>
-        </item>
-        <item>
-            <title>0.27.0</title>
-            <pubDate>Sun, 15 Nov 2026 03:33:05 +0200</pubDate>
-            <sparkle:version>48</sparkle:version>
-            <sparkle:shortVersionString>0.27.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## English
-
-- Resume SFTP transfers for saved hosts after restarting PoliSSH. Large files can continue from verified ranges.
-- Replace files and folders after the incoming copy is ready. If the server cannot confirm the final rename, transfer details show the recovery paths.
-- Preview files with Quick Look, rename and change permissions in batches, compare folders and queue copies in one direction. Jump between Files and the terminal at the current folder.
-- Download large files faster in Files mode over high-latency links. Copy folders with many small files with fewer requests.
-
-## Polski
-
-- Wznawiaj transfery SFTP zapisanych hostów po restarcie PoliSSH. Duże pliki mogą być kontynuowane od zweryfikowanych fragmentów.
-- Zastępuj pliki i katalogi po skopiowaniu nowej wersji. Jeśli serwer nie potwierdzi końcowej zmiany nazwy, szczegóły transferu pokażą ścieżki odzyskiwania.
-- Używaj Quick Look, zmieniaj grupowo nazwy i uprawnienia, porównuj katalogi i kolejkuj kopiowanie w jednym kierunku. Przechodź między panelem Pliki a terminalem z bieżącego katalogu.
-- Pobieraj duże pliki szybciej w trybie Pliki na łączach o dużym opóźnieniu. Kopiowanie katalogów z wieloma małymi plikami wymaga teraz mniej żądań.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.0/PoliSSH-0.27.0-arm64.zip" length="13124699" type="application/octet-stream" sparkle:edSignature="xHajHjuPJki9Z+JWSLwW9H7I23bZhRLiPTG/NHuSyVWY/5UAbbMS7lw12QrVuLBaxE5rAv5KeXeAI3EqLuikDw=="/>
         </item>
     </channel>
 </rss>
