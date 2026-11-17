@@ -1,5 +1,15 @@
 # Release notes / Historia zmian
 
+## 0.27.3 — 17 November / listopada 2026
+
+### English
+
+- Fixed blank output from large Kitty graphics in the local terminal, including the KymaOS desktop on Retina displays.
+
+### Polski
+
+- Naprawiono pusty ekran przy wyświetlaniu dużych obrazów Kitty w lokalnym terminalu, w tym pulpitu KymaOS na ekranach Retina.
+
 ## 0.27.2 — 17 November / listopada 2026
 
 ### English
