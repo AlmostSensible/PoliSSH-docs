@@ -6,6 +6,23 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.27.4</title>
+            <pubDate>Thu, 19 Nov 2026 12:22:41 +0200</pubDate>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>0.27.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## English
+
+- See the jump host used by a connection in the host library and connection view.
+
+## Polski
+
+- Zobacz host pośredniczący na liście hostów oraz w widoku połączenia.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.4/PoliSSH-0.27.4-arm64.zip" length="13144769" type="application/octet-stream" sparkle:edSignature="TqAZlfiRWXHUA2CtmgFHWF6mrKQtbRG8C4rxuZjrtn97FsasgOVY+Nk2uod47W4LI7A4aeAAaX9bENk+nSZEDw=="/>
+        </item>
+        <item>
             <title>0.27.3</title>
             <pubDate>Tue, 17 Nov 2026 23:53:54 +0200</pubDate>
             <sparkle:version>51</sparkle:version>
@@ -38,27 +55,6 @@
 - Zachowano wybrany widok terminala po zerwaniu i ponownym nawiązaniu połączenia SSH.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.2/PoliSSH-0.27.2-arm64.zip" length="13129919" type="application/octet-stream" sparkle:edSignature="oAUao5LqQwXUGeIBGiys7G902g1C+hkItoynl8X9O5x4yv6Ord4kZbd62RXPD43f489+rb/o0U2kgYpz/vyoDA=="/>
-        </item>
-        <item>
-            <title>0.27.1</title>
-            <pubDate>Sun, 15 Nov 2026 04:19:49 +0200</pubDate>
-            <sparkle:version>49</sparkle:version>
-            <sparkle:shortVersionString>0.27.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## English
-
-- Fixed interrupted SFTP uploads that reported a conflict after a file had already reached the server. Resume verifies the contents and only skips an identical file.
-- Redesigned transfer confirmation to show the selected items and destination in a compact native sheet.
-- Moved transfer errors above the file list in Transfer Activity.
-
-## Polski
-
-- Naprawiono wznawianie wysyłania przez SFTP po zerwaniu połączenia tuż po zapisaniu pliku na serwerze. Wznowienie sprawdza zawartość i pomija wyłącznie identyczny plik.
-- Okno potwierdzenia transferu pokazuje wybrane elementy i miejsce docelowe w kompaktowym układzie.
-- Komunikaty błędów w Aktywności transferów są widoczne nad listą plików.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.1/PoliSSH-0.27.1-arm64.zip" length="13127200" type="application/octet-stream" sparkle:edSignature="iO6hk0N9Tz0bdeAPJT1ZE/06mm/ryPToRG9PQNQdHTTjuYoO/M10FmYG6MDiNITimIjXKJLfg+iD5xMKjRcWCA=="/>
         </item>
     </channel>
 </rss>
