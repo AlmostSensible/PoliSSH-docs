@@ -6,6 +6,27 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.27.5</title>
+            <pubDate>Thu, 19 Nov 2026 18:54:04 +0200</pubDate>
+            <sparkle:version>53</sparkle:version>
+            <sparkle:shortVersionString>0.27.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[### English
+
+- Keep the host list and scrollbar steady when opening a context menu near the bottom.
+- Find host settings more easily with tabbed forms and searchable choices.
+- Preserve file selection at the root folder, show available terminal actions, and use Enter in the snippet picker to insert a command or choose hosts.
+
+### Polski
+
+- Lista hostów i pasek przewijania pozostają na miejscu po kliknięciu prawym przyciskiem przy dolnej krawędzi.
+- Zakładki i wyszukiwanie na listach wyboru ułatwiają dodawanie i edycję hostów.
+- Panel plików zachowuje zaznaczenie w katalogu głównym. Terminal pokazuje dostępność akcji, a Enter w palecie poleceń wstawia polecenie lub otwiera wybór hostów.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.5/PoliSSH-0.27.5-arm64.zip" length="13148499" type="application/octet-stream" sparkle:edSignature="HxY1fB2qrbzgfd8M8iuXMAOQdRqTTY9J2p0Q+6dDPD89WIVaj6ioY3gMdg/06vDYoo3KsytdI2056e+9WjUTCQ=="/>
+        </item>
+        <item>
             <title>0.27.4</title>
             <pubDate>Thu, 19 Nov 2026 12:22:41 +0200</pubDate>
             <sparkle:version>52</sparkle:version>
@@ -38,23 +59,6 @@
 - Naprawiono pusty ekran przy wyświetlaniu dużych obrazów Kitty w lokalnym terminalu, w tym pulpitu KymaOS na ekranach Retina.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.3/PoliSSH-0.27.3-arm64.zip" length="13128203" type="application/octet-stream" sparkle:edSignature="lbZJ173TFhKEu7jsMSq53YhtA+bfcFS+Y38FJ1MWYD/GrjyW5RxlyVSGsuTWcrFDbdrlQorYgpTMPqK0ZKCzBA=="/>
-        </item>
-        <item>
-            <title>0.27.2</title>
-            <pubDate>Tue, 17 Nov 2026 18:38:36 +0200</pubDate>
-            <sparkle:version>50</sparkle:version>
-            <sparkle:shortVersionString>0.27.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## English
-
-- Keep the selected terminal view when an SSH connection drops and reconnects.
-
-## Polski
-
-- Zachowano wybrany widok terminala po zerwaniu i ponownym nawiązaniu połączenia SSH.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.2/PoliSSH-0.27.2-arm64.zip" length="13129919" type="application/octet-stream" sparkle:edSignature="oAUao5LqQwXUGeIBGiys7G902g1C+hkItoynl8X9O5x4yv6Ord4kZbd62RXPD43f489+rb/o0U2kgYpz/vyoDA=="/>
         </item>
     </channel>
 </rss>
