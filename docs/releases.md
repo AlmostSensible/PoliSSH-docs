@@ -1,5 +1,15 @@
 # Release notes / Historia zmian
 
+## 0.27.4 — 19 November / listopada 2026
+
+### English
+
+- Show the jump host in the host library and connection view.
+
+### Polski
+
+- Pokazano host pośredniczący na liście hostów i w widoku połączenia.
+
 ## 0.27.3 — 17 November / listopada 2026
 
 ### English
