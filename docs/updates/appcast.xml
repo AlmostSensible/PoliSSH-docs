@@ -6,6 +6,27 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.28.0</title>
+            <pubDate>Thu, 19 Nov 2026 21:32:45 +0200</pubDate>
+            <sparkle:version>54</sparkle:version>
+            <sparkle:shortVersionString>0.28.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[### English
+
+- Filter files by name pattern and review the selected items before an SFTP transfer.
+- Ask for a command at the terminal cursor. Inline AI can ask a clarifying question. Enter inserts the suggestion for manual execution.
+- Search shared servers by name, address or username in MCP settings and review connected agent apps.
+
+### Polski
+
+- Filtruj pliki według maski nazwy i przejrzyj zaznaczone elementy przed transferem SFTP.
+- Poproś o polecenie przy kursorze terminala. AI może zadać pytanie pomocnicze. Enter wstawia propozycję do samodzielnego wykonania.
+- W ustawieniach MCP wyszukuj udostępniane serwery po nazwie, adresie lub użytkowniku i przeglądaj aplikacje agentów.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.28.0/PoliSSH-0.28.0-arm64.zip" length="13151688" type="application/octet-stream" sparkle:edSignature="DZOusW8wFnLPMb+UzV3tTS6ABIrSr+l/9XbvnJd9f3HEFLTJPgMWx35OrvUJv4eGQZ6sCa/g2J5ElpUualRXAg=="/>
+        </item>
+        <item>
             <title>0.27.5</title>
             <pubDate>Thu, 19 Nov 2026 18:54:04 +0200</pubDate>
             <sparkle:version>53</sparkle:version>
@@ -42,23 +63,6 @@
 - Zobacz host pośredniczący na liście hostów oraz w widoku połączenia.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.4/PoliSSH-0.27.4-arm64.zip" length="13144769" type="application/octet-stream" sparkle:edSignature="TqAZlfiRWXHUA2CtmgFHWF6mrKQtbRG8C4rxuZjrtn97FsasgOVY+Nk2uod47W4LI7A4aeAAaX9bENk+nSZEDw=="/>
-        </item>
-        <item>
-            <title>0.27.3</title>
-            <pubDate>Tue, 17 Nov 2026 23:53:54 +0200</pubDate>
-            <sparkle:version>51</sparkle:version>
-            <sparkle:shortVersionString>0.27.3</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## English
-
-- Fixed blank output from large Kitty graphics in the local terminal, including the KymaOS desktop on Retina displays.
-
-## Polski
-
-- Naprawiono pusty ekran przy wyświetlaniu dużych obrazów Kitty w lokalnym terminalu, w tym pulpitu KymaOS na ekranach Retina.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.3/PoliSSH-0.27.3-arm64.zip" length="13128203" type="application/octet-stream" sparkle:edSignature="lbZJ173TFhKEu7jsMSq53YhtA+bfcFS+Y38FJ1MWYD/GrjyW5RxlyVSGsuTWcrFDbdrlQorYgpTMPqK0ZKCzBA=="/>
         </item>
     </channel>
 </rss>
