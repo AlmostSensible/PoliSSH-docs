@@ -139,6 +139,8 @@ Upload by dragging from local to remote, or download in the opposite direction. 
 
 Open **Activity** (the pulse icon) in the application bar, then choose **Transfers**. It shows transfers across connections with progress, status, cancellation and retry. Queue pause stops pending work; active transfers finish normally. **Settings → SFTP** controls the global concurrency limit. Failed or cancelled transfers may leave partial destination files; temporary failures retry automatically up to twice by default (Settings → SFTP). Completed files are retained; known partial files restart from the beginning. Cancelled transfers require an explicit retry.
 
+Enable wildcards in the file filter and enter a pattern such as `*.log`. Choose **Select results** to select the matches. Expand the list in the transfer confirmation to review the selected files.
+
 ### Name conflicts
 
 | Choice | Effect |
@@ -198,13 +200,13 @@ Recording stops before administrator-password exchange. Use `exit` to leave the 
 
 ## AI assistant
 
-Choose **AI** to draft a command. To explain output, select it and choose **Explain** from the context menu. Review/edit the selected text before sending. The assistant returns text; it does not execute commands.
+Press **⌘I** or choose **AI** to request a command. If the assistant asks a question, choose an option or type your own answer.
 
 **Apple** is the default on-device provider, requiring macOS 26+, supported Apple Intelligence and a downloaded model. Availability is shown in the app; unsupported Polish input may require using English.
 
 **Optional AI tools:** Codex, Claude Code, Gemini, GitHub Copilot, OpenCode, Ollama and LM Studio. Install and authenticate the chosen CLI or configure a local model separately; select its provider, executable and model in **Settings → AI**. Detection does not prove account entitlement. Not every integration has been tested on a real account. External providers may receive submitted text; their terms and limits apply. There is no automatic provider switch. Review commands before use.
 
-**⌘I** opens a command suggestion at the terminal cursor. Review the result and insert it without automatic execution; Escape cancels. This mode does not automatically attach terminal history.
+Review or edit the suggested command. Enter inserts it into the terminal. Press Enter again in the shell to run it.
 
 ## Settings and data
 

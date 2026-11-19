@@ -1,14 +1,28 @@
 # Availability / Dostępność
 
-## Public beta 0.27.5
+## Public beta 0.28.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.5/PoliSSH-0.27.5-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.28.0/PoliSSH-0.28.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.5/PoliSSH-0.27.5-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.28.0/PoliSSH-0.28.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.28.0 / Nowości w 0.28.0
+
+### English
+
+- Filter files by name pattern and review the selected items before an SFTP transfer.
+- Ask for a command at the terminal cursor. Inline AI can ask a clarifying question. Enter inserts the suggestion for manual execution.
+- Search shared servers by name, address or username in MCP settings and review connected agent apps.
+
+### Polski
+
+- Filtruj pliki według maski nazwy i przejrzyj zaznaczone elementy przed transferem SFTP.
+- Poproś o polecenie przy kursorze terminala. AI może zadać pytanie pomocnicze. Enter wstawia propozycję do samodzielnego wykonania.
+- W ustawieniach MCP wyszukuj udostępniane serwery po nazwie, adresie lub użytkowniku i przeglądaj aplikacje agentów.
 
 ## New in 0.27.5 / Nowości w 0.27.5
 

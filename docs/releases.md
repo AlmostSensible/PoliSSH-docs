@@ -1,5 +1,19 @@
 # Release notes / Historia zmian
 
+## 0.28.0 — 19 November / listopada 2026
+
+### English
+
+- Filter files by name pattern and review the selected items before an SFTP transfer.
+- Ask for a command at the terminal cursor. Inline AI can ask a clarifying question. Enter inserts the suggestion for manual execution.
+- Search shared servers by name, address or username in MCP settings and review connected agent apps.
+
+### Polski
+
+- Filtruj pliki według maski nazwy i przejrzyj zaznaczone elementy przed transferem SFTP.
+- Poproś o polecenie przy kursorze terminala. AI może zadać pytanie pomocnicze. Enter wstawia propozycję do samodzielnego wykonania.
+- W ustawieniach MCP wyszukuj udostępniane serwery po nazwie, adresie lub użytkowniku i przeglądaj aplikacje agentów.
+
 ## 0.27.5 — 19 November / listopada 2026
 
 ### English

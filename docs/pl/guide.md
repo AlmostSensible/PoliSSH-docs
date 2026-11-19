@@ -139,6 +139,8 @@ Przeciągnięcie z panelu lokalnego do zdalnego wysyła pliki; w przeciwną stro
 
 Panel **Transfery** otworzysz z **Aktywności** (ikona pulsu) w pasku aplikacji. Pokazuje operacje ze wszystkich połączeń, postęp, stan, anulowanie i ponowienie. Pauza zatrzymuje zadania oczekujące; rozpoczęte kończą się normalnie. Globalny limit równoległości jest w **Ustawienia → SFTP**. Po błędzie lub anulowaniu w celu mogą pozostać pliki częściowe; błędy przejściowe są domyślnie ponawiane do dwóch razy (Ustawienia → SFTP). Ukończone pliki pozostają, a znane pliki częściowe zaczynają się od początku. Anulowane transfery wymagają jawnego ponowienia.
 
+Włącz maski w filtrze plików i wpisz wzorzec, np. `*.log`. Kliknij **Zaznacz wyniki**, aby zaznaczyć pasujące pliki. Rozwiń listę w oknie potwierdzenia transferu, aby sprawdzić zaznaczenie.
+
 ### Konflikty nazw
 
 | Decyzja | Co się stanie |
@@ -198,13 +200,13 @@ Nagrywanie zatrzymuje się przed wymianą hasła administratora. `exit` opuszcza
 
 ## Asystent AI
 
-Wybierz **AI**, aby przygotować polecenie. Aby wyjaśnić wynik, zaznacz tekst i wybierz **Wyjaśnij** z menu kontekstowego. Przejrzyj lub popraw tekst przed wysłaniem. Asystent zwraca odpowiedź, ale nie wykonuje komend.
+Naciśnij **⌘I** lub wybierz **AI**, aby poprosić o polecenie. Jeśli asystent zada pytanie, wybierz opcję lub wpisz własną odpowiedź.
 
 **Apple** jest domyślnym dostawcą działającym na urządzeniu. Wymaga macOS 26+, dostępnego Apple Intelligence i pobranego modelu. Aplikacja pokazuje dostępność; brak obsługi polskiego może wymagać zapytania po angielsku.
 
 **Opcjonalne narzędzia AI:** Codex, Claude Code, Gemini, GitHub Copilot, OpenCode, Ollama i LM Studio. Zainstaluj wybrane narzędzie i skonfiguruj logowanie lub lokalny model osobno; w **Ustawienia → AI** wybierz dostawcę, ścieżkę i model. Wykrycie narzędzia nie potwierdza uprawnień konta. Nie wszystkie integracje sprawdzono na rzeczywistych kontach. Zewnętrzny dostawca może otrzymać wysłany tekst; obowiązują jego zasady i limity. Brak automatycznej zmiany dostawcy. Sprawdzaj polecenia przed użyciem.
 
-**⌘I** otwiera sugestię polecenia przy kursorze. Sprawdź wynik i wstaw go bez automatycznego wykonania; Escape anuluje. Ten tryb nie dołącza automatycznie historii terminala.
+Sprawdź lub popraw podpowiedź. Enter wstawia ją do terminala. Kolejny Enter w powłoce uruchamia polecenie.
 
 ## Ustawienia i dane
 
