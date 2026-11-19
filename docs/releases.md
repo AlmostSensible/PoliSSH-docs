@@ -1,5 +1,19 @@
 # Release notes / Historia zmian
 
+## 0.27.5 — 19 November / listopada 2026
+
+### English
+
+- Keep the host list and scrollbar steady when opening a context menu near the bottom.
+- Find host settings more easily with tabbed forms and searchable choices.
+- Preserve file selection at the root folder, show available terminal actions, and use Enter in the snippet picker to insert a command or choose hosts.
+
+### Polski
+
+- Lista hostów i pasek przewijania pozostają na miejscu po kliknięciu prawym przyciskiem przy dolnej krawędzi.
+- Zakładki i wyszukiwanie na listach wyboru ułatwiają dodawanie i edycję hostów.
+- Panel plików zachowuje zaznaczenie w katalogu głównym. Terminal pokazuje dostępność akcji, a Enter w palecie poleceń wstawia polecenie lub otwiera wybór hostów.
+
 ## 0.27.4 — 19 November / listopada 2026
 
 ### English

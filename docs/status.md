@@ -1,14 +1,20 @@
 # Availability / Dostępność
 
-## Public beta 0.27.4
+## Public beta 0.27.5
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.4/PoliSSH-0.27.4-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.5/PoliSSH-0.27.5-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.4/PoliSSH-0.27.4-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.5/PoliSSH-0.27.5-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.27.5 / Nowości w 0.27.5
+
+Host context menus keep the list steady. Host forms offer searchable choices, and terminal actions reflect the current session state.
+
+Menu kontekstowe hosta zachowuje pozycję listy. Formularze hostów mają wyszukiwalne listy wyboru, a akcje terminala uwzględniają stan sesji.
 
 ## New in 0.27.4 / Nowości w 0.27.4
 
