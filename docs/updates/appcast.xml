@@ -6,6 +6,25 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.29.0</title>
+            <pubDate>Sat, 21 Nov 2026 15:50:55 +0200</pubDate>
+            <sparkle:version>55</sparkle:version>
+            <sparkle:shortVersionString>0.29.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[### English
+
+- Run a saved command on up to ten SSH hosts and compare their results in one window. Hosts with matching output and exit codes appear together.
+- Expand a group to inspect stdout, stderr and elapsed time. If the connection drops before the server confirms completion, PoliSSH shows an unknown outcome and keeps the output received so far.
+
+### Polski
+
+- Uruchom zapisane polecenie na maksymalnie dziesięciu hostach SSH i porównaj wyniki w jednym oknie. Hosty z identycznym wyjściem i kodem zakończenia pojawią się razem.
+- Rozwiń grupę, aby sprawdzić stdout, stderr i czas wykonania. Jeśli połączenie urwie się przed potwierdzeniem zakończenia, PoliSSH pokaże „Wynik nieznany” i zachowa odebrane wyjście.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.29.0/PoliSSH-0.29.0-arm64.zip" length="13183462" type="application/octet-stream" sparkle:edSignature="BuSe2d70LW+HDIiI7iHfjtuYLnJkQuFiQ2BOVJCgRXhU0Wd0CxvZzYylkG3/bFJ/hyvf2JCEZwycC+hOqz6aAQ=="/>
+        </item>
+        <item>
             <title>0.28.0</title>
             <pubDate>Thu, 19 Nov 2026 21:32:45 +0200</pubDate>
             <sparkle:version>54</sparkle:version>
@@ -46,23 +65,6 @@
 - Panel plików zachowuje zaznaczenie w katalogu głównym. Terminal pokazuje dostępność akcji, a Enter w palecie poleceń wstawia polecenie lub otwiera wybór hostów.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.5/PoliSSH-0.27.5-arm64.zip" length="13148499" type="application/octet-stream" sparkle:edSignature="HxY1fB2qrbzgfd8M8iuXMAOQdRqTTY9J2p0Q+6dDPD89WIVaj6ioY3gMdg/06vDYoo3KsytdI2056e+9WjUTCQ=="/>
-        </item>
-        <item>
-            <title>0.27.4</title>
-            <pubDate>Thu, 19 Nov 2026 12:22:41 +0200</pubDate>
-            <sparkle:version>52</sparkle:version>
-            <sparkle:shortVersionString>0.27.4</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## English
-
-- See the jump host used by a connection in the host library and connection view.
-
-## Polski
-
-- Zobacz host pośredniczący na liście hostów oraz w widoku połączenia.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.27.4/PoliSSH-0.27.4-arm64.zip" length="13144769" type="application/octet-stream" sparkle:edSignature="TqAZlfiRWXHUA2CtmgFHWF6mrKQtbRG8C4rxuZjrtn97FsasgOVY+Nk2uod47W4LI7A4aeAAaX9bENk+nSZEDw=="/>
         </item>
     </channel>
 </rss>
