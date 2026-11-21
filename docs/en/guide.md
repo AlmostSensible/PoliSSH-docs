@@ -172,7 +172,7 @@ For the current connected terminal:
 - **Insert** puts the command into the shell for editing without sending Enter.
 - **Execute** sends the command and Enter.
 
-**Run on hosts…** lets you select up to ten hosts, review the command and endpoints, then run it in separate new terminals. No target is preselected. Authentication and fingerprint checks still apply. A “Command sent” status reports delivery, not command success. It does not automatically retry or run the hosts' startup commands.
+**Run on hosts…** lets you select up to ten hosts, review the command and endpoints, then choose **Collect results** or **Interactive terminals**. Collect results uses a separate non-interactive SSH exec channel per host. Identical complete responses with the same exit code are grouped. Expand a row to inspect hosts, elapsed time, stdout and stderr. The time limit for execution is five minutes and each output stream is capped at 512 KiB. If the server does not confirm an exit status after connection loss, the outcome is unknown. Closing the results discards them. Interactive terminals open separate shells as before. No target is preselected. Authentication and fingerprint checks still apply. In interactive mode a “Command sent” status reports delivery, not command success. It does not automatically retry or run the hosts' startup commands.
 
 A host can explicitly enable an approved startup snippet. Changing that snippet requires renewed approval; automatic reconnect does not replay it.
 

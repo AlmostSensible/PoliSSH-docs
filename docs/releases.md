@@ -1,5 +1,17 @@
 # Release notes / Historia zmian
 
+## 0.29.0 — 21 November / listopada 2026
+
+### English
+
+- Run a saved command on up to ten SSH hosts and compare their results in one window. Hosts with matching output and exit codes appear together.
+- Expand a group to inspect stdout, stderr and elapsed time. If the connection drops before the server confirms completion, PoliSSH shows an unknown outcome and keeps the output received so far.
+
+### Polski
+
+- Uruchom zapisane polecenie na maksymalnie dziesięciu hostach SSH i porównaj wyniki w jednym oknie. Hosty z identycznym wyjściem i kodem zakończenia pojawią się razem.
+- Rozwiń grupę, aby sprawdzić stdout, stderr i czas wykonania. Jeśli połączenie urwie się przed potwierdzeniem zakończenia, PoliSSH pokaże „Wynik nieznany” i zachowa odebrane wyjście.
+
 ## 0.28.0 — 19 November / listopada 2026
 
 ### English

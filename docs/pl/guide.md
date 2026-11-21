@@ -172,7 +172,9 @@ Dla bieżącego, połączonego terminala:
 - **Wstaw** umieszcza tekst w powłoce do edycji, bez Enter.
 - **Wykonaj** wysyła polecenie i Enter.
 
-**Uruchom na hostach…** pozwala wybrać do dziesięciu hostów, przejrzeć komendę i adresy, a następnie uruchomić ją w osobnych nowych terminalach. Żaden cel nie jest domyślnie zaznaczony. Uwierzytelnianie i sprawdzanie odcisku nadal obowiązują. Stan „Polecenie wysłane” potwierdza dostarczenie, a nie sukces. Nie ma automatycznego ponowienia ani wykonywania poleceń startowych tych hostów.
+W **Uruchom na hostach…** wybierz do dziesięciu serwerów i sprawdź polecenie oraz adresy. **Zbierz wyniki** grupuje identyczne odpowiedzi z tym samym kodem zakończenia. Rozwiń wiersz, żeby zobaczyć adresy, czas dla każdego hosta i osobne strumienie stdout i stderr. Polecenie działa bez terminala, z limitem pięciu minut i 512 KiB na strumień. Jeśli po wysłaniu polecenia połączenie się urwie bez potwierdzenia zakończenia, zobaczysz „Wynik nieznany”. Wyniki są dostępne do zamknięcia okna.
+
+Do poleceń wymagających wpisywania tekstu wybierz **Terminale interaktywne**. Ten tryb otwiera osobny terminal dla każdego hosta. Oba tryby korzystają ze zwykłego uwierzytelniania i weryfikacji odcisku serwera, pomijają polecenia startowe hosta i wymagają ręcznego zatwierdzenia każdego nowego uruchomienia.
 
 Host może mieć jawnie zatwierdzone polecenie startowe. Jego zmiana wymaga ponownego zatwierdzenia; automatyczne wznowienie połączenia go nie powtarza.
 
