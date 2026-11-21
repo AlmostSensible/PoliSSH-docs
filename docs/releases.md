@@ -1,5 +1,19 @@
 # Release notes / Historia zmian
 
+## 0.30.0 — 21 November / listopada 2026
+
+### English
+
+- Add tags under **Organization** and use **Tags** in the library toolbar to filter hosts. Colored pills identify tags across hosts. When a row shows **+N**, select the host to see the remaining tags in Details.
+- Click anywhere on a group header to expand or collapse it, including nested groups. Switch between list and tiles, look for the **Root** badge on hosts with configured root access, and use the ellipsis for host actions.
+- Find connection, authentication, organization and advanced settings in collapsible sections. Related setup and file dialogs use the same form styling.
+
+### Polski
+
+- Dodawaj tagi w sekcji **Organizacja** i filtruj bibliotekę przez **Tagi** na pasku narzędzi. Kolorowe kapsułki ułatwiają rozpoznanie tych samych tagów na różnych hostach. Gdy wiersz pokazuje **+N**, zaznacz hosta, aby zobaczyć pozostałe tagi w szczegółach.
+- Kliknij w dowolne miejsce nagłówka, aby rozwinąć lub zwinąć grupę, także zagnieżdżoną. Przełączaj listę i kafelki, sprawdzaj skonfigurowany dostęp po znaczniku **Root** i otwieraj akcje hosta pod wielokropkiem.
+- Dane połączenia, uwierzytelnianie, organizacja i ustawienia zaawansowane mają zwijane sekcje. Powiązane formularze konfiguracji i operacji na plikach mają spójny wygląd.
+
 ## 0.29.0 — 21 November / listopada 2026
 
 ### English

@@ -2,7 +2,7 @@
 
 SSH terminals, SFTP and remote editing for macOS. Local terminals, split panes and reusable commands in one app.
 
-[Pobierz / Download 0.29.0](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.29.0/PoliSSH-0.29.0-arm64.zip){ .md-button .md-button--primary }
+[Pobierz / Download 0.30.0](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.30.0/PoliSSH-0.30.0-arm64.zip){ .md-button .md-button--primary }
 [Instrukcja PL](pl/guide.md){ .md-button }
 [User guide EN](en/guide.md){ .md-button }
 

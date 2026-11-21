@@ -29,7 +29,9 @@ Możesz też podać `user@example.com` lub wyszukać zapisany host albo sesję. 
 
 ## Hosty i uwierzytelnianie
 
-Porządkuj hosty przy użyciu grup, tagów i ulubionych. Biblioteka ma widok listy oraz kafelków. Wyszukiwanie obejmuje nazwy, adresy, grupy i tagi. Otwarcie hosta z działającą sesją przechodzi do tej sesji.
+Kliknij nagłówek grupy, aby ją rozwinąć lub zwinąć. Dotyczy to także grup zagnieżdżonych. Biblioteka ma widok listy oraz kafelków. Znacznik **Root** oznacza skonfigurowany dostęp root, a wielokropek otwiera akcje hosta. Otwarcie hosta z działającą sesją przechodzi do tej sesji.
+
+Dodawaj tagi w sekcji **Organizacja** w formularzu hosta. Filtr **Tagi** jest na pasku narzędzi biblioteki. Kolorowe kapsułki ułatwiają rozpoznanie tagów. Jeśli przy hoście widać **+N**, zaznacz go, aby zobaczyć wszystkie tagi w **Szczegółach**.
 
 Profile w sekcji **Uwierzytelnianie** można przypisywać do wielu hostów:
 

@@ -1,14 +1,28 @@
 # Availability / Dostępność
 
-## Public beta 0.29.0
+## Public beta 0.30.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.29.0/PoliSSH-0.29.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.30.0/PoliSSH-0.30.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.29.0/PoliSSH-0.29.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.30.0/PoliSSH-0.30.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.30.0 / Nowości w 0.30.0
+
+### English
+
+- Add tags under **Organization** and use **Tags** in the library toolbar to filter hosts. Colored pills identify tags across hosts. When a row shows **+N**, select the host to see the remaining tags in Details.
+- Click anywhere on a group header to expand or collapse it, including nested groups. Switch between list and tiles, look for the **Root** badge on hosts with configured root access, and use the ellipsis for host actions.
+- Find connection, authentication, organization and advanced settings in collapsible sections. Related setup and file dialogs use the same form styling.
+
+### Polski
+
+- Dodawaj tagi w sekcji **Organizacja** i filtruj bibliotekę przez **Tagi** na pasku narzędzi. Kolorowe kapsułki ułatwiają rozpoznanie tych samych tagów na różnych hostach. Gdy wiersz pokazuje **+N**, zaznacz hosta, aby zobaczyć pozostałe tagi w szczegółach.
+- Kliknij w dowolne miejsce nagłówka, aby rozwinąć lub zwinąć grupę, także zagnieżdżoną. Przełączaj listę i kafelki, sprawdzaj skonfigurowany dostęp po znaczniku **Root** i otwieraj akcje hosta pod wielokropkiem.
+- Dane połączenia, uwierzytelnianie, organizacja i ustawienia zaawansowane mają zwijane sekcje. Powiązane formularze konfiguracji i operacji na plikach mają spójny wygląd.
 
 ## New in 0.29.0 / Nowości w 0.29.0
 

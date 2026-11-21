@@ -29,7 +29,9 @@ You can also enter `user@example.com` or search for a saved host or open session
 
 ## Hosts and authentication
 
-Use groups, tags, favorites and search to organize hosts. Switch the library between list and tiles. Opening a host that already has a session selects that session.
+Click a group header to expand or collapse it, including nested groups. Switch the library between list and tiles. The **Root** badge indicates configured root access, and the ellipsis opens host actions. Opening a host that already has a session selects that session.
+
+Add tags under **Organization** in the host form and use **Tags** in the toolbar to filter hosts. Colored pills identify tags across hosts. If a row shows **+N**, select the host to see all its tags in **Details**.
 
 Under **Authentication**, create a profile to reuse across hosts:
 
