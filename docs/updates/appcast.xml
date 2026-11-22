@@ -6,6 +6,27 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.31.0</title>
+            <pubDate>Sun, 22 Nov 2026 04:01:29 +0200</pubDate>
+            <sparkle:version>57</sparkle:version>
+            <sparkle:shortVersionString>0.31.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[### English
+
+- Connect compatible clients using MCP `2026-07-28`. Earlier MCP versions remain supported.
+- Keep the iCloud sync preference enabled when synchronization is temporarily unavailable. When iCloud is available again, choose **Sync now**.
+- Built-in terminal suggestions and model settings have been removed. Manage external MCP clients under **Settings → Agents**.
+
+### Polski
+
+- Połącz zgodne klienty przez MCP `2026-07-28`. Wcześniejsze wersje MCP nadal są obsługiwane.
+- Ustawienie synchronizacji iCloud pozostaje włączone, gdy synchronizacja jest chwilowo niedostępna. Gdy iCloud wróci, wybierz **Synchronizuj teraz**.
+- Usunięto wbudowane podpowiedzi w terminalu i ustawienia modeli. Dostępem klientów MCP zarządzisz w **Ustawieniach → Agenci**.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.31.0/PoliSSH-0.31.0-arm64.zip" length="13190250" type="application/octet-stream" sparkle:edSignature="+1C5yVT4PH5N/92mRAsEOr8NjTUhyW8JDQ28OkR9qLQoFpBlPq1tZo0/JYH3DpyVmlyKljvOIrnecBls2ZAXAA=="/>
+        </item>
+        <item>
             <title>0.30.0</title>
             <pubDate>Sat, 21 Nov 2026 17:35:12 +0200</pubDate>
             <sparkle:version>56</sparkle:version>
@@ -44,27 +65,6 @@
 - Rozwiń grupę, aby sprawdzić stdout, stderr i czas wykonania. Jeśli połączenie urwie się przed potwierdzeniem zakończenia, PoliSSH pokaże „Wynik nieznany” i zachowa odebrane wyjście.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.29.0/PoliSSH-0.29.0-arm64.zip" length="13183462" type="application/octet-stream" sparkle:edSignature="BuSe2d70LW+HDIiI7iHfjtuYLnJkQuFiQ2BOVJCgRXhU0Wd0CxvZzYylkG3/bFJ/hyvf2JCEZwycC+hOqz6aAQ=="/>
-        </item>
-        <item>
-            <title>0.28.0</title>
-            <pubDate>Thu, 19 Nov 2026 21:32:45 +0200</pubDate>
-            <sparkle:version>54</sparkle:version>
-            <sparkle:shortVersionString>0.28.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[### English
-
-- Filter files by name pattern and review the selected items before an SFTP transfer.
-- Ask for a command at the terminal cursor. Inline AI can ask a clarifying question. Enter inserts the suggestion for manual execution.
-- Search shared servers by name, address or username in MCP settings and review connected agent apps.
-
-### Polski
-
-- Filtruj pliki według maski nazwy i przejrzyj zaznaczone elementy przed transferem SFTP.
-- Poproś o polecenie przy kursorze terminala. AI może zadać pytanie pomocnicze. Enter wstawia propozycję do samodzielnego wykonania.
-- W ustawieniach MCP wyszukuj udostępniane serwery po nazwie, adresie lub użytkowniku i przeglądaj aplikacje agentów.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.28.0/PoliSSH-0.28.0-arm64.zip" length="13151688" type="application/octet-stream" sparkle:edSignature="DZOusW8wFnLPMb+UzV3tTS6ABIrSr+l/9XbvnJd9f3HEFLTJPgMWx35OrvUJv4eGQZ6sCa/g2J5ElpUualRXAg=="/>
         </item>
     </channel>
 </rss>
