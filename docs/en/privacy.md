@@ -18,9 +18,9 @@ SSH/SFTP connect to the servers you choose. Those servers and your network opera
 
 If you enable synchronization in a provisioned build, configuration is sent to your private Apple CloudKit database and eligible credentials use iCloud Keychain. Apple operates these services under its own [privacy policy](https://www.apple.com/legal/privacy/). Cross-device operation has not yet been verified. Sync is optional; turning it off retains local data and does not automatically erase cloud data. Do not treat sync as a backup.
 
-## Optional AI
+## Optional MCP access
 
-Apple on-device models and supported local Ollama/LM Studio configurations run on your Mac; installing or authenticating external tools is a separate step. With external CLI providers, the text you submit may be sent to the selected provider using your existing account. Their privacy terms, retention, subscription and usage limits apply. PoliSSH does not automatically attach Keychain secrets or the whole terminal history to inline command requests. Text or context that you submit yourself can still contain sensitive data. Review prompts and generated commands before use.
+PoliSSH shares selected SSH hosts with external MCP clients when you turn on sharing and set up a connection. A connected client can receive information about those hosts and read files using the saved SSH account. The client's own privacy terms govern how it handles data it receives. Manage and revoke access in **Settings → Agents**.
 
 ## Updates and the website
 

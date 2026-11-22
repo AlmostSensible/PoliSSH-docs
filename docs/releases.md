@@ -1,5 +1,19 @@
 # Release notes / Historia zmian
 
+## 0.31.0 — 22 November / listopada 2026
+
+### English
+
+- Connect compatible clients using MCP `2026-07-28`. Earlier MCP versions remain supported.
+- Keep the iCloud sync preference enabled when synchronization is temporarily unavailable. When iCloud is available again, choose **Sync now**.
+- Built-in terminal suggestions and model settings have been removed. Manage external MCP clients under **Settings → Agents**.
+
+### Polski
+
+- Połącz zgodne klienty przez MCP `2026-07-28`. Wcześniejsze wersje MCP nadal są obsługiwane.
+- Ustawienie synchronizacji iCloud pozostaje włączone, gdy synchronizacja jest chwilowo niedostępna. Gdy iCloud wróci, wybierz **Synchronizuj teraz**.
+- Usunięto wbudowane podpowiedzi w terminalu i ustawienia modeli. Dostępem klientów MCP zarządzisz w **Ustawieniach → Agenci**.
+
 ## 0.30.0 — 21 November / listopada 2026
 
 ### English

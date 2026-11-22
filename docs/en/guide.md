@@ -200,15 +200,11 @@ Passwords are saved only after confirmed root access that used the password. If 
 
 Recording stops before administrator-password exchange. Use `exit` to leave the elevated shell. Elevating the terminal does not elevate SFTP. Initial automatic elevation is not repeated by automatic reconnect.
 
-## AI assistant
+## External agents (MCP)
 
-Press **⌘I** or choose **AI** to request a command. If the assistant asks a question, choose an option or type your own answer.
+Open **Settings → Agents** and enable **Share PoliSSH through MCP**. Select the hosts to share and add a named connection. For Codex, select **Copy setup command** and run it in Terminal. For other clients, use **Copy configuration**. The copied settings point to a private credentials file on this Mac.
 
-**Apple** is the default on-device provider, requiring macOS 26+, supported Apple Intelligence and a downloaded model. Availability is shown in the app; unsupported Polish input may require using English.
-
-**Optional AI tools:** Codex, Claude Code, Gemini, GitHub Copilot, OpenCode, Ollama and LM Studio. Install and authenticate the chosen CLI or configure a local model separately; select its provider, executable and model in **Settings → AI**. Detection does not prove account entitlement. Not every integration has been tested on a real account. External providers may receive submitted text; their terms and limits apply. There is no automatic provider switch. Review commands before use.
-
-Review or edit the suggested command. Enter inserts it into the terminal. Press Enter again in the shell to run it.
+The connection supports MCP `2026-07-28` and earlier versions. File writes and remote commands require your approval in PoliSSH. Revoke a connection from **Settings → Agents** when you want to remove its access.
 
 ## Settings and data
 
@@ -216,7 +212,7 @@ Review or edit the suggested command. Enter inserts it into the terminal. Press 
 | --- | --- |
 | General | English/Polish language and dark/light/system appearance. |
 | SFTP | Local start folder and global transfer concurrency. New local panes use the configured start folder. |
-| AI | Provider, executable path and model. |
+| Agents | MCP connections and shared hosts. |
 | Terminal | Font, palette, cursor, input/mouse behavior, reconnect, scrollback and bell; newer builds add pattern/paste/notification settings. |
 | iCloud | Optional configuration synchronization when the app is provisioned for it. |
 | Shortcuts | Keyboard shortcut reference. |
@@ -253,4 +249,4 @@ See the bilingual [files workspace guide](../files-workspace.md) for file-only c
 
 Connection tabs have more room in the compact window bar. Use **+** for a new connection, local terminal or host. **Activity** combines attention, transfers and agents; **…** contains the searchable list of open connections and session actions. Branding is in the sidebar.
 
-**Needs attention** has a fixed heading, session count and an explanation when no sessions need a response. Completed results can still be marked as read; waiting programs remain until their state changes. Terminal AI, search, split and more actions use one compact group. In the host form, **Test connection**, **Cancel** and **Save** share the footer, with test results above them. Host Terminal/Files buttons remain visible after resizing. Tailscale Android devices have a robot icon; online status still does not prove SSH access.
+**Needs attention** has a fixed heading, session count and an explanation when no sessions need a response. Completed results can still be marked as read; waiting programs remain until their state changes. Terminal search, split and more actions use one compact group. In the host form, **Test connection**, **Cancel** and **Save** share the footer, with test results above them. Host Terminal/Files buttons remain visible after resizing. Tailscale Android devices have a robot icon; online status still does not prove SSH access.

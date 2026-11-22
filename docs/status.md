@@ -1,14 +1,28 @@
 # Availability / Dostępność
 
-## Public beta 0.30.0
+## Public beta 0.31.0
 
-For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.30.0/PoliSSH-0.30.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
+For Apple Silicon Macs (M1 or later), macOS 14+. Intel is not supported by the current ZIP. No App Store or TestFlight is required. [Download](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.31.0/PoliSSH-0.31.0-arm64.zip), extract and copy the app to Applications. Updates are available from the PoliSSH menu. Version 0.16.1 and earlier require this one-time manual installation.
 
-Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.30.0/PoliSSH-0.30.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
+Dla Maców z Apple Silicon (M1 lub nowszym), macOS 14+. Obecna paczka nie obsługuje procesorów Intel. Nie wymaga App Store ani TestFlight. [Pobierz](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.31.0/PoliSSH-0.31.0-arm64.zip), rozpakuj i przenieś aplikację do Aplikacji. Aktualizacje są w menu PoliSSH. Wersje 0.16.1 i starsze wymagają jednorazowej instalacji ręcznej.
 
 The app source is private; this repository contains public documentation and release downloads. The download is signed and notarized. Notarization does not mean that every feature has been tested on every supported Mac.
 
 Kod aplikacji pozostaje prywatny; to repozytorium zawiera publiczną dokumentację i paczki. Aplikacja jest podpisana i notaryzowana. Notaryzacja nie oznacza przetestowania każdej funkcji na każdym wspieranym Macu.
+
+## New in 0.31.0 / Nowości w 0.31.0
+
+### English
+
+- Connect compatible clients using MCP `2026-07-28`. Earlier MCP versions remain supported.
+- Keep the iCloud sync preference enabled when synchronization is temporarily unavailable. When iCloud is available again, choose **Sync now**.
+- Built-in terminal suggestions and model settings have been removed. Manage external MCP clients under **Settings → Agents**.
+
+### Polski
+
+- Połącz zgodne klienty przez MCP `2026-07-28`. Wcześniejsze wersje MCP nadal są obsługiwane.
+- Ustawienie synchronizacji iCloud pozostaje włączone, gdy synchronizacja jest chwilowo niedostępna. Gdy iCloud wróci, wybierz **Synchronizuj teraz**.
+- Usunięto wbudowane podpowiedzi w terminalu i ustawienia modeli. Dostępem klientów MCP zarządzisz w **Ustawieniach → Agenci**.
 
 ## New in 0.30.0 / Nowości w 0.30.0
 
@@ -200,6 +214,6 @@ Dostępne są wzorce i regexy, podgląd wklejania, klikane ścieżki, integracja
 - Remote editor: UTF-8 up to 2 MiB. Saves retain the previous file as a recovery copy; a disconnect between the two renames may require manual recovery. No atomic server lock; ACLs and extended attributes are not copied to the replacement. Recovery copies require manual cleanup. / Edytor: UTF-8 do 2 MiB. Zapis zachowuje poprzedni plik jako kopię; zerwanie połączenia między zmianami nazwy może wymagać ręcznego odzyskania. Bez atomowej blokady; nowy plik nie przejmuje ACL ani rozszerzonych atrybutów. Kopie usuwa się ręcznie.
 - Root in a terminal does not elevate SFTP. / Root w terminalu nie zmienia uprawnień SFTP.
 - OpenSSH import supports basic fields, not the complete configuration language. No Mosh, Telnet or serial connections. / Import OpenSSH obsługuje podstawowe pola. Brak Mosh, Telnet i połączeń szeregowych.
-- Cross-device iCloud, a fresh installation on macOS 14 and all external AI providers on real accounts are not fully verified. / Nie potwierdzono pełnej synchronizacji iCloud, świeżej instalacji na macOS 14 ani wszystkich dostawców AI na rzeczywistych kontach.
+- Cross-device iCloud and a fresh installation on macOS 14 still need verification. / Pełna synchronizacja iCloud i świeża instalacja na macOS 14 nadal wymagają weryfikacji.
 
 [Help / Pomoc](en/support.md) · [Zgłoś problem / Report an issue](https://github.com/AlmostSensible/PoliSSH-docs/issues/new/choose)

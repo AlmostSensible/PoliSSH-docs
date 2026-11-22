@@ -18,9 +18,9 @@ SSH/SFTP łączy się z wybranymi przez Ciebie serwerami. Serwery i operatorzy s
 
 Po włączeniu synchronizacji w przygotowanej kompilacji konfiguracja trafia do prywatnej bazy Apple CloudKit, a odpowiednie dane uwierzytelniania korzystają z Pęku kluczy iCloud. Usługi obsługuje Apple zgodnie z własną [polityką prywatności](https://www.apple.com/legal/privacy/). Pełny przepływ między urządzeniami nie został jeszcze sprawdzony. Synchronizacja jest opcjonalna; wyłączenie zachowuje lokalne dane i nie usuwa automatycznie danych z chmury. Nie zastępuje kopii zapasowej.
 
-## Opcjonalne AI
+## Opcjonalny dostęp przez MCP
 
-Modele Apple na urządzeniu i obsługiwane lokalne konfiguracje Ollama/LM Studio działają na Macu; instalacja lub logowanie w zewnętrznych narzędziach odbywa się osobno. W przypadku zewnętrznych dostawców CLI wysłany tekst może trafić do wybranego dostawcy przez Twoje istniejące konto. Obowiązują jego zasady prywatności, przechowywania danych, planu i limitów. PoliSSH nie dołącza automatycznie sekretów z pęku kluczy ani całej historii terminala do żądań generowania poleceń przy kursorze. Samodzielnie wysłany tekst lub kontekst nadal może zawierać dane poufne. Sprawdzaj prompty i proponowane polecenia przed użyciem.
+PoliSSH udostępnia wybrane hosty SSH zewnętrznym klientom MCP, gdy włączysz udostępnianie i dodasz połączenie. Połączony klient może otrzymać informacje o tych hostach i odczytać pliki, korzystając z zapisanego konta SSH. Sposób, w jaki klient przetwarza otrzymane dane, określają jego zasady prywatności. Dostępem zarządzisz w **Ustawieniach → Agenci**, gdzie możesz też unieważnić połączenie.
 
 ## Aktualizacje i strona
 

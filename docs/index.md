@@ -2,17 +2,17 @@
 
 SSH terminals, SFTP and remote editing for macOS. Local terminals, split panes and reusable commands in one app.
 
-[Pobierz / Download 0.30.0](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.30.0/PoliSSH-0.30.0-arm64.zip){ .md-button .md-button--primary }
+[Pobierz / Download 0.31.0](https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.31.0/PoliSSH-0.31.0-arm64.zip){ .md-button .md-button--primary }
 [Instrukcja PL](pl/guide.md){ .md-button }
 [User guide EN](en/guide.md){ .md-button }
 
-**Public beta · Apple Silicon (M1 or later) · macOS 14+ · ZIP, 13.0 MB**
+**Public beta · Apple Silicon (M1 or later) · macOS 14+ · ZIP**
 
 **Publiczna beta · Apple Silicon (M1 lub nowszy) · macOS 14+**
 
-Signed with Developer ID and notarized by Apple. Intel Macs are not supported by this download. Core SSH, SFTP and local terminals do not require an AI account or developer tools. Optional AI providers have their own requirements.
+Signed with Developer ID and notarized by Apple. Intel Macs are not supported by this download. Connect external MCP clients from the optional Agents settings.
 
-Podpis Developer ID i notaryzacja Apple. Paczka nie obsługuje Maców z procesorem Intel. SSH, SFTP i lokalny terminal nie wymagają konta AI ani narzędzi programistycznych. Opcjonalni dostawcy AI mają własne wymagania.
+Podpis Developer ID i notaryzacja Apple. Paczka nie obsługuje Maców z procesorem Intel. Zewnętrzne klienty MCP możesz połączyć przez zakładkę Agenci w ustawieniach.
 
 ![PoliSSH host library](assets/hosts-dark.jpg)
 

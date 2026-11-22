@@ -202,15 +202,11 @@ Hasło jest zapisywane dopiero po potwierdzonym wejściu na roota z jego użycie
 
 Nagrywanie zatrzymuje się przed wymianą hasła administratora. `exit` opuszcza podwyższoną powłokę. Przejście terminala na root nie podnosi uprawnień SFTP. Automatyczne wznowienie połączenia nie ponawia początkowego przejścia na root.
 
-## Asystent AI
+## Zewnętrzni agenci (MCP)
 
-Naciśnij **⌘I** lub wybierz **AI**, aby poprosić o polecenie. Jeśli asystent zada pytanie, wybierz opcję lub wpisz własną odpowiedź.
+Otwórz **Ustawienia → Agenci** i włącz **Udostępnij PoliSSH przez MCP**. Wybierz hosty, które chcesz udostępnić, i dodaj nazwane połączenie. W przypadku Codexa wybierz **Kopiuj polecenie połączenia** i uruchom je w terminalu. W przypadku innych klientów użyj **Kopiuj konfigurację**. Skopiowane ustawienia wskazują prywatny plik poświadczeń na tym Macu.
 
-**Apple** jest domyślnym dostawcą działającym na urządzeniu. Wymaga macOS 26+, dostępnego Apple Intelligence i pobranego modelu. Aplikacja pokazuje dostępność; brak obsługi polskiego może wymagać zapytania po angielsku.
-
-**Opcjonalne narzędzia AI:** Codex, Claude Code, Gemini, GitHub Copilot, OpenCode, Ollama i LM Studio. Zainstaluj wybrane narzędzie i skonfiguruj logowanie lub lokalny model osobno; w **Ustawienia → AI** wybierz dostawcę, ścieżkę i model. Wykrycie narzędzia nie potwierdza uprawnień konta. Nie wszystkie integracje sprawdzono na rzeczywistych kontach. Zewnętrzny dostawca może otrzymać wysłany tekst; obowiązują jego zasady i limity. Brak automatycznej zmiany dostawcy. Sprawdzaj polecenia przed użyciem.
-
-Sprawdź lub popraw podpowiedź. Enter wstawia ją do terminala. Kolejny Enter w powłoce uruchamia polecenie.
+Połączenie obsługuje MCP `2026-07-28` i wcześniejsze wersje. Zapis plików i zdalne polecenia wymagają Twojej zgody w PoliSSH. Aby odebrać dostęp, unieważnij połączenie w **Ustawieniach → Agenci**.
 
 ## Ustawienia i dane
 
@@ -218,7 +214,7 @@ Sprawdź lub popraw podpowiedź. Enter wstawia ją do terminala. Kolejny Enter w
 | --- | --- |
 | Ogólne | Język polski/angielski i motyw ciemny/jasny/systemowy. |
 | SFTP | Lokalny katalog startowy i globalny limit równoległych transferów. Katalog startowy dotyczy nowych paneli lokalnych. |
-| AI | Dostawca, ścieżka narzędzia i model. |
+| Agenci | Połączenia MCP i udostępnione hosty. |
 | Terminal | Czcionka, paleta, kursor, klawiatura/mysz, wznowienie, historia ekranu i dzwonek; wzorce, podgląd wklejania i powiadomienia. |
 | iCloud | Eksperymentalna, opcjonalna synchronizacja w przygotowanej i podpisanej aplikacji. |
 | Skróty | Lista skrótów klawiaturowych. |
@@ -257,4 +253,4 @@ Zobacz dwujęzyczną [instrukcję obszaru plików](../files-workspace.md): poł�
 
 Karty połączeń mają więcej miejsca w kompaktowym pasku okna. **+** otwiera menu nowego połączenia, lokalnego terminala lub hosta. **Aktywność** łączy uwagę, transfery i agentów; **…** zawiera wyszukiwalną listę otwartych połączeń i akcje sesji. Logo znajduje się w panelu bocznym.
 
-**Wymaga uwagi** ma stały nagłówek, liczbę sesji i wyjaśnienie pustej listy. Zakończone wyniki nadal można oznaczyć jako przeczytane; oczekujące programy pozostają do zmiany stanu. AI, wyszukiwanie, podział i pozostałe akcje terminala tworzą jedną kompaktową grupę. W formularzu hosta **Testuj połączenie**, **Anuluj** i **Zapisz** są w jednym pasku na dole, a wynik testu nad nimi. Przyciski Terminal/Pliki pozostają widoczne po zmianie rozmiaru okna. Urządzenia Android w Tailscale mają ikonę robota; online nadal nie potwierdza dostępu SSH.
+**Wymaga uwagi** ma stały nagłówek, liczbę sesji i wyjaśnienie pustej listy. Zakończone wyniki nadal można oznaczyć jako przeczytane; oczekujące programy pozostają do zmiany stanu. Wyszukiwanie, podział i pozostałe akcje terminala tworzą jedną kompaktową grupę. W formularzu hosta **Testuj połączenie**, **Anuluj** i **Zapisz** są w jednym pasku na dole, a wynik testu nad nimi. Przyciski Terminal/Pliki pozostają widoczne po zmianie rozmiaru okna. Urządzenia Android w Tailscale mają ikonę robota; online nadal nie potwierdza dostępu SSH.
