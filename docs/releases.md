@@ -1,5 +1,15 @@
 # Release notes / Historia zmian
 
+## 0.31.1 — 24 November / listopada 2026
+
+### English
+
+- The SFTP confirmation dialog now shows the destination folder and selected files immediately for uploads and downloads. Scroll through larger selections before adding them to the queue.
+
+### Polski
+
+- Okno potwierdzenia SFTP od razu pokazuje katalog docelowy i wybrane pliki przy wysyłaniu i pobieraniu. Dłuższe listy można przewijać przed dodaniem transferu do kolejki.
+
 ## 0.31.0 — 22 November / listopada 2026
 
 ### English
