@@ -6,6 +6,23 @@
         <description>Signed and notarized PoliSSH updates for macOS.</description>
         <language>en</language>
         <item>
+            <title>0.31.1</title>
+            <pubDate>Tue, 24 Nov 2026 18:45:33 +0200</pubDate>
+            <sparkle:version>58</sparkle:version>
+            <sparkle:shortVersionString>0.31.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[## English
+
+- The SFTP confirmation dialog now shows the destination folder and selected files immediately for uploads and downloads. Scroll through larger selections before adding them to the queue.
+
+## Polski
+
+- Okno potwierdzenia SFTP od razu pokazuje katalog docelowy i wybrane pliki przy wysyłaniu i pobieraniu. Dłuższe listy można przewijać przed dodaniem transferu do kolejki.
+]]></description>
+            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.31.1/PoliSSH-0.31.1-arm64.zip" length="13188566" type="application/octet-stream" sparkle:edSignature="M0wOa35TrvCc+jm9ctNt/mY1QMO0D0nfAH2szWunkmA7jyVljSnp4jFK36HFfgnZobaKeD4h2xLB7zdtL44OBQ=="/>
+        </item>
+        <item>
             <title>0.31.0</title>
             <pubDate>Sun, 22 Nov 2026 04:01:29 +0200</pubDate>
             <sparkle:version>57</sparkle:version>
@@ -46,25 +63,6 @@
 - Dane połączenia, uwierzytelnianie, organizacja i ustawienia zaawansowane mają zwijane sekcje. Powiązane formularze konfiguracji i operacji na plikach mają spójny wygląd.
 ]]></description>
             <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.30.0/PoliSSH-0.30.0-arm64.zip" length="13284581" type="application/octet-stream" sparkle:edSignature="AG77wzqXNe/xPp+z2MB7AEDmiFu7JthiHiwhePtH6KzRCdKs3TgpUJC0FNkXkWuxmfDr1opd0wACRnYp5OtwDQ=="/>
-        </item>
-        <item>
-            <title>0.29.0</title>
-            <pubDate>Sat, 21 Nov 2026 15:50:55 +0200</pubDate>
-            <sparkle:version>55</sparkle:version>
-            <sparkle:shortVersionString>0.29.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[### English
-
-- Run a saved command on up to ten SSH hosts and compare their results in one window. Hosts with matching output and exit codes appear together.
-- Expand a group to inspect stdout, stderr and elapsed time. If the connection drops before the server confirms completion, PoliSSH shows an unknown outcome and keeps the output received so far.
-
-### Polski
-
-- Uruchom zapisane polecenie na maksymalnie dziesięciu hostach SSH i porównaj wyniki w jednym oknie. Hosty z identycznym wyjściem i kodem zakończenia pojawią się razem.
-- Rozwiń grupę, aby sprawdzić stdout, stderr i czas wykonania. Jeśli połączenie urwie się przed potwierdzeniem zakończenia, PoliSSH pokaże „Wynik nieznany” i zachowa odebrane wyjście.
-]]></description>
-            <enclosure url="https://github.com/AlmostSensible/PoliSSH-docs/releases/download/v0.29.0/PoliSSH-0.29.0-arm64.zip" length="13183462" type="application/octet-stream" sparkle:edSignature="BuSe2d70LW+HDIiI7iHfjtuYLnJkQuFiQ2BOVJCgRXhU0Wd0CxvZzYylkG3/bFJ/hyvf2JCEZwycC+hOqz6aAQ=="/>
         </item>
     </channel>
 </rss>
